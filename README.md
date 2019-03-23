@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <p>
-  <a href="https://discord.gg/jQdFFH6"><img src="https://cdn.discordapp.com/attachments/517844680956706818/558789279686590506/AI_ChatBot_Js.png" width="40%"></a>
+  <a href="https://discord.gg/jQdFFH6"><img src="https://cdn.discordapp.com/attachments/548692280350081026/559092648745500727/devil.png" width="50%"></a>
  </p>
   <p>
     <a href="https://discord.gg/jQdFFH6"><img src="https://discordapp.com/api/guilds/550140222822809610/embed.png" alt="Discord server" /></a>
