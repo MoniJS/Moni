@@ -20,6 +20,7 @@ Moni is a Discord ChatBot made with [Javascript](https://www.javascript.com/) an
 ## Links
 * [Discord.js](https://discord.js.org/#/)
 * [Node.js](https://nodejs.org/en/)
+* [Discord-Akairo](https://github.com/discord-akairo/discord-akairo)
 
 ## Contributing
 Before creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the
