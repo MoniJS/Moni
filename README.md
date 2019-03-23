@@ -11,25 +11,15 @@
 </div>
 
 ## About
-Moni is a powerful AI(Artificial intelligence) ChatBot made with [Javascript](https://www.javascript.com/) written using [DialogFlow](https://dialogflow.com/) that get smarter every time.
+Moni is a Discord ChatBot made with [Javascript](https://www.javascript.com/) and Discord.js
 
-- Human-like Responce
-- Fluent Conversations
-- Open Source (You can change it However You Like)
-
-## Usage
-## Example usage	
-```An example of typical input would be something like this:
-
-> **user:**  Good morning! How are you doing?  
-> **bot:**  I am doing very well, thank you for asking.  
-> **user:**  You're welcome.  
-> **bot:**  Do you like the color red?
-```
+- Open-Source
+- Community Features
+- Open Source (You can change it However You Like, Not Steal)
 
 ## Links
-* [DialogFlow](https://dialogflow.com/)
-* [Angular](https://angular.io/)
+* [Discord.js](https://discord.js.org/#/)
+* [Node.js](https://nodejs.org/en/)
 
 ## Contributing
 Before creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the
