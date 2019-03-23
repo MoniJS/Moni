@@ -25,7 +25,7 @@ Moni is a Discord ChatBot made with [Javascript](https://www.javascript.com/) an
 ## Contributing
 Before creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the
 [documentation]().  
-See [the contribution guide](https://github.com/MoniS10/Moni/blob/master/CONTRIBUTING.md) if you'd like to submit a PR.
+See [the contribution guide](https://github.com/moni-js/Moni/blob/master/CONTRIBUTING.md) if you'd like to submit a PR.
 
 ## Help
 If you don't understand something or, you are experiencing problems, or you just need a gentle
