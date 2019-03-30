@@ -1,14 +1,14 @@
 language: node_js
 node_js:
-  - 10
+  - 11
   - 11
 install: npm install
 script: bash ./travis/test.sh
 jobs:
   include:
     - stage: deploy
-      node_js: 10
-      script: bash ./travis/deploy.sh
+      node_js: 11
+      script: bash .deploy.sh
       env:
         - ENCRYPTION_LABEL="af862fa96d3e"
         - COMMIT_AUTHOR_EMAIL="suvajit.c@outlook.in"
