@@ -9,8 +9,12 @@ class ErrorListener extends Listener {
     }
 
     exec(message) {
-    message.channel.send("Oops, something went wrong")
-    message.channel.send("Try again");
+        try {
+            return message.channel.send([
+                `Oops, something went wrong`,
+                `Try again.`
+            ])
+        } catch {}
     }
 }
 
