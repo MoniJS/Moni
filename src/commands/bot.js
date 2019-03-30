@@ -10,11 +10,10 @@ class BotInfoCommand extends Command {
     }
 
     exec(message) {
-        let randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
-        const exampleEmbed = new Discord.MessageEmbed()
-	    .setColor(randomColor)
+        const embed = new Discord.MessageEmbed()
+	    .setColor('RANDOM')
 	    .setTitle('Bot Info')
-	    .setAuthor(`${message.author.username}#${message.author.discriminator}`)
+	    .setAuthor(`${message.author.tag}`)
 	    .setDescription('Info On Your Server')
         .addField("Bot Name",  'Moni.js', true)
 	    .addField("Created On",  this.client.user.createdAt, true)
@@ -29,7 +28,7 @@ class BotInfoCommand extends Command {
 	    .setTimestamp()
         .setImage(this.client.user.avatarURL)
 	    .setFooter("Version 0.0.2");
-        return message.util.send(exampleEmbed);
+        return message.util.send(embed);
     }
 }
 
