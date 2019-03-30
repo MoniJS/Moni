@@ -1,4 +1,4 @@
-const { Command } = require('discord-akairo');
+const { Command, version } = require('discord-akairo');
 const Discord = require("discord.js");
 
 
@@ -24,6 +24,8 @@ class BotInfoCommand extends Command {
     .addField('Guild Size',  this.client.guilds.size, true)
     .addField('UpTime', `${this.client.uptime} ms`, true)
     .addField('Last Restart', this.client.readyAt, true)
+    .addField('Discord.js', Discord.version, true)
+    .addField('Akairo', version, true)
 	.setTimestamp()
     .setImage(this.client.user.avatarURL)
 	.setFooter("Version 0.0.2");
