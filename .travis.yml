@@ -5,7 +5,3 @@ node_js:
 install: npm i
 cache: npm
 
-jobs:
-  include:
-    - script: npm run lint
-      name: "Lint"
