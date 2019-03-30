@@ -35,4 +35,4 @@ client.on('reconnecting', async () => console.log('I am reconnecting now!'));
    client.user.setActivity(`type !src | ${client.guilds.size} Servers | ${client.users.size} Users`);
 });
 
-client.login('NTUwNDYwMTYwODI5ODE2ODMz.D3206g.C8TEjSc-LsSmc8YTqkdHYs8KmoA');
+client.login(token);
