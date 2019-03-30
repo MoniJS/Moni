@@ -8,9 +8,10 @@ class SrcCommand extends Command {
     }
 
     exec(message) { 
-        message.channel.send("Fork Me On GitHub and make me better (https://github.com/moni-js/Moni)");
-message.channel.send("You also get a Special Role Here https://discord.gg/jQdFFH6");
-
+        return message.channel.send([
+            `Fork Me On GitHub and make me better (https://github.com/moni-js/Moni)`,
+            `You also get a Special Role Here https://discord.gg/jQdFFH6`
+        ]);
     }
 }
 

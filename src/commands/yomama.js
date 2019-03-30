@@ -9,9 +9,9 @@ class YomamaCommand extends Command {
     }
 
     exec(message) {
-    let joke = require('../random/yomama.json');
-var randomQ = joke[Math.floor(Math.random() * joke.length)];
-message.channel.send(randomQ);
+        let joke = require('../random/yomama.json');
+        let randomQ = joke[Math.floor(Math.random() * joke.length)];
+        return message.channel.send(randomQ);
     }
 }
 
