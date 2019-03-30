@@ -1,12 +1,30 @@
 {
   "main": "index.js",
   "dependencies": {
-    "discord-akairo": "discord-akairo/discord-akairo",
-    "discord.js": "discordjs/discord.js",
+    "discord-akairo": "github:discord-akairo/discord-akairo",
+    "discord.js": "github:discordjs/discord.js",
     "discord.js-minesweeper": "1.0.3",
     "dotenv": "^7.0.0",
     "moment": "^2.24.0",
     "ms": "2.1.1",
     "request": "2.88.0"
-  }
+  },
+  "name": "Moni",
+  "description": "<div align=\"center\">\r   <br />\r   <p>\r   <a href=\"https://discord.gg/jQdFFH6\"><img src=\"https://cdn.discordapp.com/attachments/548692280350081026/559092648745500727/devil.png\" width=\"50%\"></a>\r  </p>\r   <p>\r     <a href=\"https://discord.gg/jQdFFH6\"><img src=\"https://discordapp.com/api/guilds/550140222822809610/embed.png\" alt=\"Discord server\" /></a>\r     <a href=\"https://www.patreon.com/\"><img src=\"https://img.shields.io/badge/donate-patreon-F96854.svg\" alt=\"Patreon\" /></a>\r   </p>\r </br>\r </div>",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moni-js/Moni.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moni-js/Moni/issues"
+  },
+  "homepage": "https://github.com/moni-js/Moni#readme"
 }
