@@ -1,0 +1,11 @@
+{
+  "main": "index.js",
+  "dependencies": {
+    "discord-akairo": "discord-akairo/discord-akairo",
+    "discord.js": "discordjs/discord.js",
+    "discord.js-minesweeper": "1.0.3",
+    "moment": "^2.24.0",
+    "ms": "2.1.1",
+    "request": "2.88.0"
+  }
+}
