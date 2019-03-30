@@ -9,7 +9,9 @@ class cooldownListener extends Listener {
     }
 
     exec(message, command, remaining) {
-       message.channel.send(`Please wait ${remaining}ms before trying the (${command}) command.`);
+        try {
+            return message.channel.send(`Please wait ${remaining}ms before trying the (${command}) command.`);
+        } catch {}
     }
 }
 
