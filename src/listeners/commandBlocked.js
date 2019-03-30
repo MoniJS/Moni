@@ -9,7 +9,9 @@ class commandBlockedListener extends Listener {
     }
 
     exec(message, command, args) {
-    message.channel.send("Oops, it looks like this command is Owner Only, Sorry.");
+        try {
+            return message.channel.send("Oops, it looks like this command is Owner Only, Sorry.");
+        } catch {}
     }
 }
 
