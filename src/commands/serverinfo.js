@@ -34,7 +34,7 @@ class ServerCommand extends Command {
         .setImage(message.guild.iconURL())
 	    .setFooter(new Date().getTime() - message.createdTimestamp + " ms");
 
-        return message.channel.send(exampleEmbed);
+        return message.util.send(exampleEmbed);
     }
 }
 

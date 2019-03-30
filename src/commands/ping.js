@@ -8,7 +8,7 @@ class PingCommand extends Command {
     }
 
     exec(message) {
-        return message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");  
+        return message.util.send(new Date().getTime() - message.createdTimestamp + " ms");  
     }
 }
 

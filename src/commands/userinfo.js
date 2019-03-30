@@ -42,7 +42,7 @@ class UserCommand extends Command {
             `• Status: ${user.presence.status.toUpperCase()}`,
             `• Activity: ${user.presence.activity ? user.presence.activity.name : 'None'}`
 		])
-		return message.channel.send({ embed });
+		return message.util.send({ embed });
     }
 }
 
