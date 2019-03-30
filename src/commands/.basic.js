@@ -7,9 +7,7 @@ class BasicCommand extends Command {
         });
     }
 
-    exec(message) {
-        
-    }
+    exec(message) {}
 }
 
 module.exports = BasicCommand;

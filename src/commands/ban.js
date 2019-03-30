@@ -25,7 +25,7 @@ class BanCommand extends Command {
            return 'do you really think I can ban the server owner? Learn how to discord, thanks';
          }
          if (args.member.id === "550460160829816833") {
-      return 'not gonna ban myself, thanks';
+        return 'not gonna ban myself, thanks';
         }   
          args.member.ban().then(() => {
             return message.reply(`${args.member} was banned!`);     
