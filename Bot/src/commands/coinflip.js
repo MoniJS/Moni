@@ -11,6 +11,7 @@ class CoinFlipCommand extends Command {
          let coin = require('../random/coinflip.json');
       var randomCoin = coin[Math.floor(Math.random() * coin.length)];
     message.reply(randomCoin);
+   
     }
 }
 

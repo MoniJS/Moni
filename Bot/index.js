@@ -15,7 +15,7 @@ const fs = require("fs");
 
 const request = require('request');
 
-const token = process.env.DISCORD_BOT_SECRET;             
+const token = process.env.DISCORD_BOT_SECRET;
 
 const keep_alive = require('./keep_alive.js')
 
@@ -24,7 +24,7 @@ const keep_alive = require('./keep_alive.js')
 client.on('ready', async () => {
   console.log('I am on and ready to work for you!');
 
-  console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
+  console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
 
   client.on('ready', async () => console.log('Yo this ready!'));
 
@@ -35,4 +35,4 @@ client.on('reconnecting', async () => console.log('I am reconnecting now!'));
    client.user.setActivity(`type !src | ${client.guilds.size} Servers | ${client.users.size} Users`);
 });
 
-client.login(token);
+client.login('NTUwNDYwMTYwODI5ODE2ODMz.D3206g.C8TEjSc-LsSmc8YTqkdHYs8KmoA');

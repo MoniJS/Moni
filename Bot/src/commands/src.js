@@ -3,7 +3,7 @@ const { Command } = require('discord-akairo');
 class SrcCommand extends Command {
     constructor() {
         super('src', {
-           aliases: ['src', 'source', 'support', 'commands', 'cmd', "help"]
+           aliases: ['src', 'source', 'support', 'commands', 'cmd']
         });
     }
 

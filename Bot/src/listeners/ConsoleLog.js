@@ -4,7 +4,7 @@ class CommandStartedListener extends Listener {
     constructor() {
         super('commandstarted', {
             emitter: 'commandHandler',
-            eventName: 'commandStarted'
+            event: 'commandStarted'
         });
     }
 
