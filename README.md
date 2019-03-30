@@ -4,18 +4,27 @@
   <a href="https://discord.gg/jQdFFH6"><img src="https://cdn.discordapp.com/attachments/548692280350081026/559092648745500727/devil.png" width="50%"></a>
  </p>
   <p>
-    <a href="https://discord.gg/jQdFFH6"><img src="https://discordapp.com/api/guilds/550140222822809610/embed.png" alt="Discord server" /></a>
-    <a href="https://www.patreon.com/"><img src="https://img.shields.io/badge/donate-patreon-F96854.svg" alt="Patreon" /></a>
+    <a href="https://discord.gg/jQdFFH6"><img src="https://img.shields.io/discord/550140222822809610.svg?colorB=Blue&logo=discord&label=Support&style=for-the-badge" alt="Discord server" /></a>
+    <a href="https://discord.gg/jQdFFH6">
+    <img src="https://img.shields.io/travis/com/moni-js/moni.svg?style=for-the-badge" alt="Build">
+</a>
+    <a href="https://discord.gg/jQdFFH6"><img src="https://img.shields.io/github/languages/top/moni-js/moni.svg?colorB=f0db4f&style=for-the-badge" alt="Language" /></a>
+<a href="https://github.com/moni-js/moni/issues">
+    <img src="https://img.shields.io/github/issues/moni-js/moni.svg?style=for-the-badge&colorB=37f149" alt="Issues">
+</a>
+<a href="https://github.com/moni-js/moni/pulls">
+    <img src="https://img.shields.io/github/issues-pr/moni-js/moni.svg?style=for-the-badge&colorB=37f149" alt="Pull Request">
+</a>
   </p>
 </br>
 </div>
 
 ## About
-Moni is a Discord ChatBot made with [Javascript](https://www.javascript.com/) and Discord.js
+Moni is a Discord ChatBot made with [JavaScript](https://www.javascript.com/) and [Discord.JS](https://discord.js.org/#/).
 
 - Open-Source
 - Community Features
-- Open Source (You can change it However You Like, Not Steal)
+- Open Source (You can change it However You Like) 
 
 ## Links
 * [Discord.js](https://discord.js.org/#/)
