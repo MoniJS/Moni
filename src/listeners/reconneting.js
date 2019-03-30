@@ -1,5 +1,4 @@
 const { Listener } = require('discord-akairo');
-const Logger = require('../../util/Logger');
 
 class ReconnectListener extends Listener {
 	constructor() {
@@ -11,7 +10,7 @@ class ReconnectListener extends Listener {
 	}
 
 	exec() {
-		Logger.info("[RECONNECTING]");
+		console.log("[RECONNECTING]");
 	}
 }
 

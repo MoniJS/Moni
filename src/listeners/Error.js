@@ -8,7 +8,8 @@ class ErrorListener extends Listener {
         });
     }
 
-    exec(message) {
+    exec(error, message, command) {
+        console.log(error);
         try {
             return message.channel.send([
                 `Oops, something went wrong`,

@@ -1,5 +1,4 @@
 const { Listener } = require('discord-akairo');
-const Logger = require('../../util/Logger');
 
 class ResumeListener extends Listener {
 	constructor() {
@@ -11,7 +10,7 @@ class ResumeListener extends Listener {
 	}
 
 	exec(events) {
-		Logger.info(`[RESUME] (replayed ${events} events)`);
+		console.log(`[RESUME] (replayed ${events} events)`);
 	}
 }
 

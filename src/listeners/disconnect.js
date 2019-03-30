@@ -1,5 +1,4 @@
 const { Listener } = require('discord-akairo');
-const Logger = require('../../util/Logger');
 
 class DisconnectListener extends Listener {
 	constructor() {
@@ -11,7 +10,7 @@ class DisconnectListener extends Listener {
 	}
 
 	exec(event) {
-		Logger.warn(`[DISCONNECT] (${event.code})`);
+		console.log(`[DISCONNECT] (${event.code})`);
 	}
 }
 
