@@ -9,7 +9,7 @@ class JavaScriptCommand extends Command {
 
     exec(message) {
         if(message.guild.id === '550140222822809610') {
-          message.channel.send(`***Learn JS***
+            return message.channel.send(`***Learn JS***
 
 - MDN JS : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
 - CodeAcademy : https://www.codecademy.com/learn/introduction-to-javascript

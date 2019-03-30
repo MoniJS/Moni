@@ -8,10 +8,9 @@ class RoastCommand extends Command {
     }
 
     exec(message) {
-            var roast =require('../random/roast.json');
-  var randomRoast = roast[Math.floor(Math.random() * roast.length)];
-
-message.reply(randomRoast)
+        const roast =require('../random/roast.json');
+        let randomRoast = roast[Math.floor(Math.random() * roast.length)];
+        return message.reply(randomRoast)
     }
 }
 

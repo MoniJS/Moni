@@ -8,8 +8,8 @@ class DogFactCommand extends Command {
     }
 
     exec(message) {
-           let facts = require('../random/dogfact.json');
-    return message.channel.send(facts[Math.floor(Math.random() * facts.length)]);
+        let facts = require('../random/dogfact.json');
+        return message.channel.send(facts[Math.floor(Math.random() * facts.length)]);
     }
 }
 

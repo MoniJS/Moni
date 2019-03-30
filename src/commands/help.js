@@ -9,8 +9,8 @@ class HelpCommand extends Command {
 
     exec(message, commands) {
         const prefix = this.handler.prefix(message);
-		console.log(prefix);
-		}
+		console.log(prefix[0]);
+	}
 
 		
 }

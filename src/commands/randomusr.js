@@ -8,7 +8,7 @@ class RandomUsrCommand extends Command {
     }
 
     exec(message) {
-         return message.reply(`I choose ${message.guild.members.random().displayName}!`);
+        return message.reply(`I choose ${message.guild.members.random().displayName}!`);
     }
 }
 

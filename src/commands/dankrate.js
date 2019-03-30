@@ -7,10 +7,10 @@ class DankRateCommand extends Command {
         });
     }
 
-    exec(message) {
-        var dankrate = Math.floor(Math.random() * 101)
-        message.reply('You are ' + dankrate + '% Dank!!')
-        message.react('💯')
+    async exec(message) {
+        let dankrate = Math.floor(Math.random() * 101)
+        const m = await message.reply('You are ' + dankrate + '% Dank!!')
+        m.react('💯');
     }
 }
 

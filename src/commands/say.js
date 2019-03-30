@@ -3,16 +3,19 @@ const { Command } = require('discord-akairo');
 class SayCommand extends Command {
     constructor() {
         super('say', {
-           aliases: ['say', 'echo']
+           aliases: ['say', 'echo'],
+           args: [
+               {
+                   id: 'msg',
+                   match: 'content',
+                   default: 'hey say something, before I give up on you'
+               }
+           ]
         });
     }
 
-    exec(message) {
-        const args = message.content.slice(['.', '!']).split(/ +/);
-     var text = message.content.split(" ").slice(1).join(" ")
-    if(!text) return message.reply ('hey say something, before I give up on you')
-    message.channel.send(text);
-
+    exec(message, { msg }) {
+        return message.channel.send(msg);
     }
 }
 

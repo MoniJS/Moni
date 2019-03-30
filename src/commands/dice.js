@@ -8,9 +8,10 @@ class DiceCommand extends Command {
     }
 
     exec(message) {
-       let Roll = require('../random/dice.json');
-      var randomRoll = Roll[Math.floor(Math.random() * Roll.length)];
-      message.channel.send('#' + randomRoll);
+
+        let Roll = require('../random/dice.json');
+        let randomRoll = Roll[Math.floor(Math.random() * Roll.length)];
+        return message.channel.send('#' + randomRoll);
     }
 }
 

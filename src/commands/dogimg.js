@@ -9,13 +9,12 @@ class DogImgCommand extends Command {
     }
 
     exec(message) {
-      
         request('https://random.dog/woof.json', { json: true }, (err, res, body) => {
-  if (err) { return console.log(err); }
-  console.log("----------");
-  console.log(body.url);
-  message.channel.send(body.url)
-});
+            if (err) { return console.log(err); }
+            console.log("----------");
+            console.log(body.url);
+            return message.channel.send(body.url)
+        });
         
     }
 }

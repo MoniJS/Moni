@@ -15,7 +15,7 @@ class Client extends AkairoClient {
 		this.commandHandler = new CommandHandler(this, {
 			directory: path.join(__dirname, '..', 'commands'),
 			aliasReplacement: /-/g,
-			prefix: ['*', '!', '?', 'm!', '.'],
+			prefix: message => ['*', '!', '?', 'm!', '.'],
 			allowMention: true,
 			fetchMembers: true,
 			commandUtil: true,
