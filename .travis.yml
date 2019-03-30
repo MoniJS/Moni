@@ -9,9 +9,9 @@ jobs:
     - stage: deploy
       node_js: 10
       script: bash ./travis/deploy.sh
-      #env:
-      #  - ENCRYPTION_LABEL="af862fa96d3e"
-      #  - COMMIT_AUTHOR_EMAIL=""
+      env:
+        - ENCRYPTION_LABEL="af862fa96d3e"
+        - COMMIT_AUTHOR_EMAIL="suvajit.c@outlook.in"
 cache:
   directories:
     - node_modules
