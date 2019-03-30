@@ -80,7 +80,7 @@ delayed-stream@~1.0.0:
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
-discord-akairo@discord-akairo/discord-akairo:
+"discord-akairo@github:discord-akairo/discord-akairo":
   version "8.0.0-beta.5"
   resolved "https://codeload.github.com/discord-akairo/discord-akairo/tar.gz/bb271b2f5ef3d7623788e0b98957796f5f474681"
 
@@ -89,7 +89,7 @@ discord.js-minesweeper@1.0.3:
   resolved "https://registry.yarnpkg.com/discord.js-minesweeper/-/discord.js-minesweeper-1.0.3.tgz#ec193f449e8c91037f397a5fd55ddd82dbfb5ea8"
   integrity sha512-HAV8eLZTMtgm8xBPNm8F4CVEcIPpPm6W/a9Yv6oRNDqkKQZIu6yVaXPfszY+N/sajjsIpgqVgockp4pvsKcZeA==
 
-discord.js@discordjs/discord.js:
+"discord.js@github:discordjs/discord.js":
   version "12.0.0-dev"
   resolved "https://codeload.github.com/discordjs/discord.js/tar.gz/04fa56d0c07b66c77d0fdd6cb4419efb890043eb"
   dependencies:
@@ -233,6 +233,11 @@ mime-types@^2.1.12, mime-types@~2.1.19:
   integrity sha512-aGl6TZGnhm/li6F7yx82bJiBZwgiEa4Hf6CNr8YO+r5UHr53tSTYZb102zyU50DOWWKeOv0uQLRL0/9EiKWCog==
   dependencies:
     mime-db "~1.38.0"
+
+moment-duration-format@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/moment-duration-format/-/moment-duration-format-2.2.2.tgz#b957612de26016c9ad9eb6087c054573e5127779"
+  integrity sha1-uVdhLeJgFsmtnrYIfAVFc+USd3k=
 
 moment@^2.24.0:
   version "2.24.0"

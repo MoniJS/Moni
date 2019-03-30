@@ -13,4 +13,3 @@ client.start();
 process.on('unhandledRejection', err => {
 	console.error(`[UNHANDLED REJECTION] ${err.message}`);
 });
-
