@@ -9,12 +9,12 @@ class CatImgCommand extends Command {
     }
 
     exec(message) {
-    request('http://aws.random.cat/meow', { json: true }, (err, res, body) => {
-  if (err) { return console.log(err); }
-  console.log("----------");
-  console.log(body.file);
-  message.channel.send(body.file)
-    });
+        request('http://aws.random.cat/meow', { json: true }, (err, res, body) => {
+            if (err) { return console.log(err); }
+            console.log("----------");
+            console.log(body.file);
+            return message.channel.send(body.file)
+        });
     }
 }
 

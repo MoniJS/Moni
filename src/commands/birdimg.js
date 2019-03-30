@@ -9,13 +9,12 @@ class BirdImgCommand extends Command {
     }
 
     exec(message) {
-    request('http://random.birb.pw/tweet.json/', { json: true }, (err, res, body) => {
-    if (err) { return console.log(err); }
-    console.log("----------");
-    console.log(body.file);
-    message.channel.send(`https://random.birb.pw/img/${body.file}`)
-
-  });
+        request('http://random.birb.pw/tweet.json/', { json: true }, (err, res, body) => {
+            if (err) { return console.log(err); }
+            console.log("----------");
+            console.log(body.file);
+            return message.channel.send(`https://random.birb.pw/img/${body.file}`)
+        });
     }
 }
 

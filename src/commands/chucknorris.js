@@ -10,10 +10,10 @@ class ChuckNCommand extends Command {
     }
 
     exec(message) {
-    request('https://api.chucknorris.io/jokes/random', { json: true }, (err, res, body) => {
-    if (err) { return console.log(err); }
-    message.channel.send(body.value)
-    });
+        request('https://api.chucknorris.io/jokes/random', { json: true }, (err, res, body) => {
+            if (err) { return console.log(err); }
+            return message.channel.send(body.value)
+        });
     }
 }
 

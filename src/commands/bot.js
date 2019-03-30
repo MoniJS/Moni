@@ -11,7 +11,7 @@ class BotInfoCommand extends Command {
 
     exec(message) {
          var randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
-    const exampleEmbed = new Discord.RichEmbed()
+    const exampleEmbed = new Discord.MessageEmbed()
 	.setColor(randomColor)
 	.setTitle('Bot Info')
 	.setAuthor(`${message.author.username}#${message.author.discriminator}`)

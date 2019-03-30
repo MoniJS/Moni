@@ -8,10 +8,9 @@ class CoinFlipCommand extends Command {
     }
 
     exec(message) {
-         let coin = require('../random/coinflip.json');
-      var randomCoin = coin[Math.floor(Math.random() * coin.length)];
-    message.reply(randomCoin);
-   
+        let coin = require('../random/coinflip.json');
+        let randomCoin = coin[Math.floor(Math.random() * coin.length)];
+        return message.reply(randomCoin);
     }
 }
 
