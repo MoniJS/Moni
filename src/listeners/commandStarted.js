@@ -10,18 +10,13 @@ class CommandStartedListener extends Listener {
     }
 
     exec(message, command, args) {
-
-        console.log('Command Name: ' + command.aliases);
-        console.log('User Id: ' + message.author.id); 
-        console.log(`User: ${message.author.tag} (${message.author.id})`)
-        console.log('Time: ' + message.createdAt);
-        console.log('Guild Id: ' + message.guild.id);
-        console.log('Guild Member Count: ' + message.guild.memberCount);
-        console.log('Guild Name: ' + message.guild.name);
-        console.log('Guild URl ' + message.guild.iconURL());
-        console.log(message.content);
-        console.log(new Date().getTime() - message.createdTimestamp + " ms")
-        console.log('----------');
+        console.log({
+            time: message.createdAt,
+            command: command.id,
+            guild: message.guild ? `${message.guild.name} (${message.guild.id})` : 'DM',
+            user: `${message.author.tag} (${message.author.id})`,
+            args: message.content
+        })
     }
 }
 
