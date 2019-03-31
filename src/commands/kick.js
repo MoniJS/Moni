@@ -4,7 +4,7 @@ class KickCommand extends Command {
     constructor() {
         super('kick', {
             aliases: ['kick'],
-          category: 'util',
+          category: 'mod',
           channel: 'guild',
           clientPermissions: ['SEND_MESSAGES', 'KICK_MEMBERS'],
           description: {

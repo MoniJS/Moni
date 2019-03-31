@@ -4,7 +4,7 @@ class HackCommand extends Command {
     constructor() {
         super('Hack', {
            aliases: ['hack'],
-           category: '',
+           category: 'fun',
            channel: 'guild',
            clientPermissions: ['SEND_MESSAGES'],
            description: {

@@ -4,7 +4,7 @@ class CrashCommand extends Command {
     constructor() {
         super('Crash', {
            aliases: ['crash'],
-           category: 'util',
+           category: 'fun',
            channel: 'guild',
            clientPermissions: ['SEND_MESSAGES'],
            description: {
