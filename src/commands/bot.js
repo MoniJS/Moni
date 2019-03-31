@@ -2,7 +2,8 @@ const moment = require('moment'); require('moment-duration-format');
 const { Command } = require('discord-akairo');
 const Discord = require("discord.js");
 const Akairo = require('discord-akairo');
-const { version } = require('../../package.json')
+const { version } = require('../../package.json');
+const os = require('os-utils')
 
 class BotInfoCommand extends Command {
     constructor() {
@@ -34,6 +35,10 @@ class BotInfoCommand extends Command {
         .addField('Last Restart', moment.utc(this.client.readyAt).format('DD-MM-YYYY kk:mm:ss'), true)
         .addField('Discord.js', Discord.version, true)
         .addField('Akairo', Akairo.version, true)
+        .addField('Memory',
+[`• Using : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`,
+`• Free : ${Math.round(os.freemem())}`
+], true)
 	    .setTimestamp()
         .setImage(this.client.user.avatarURL)
 	    .setFooter(`Version ${version}`);
