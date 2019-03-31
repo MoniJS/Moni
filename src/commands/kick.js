@@ -11,7 +11,7 @@ class KickCommand extends Command {
                content: 'Kick Bad People',
                usage: '!kick',
                examples: ['kick @Moni', 'kick Suvajit', 'kick 550460160829816833']
-          }
+          },
             args: [
                 {
                     id: 'member',

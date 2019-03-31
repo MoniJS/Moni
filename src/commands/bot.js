@@ -6,7 +6,7 @@ const ms = require('ms');
 class BotInfoCommand extends Command {
     constructor() {
         super('BotInfo', {
-           aliases: ['bot', 'botstats', 'botinfo', 'bot-info'],
+           aliases: ['bot', 'botstats', 'botinfo'],
            category: 'util',
            channel: 'guild',
            clientPermissions: ['SEND_MESSAGES'],

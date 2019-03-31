@@ -11,7 +11,7 @@ class HackCommand extends Command {
                content: 'Ummm. Hack Someone',
                usage: '!src',
                examples: ['hack @Moni', 'hack', 'hack Moni']
-               }
+          },
            args: [
                {
                    id: 'member',

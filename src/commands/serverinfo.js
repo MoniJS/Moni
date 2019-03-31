@@ -7,7 +7,7 @@ const verificationLevels = ['None', 'Low', 'Medium', '(╯°□°）╯︵ ┻�
 class ServerCommand extends Command {
     constructor() {
         super('server', {
-           aliases: ['server', 'serverinfo', 'serverstats', 'serverstat', 'server-info'],
+           aliases: ['server', 'serverinfo', 'serverstats', 'serverstat'],
            category: 'util',
            channel: 'guild',
            clientPermissions: ['SEND_MESSAGES'],
