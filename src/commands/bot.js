@@ -29,7 +29,7 @@ class BotInfoCommand extends Command {
 	    .addField("Created On",  moment.utc(this.client.user.createdAt).format('DD-MM-YYYY kk:mm:ss'), true)
         .addField('Serving',  `${this.client.users.size} Users`, true)
         .addField('Channel Count',  this.client.channels.size, true)
-        .addField('Bot Devs',  devs.join(', '), true)
+        .addField('Bot Devs',  devs.join('| '), true)
         .addField('Guild Size',  this.client.guilds.size, true)
         .addField('UpTime', moment.duration(this.client.uptime).format("M [months], W [weeks], D [days], H [hrs], m [mins], s [secs]"), true)
         .addField('Last Restart', moment.utc(this.client.readyAt).format('DD-MM-YYYY kk:mm:ss'), true)
