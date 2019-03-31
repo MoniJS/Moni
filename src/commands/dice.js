@@ -3,7 +3,14 @@ const { Command } = require('discord-akairo');
 class DiceCommand extends Command {
     constructor() {
         super('Dice', {
-           aliases: ['dice', 'roll']
+           aliases: ['dice', 'roll'],
+           category: 'util',
+           channel: 'guild',
+           clientPermissions: ['SEND_MESSAGES'],
+           description: {
+               content: 'Roll A 6 Sided Dice',
+               usage: '!dice',
+               examples: ['dice']
         });
     }
 

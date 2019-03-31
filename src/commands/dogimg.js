@@ -4,7 +4,14 @@ const request = require('request');
 class DogImgCommand extends Command {
     constructor() {
         super('DogImg', {
-           aliases: ['dogimage', 'dogpic', 'dogpics', 'dogimgs', 'dogimg'] 
+           aliases: ['dogimage', 'dogpic', 'dogpics', 'dogimgs', 'dogimg'],
+           category: 'fun',
+           channel: 'guild',
+           clientPermissions: ['SEND_MESSAGES'],
+           description: {
+               content: 'Doggi Pics',
+               usage: '!dogimg',
+               examples: ['dogimg']
         });
     }
 
@@ -15,7 +22,7 @@ class DogImgCommand extends Command {
             console.log(body.url);
             return message.channel.send(body.url)
         });
-        
+
     }
 }
 

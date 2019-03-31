@@ -3,7 +3,14 @@ const { Command } = require('discord-akairo');
 class CrashCommand extends Command {
     constructor() {
         super('Crash', {
-           aliases: ['crash']
+           aliases: ['crash'],
+           category: 'util',
+           channel: 'guild',
+           clientPermissions: ['SEND_MESSAGES'],
+           description: {
+               content: 'Try Me',
+               usage: '!crash',
+               examples: ['crash']
         });
     }
 

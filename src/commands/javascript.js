@@ -3,7 +3,14 @@ const { Command } = require('discord-akairo');
 class JavaScriptCommand extends Command {
     constructor() {
         super('JavaScript', {
-           aliases: ['Javascript', 'js','ecmascript'] 
+           aliases: ['Javascript', 'js','ecmascript'],
+           category: 'util',
+           channel: 'guild',
+           clientPermissions: ['SEND_MESSAGES'],
+           description: {
+               content: 'Learn JS',
+               usage: '!js',
+               examples: ['js']
         });
     }
 
