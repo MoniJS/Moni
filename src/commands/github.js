@@ -3,7 +3,15 @@ const { Command } = require('discord-akairo');
 class GitHubCommand extends Command {
     constructor() {
         super('Github', {
-           aliases: ['github', 'git'] 
+           aliases: ['github', 'git'],
+           category: 'util',
+           channel: 'guild',
+           clientPermissions: ['SEND_MESSAGES'],
+           description: {
+               content: 'GitHub Links',
+               usage: '!git',
+               examples: ['github', 'git']
+               }
         });
     }
 

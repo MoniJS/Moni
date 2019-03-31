@@ -4,7 +4,15 @@ const Discord = require("discord.js");
 class RulesCommand extends Command {
     constructor() {
         super('rules', {
-           aliases: ['rules', 'rule']
+           aliases: ['rules', 'rule'],
+           category: 'util',
+           channel: 'guild',
+           clientPermissions: ['SEND_MESSAGES'],
+           description: {
+               content: 'Rules To Use This Bot',
+               usage: '!rules',
+               examples: ['rules', 'rule']
+           }
         });
     }
 

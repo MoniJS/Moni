@@ -4,6 +4,14 @@ class KickCommand extends Command {
     constructor() {
         super('kick', {
             aliases: ['kick'],
+          category: 'mod',
+          channel: 'guild',
+          clientPermissions: ['SEND_MESSAGES', 'KICK_MEMBERS'],
+          description: {
+               content: 'Kick Bad People',
+               usage: '!kick',
+               examples: ['kick @Moni', 'kick Suvajit', 'kick 550460160829816833']
+          },
             args: [
                 {
                     id: 'member',
@@ -18,7 +26,7 @@ class KickCommand extends Command {
 
     exec(message, args) {
         if (!args.member) {
-            return message.reply('No member found with that name.');    
+            return message.reply('No member found with that name.');
         }
 
         return args.member.kick().then(() => {

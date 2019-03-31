@@ -3,7 +3,14 @@ const { Command } = require('discord-akairo');
 class PythonCommand extends Command {
     constructor() {
         super('python', {
-           aliases: ['python', 'py'] 
+           aliases: ['python', 'py'],
+           channel: 'guild',
+           clientPermissions: ['SEND_MESSAGES'],
+           description: {
+               content: 'Python Links To Learn',
+               usage: '!py',
+               examples: ['py', 'python']
+           }
         });
     }
 
@@ -23,7 +30,7 @@ Python and XML − (http://pyxml.sourceforge.net/topics/) This Topic Guide links
 
 Think Python −  (http://www.greenteapress.com/thinkpython/html/index.html) Free book on python. How to think like a computer scientist, by Allen Downey?
 -----
-Tutorial 
+Tutorial
 => https://www.youtube.com/watch?v=rfscVS0vtbw
 => https://www.youtube.com/watch?v=N4mEzFDjqtA`);
         }

@@ -4,6 +4,14 @@ class BanCommand extends Command {
     constructor() {
         super('ban', {
             aliases: ['ban'],
+            category: 'mod',
+           channel: 'guild',
+           clientPermissions: ['SEND_MESSAGES', 'BAN_MEMBERS'],
+           description: {
+               content: 'Ban Bad People',
+               usage: '!ban',
+               examples: ['ban @moni', 'ban moni', 'ban 550460160829816833']
+          },
             args: [
                 {
                     id: 'member',
@@ -26,9 +34,9 @@ class BanCommand extends Command {
          }
          if (args.member.id === "550460160829816833") {
         return 'not gonna ban myself, thanks';
-        }   
+        }
          args.member.ban().then(() => {
-            return message.reply(`${args.member} was banned!`);     
+            return message.reply(`${args.member} was banned!`);
         });
     }
 }

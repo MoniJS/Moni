@@ -4,7 +4,15 @@ const request = require('request');
 class MemeCommand extends Command {
     constructor() {
         super('meme', {
-           aliases: ['meme', 'memes']
+           aliases: ['meme', 'memes'],
+           category: 'util',
+           channel: 'guild',
+           clientPermissions: ['SEND_MESSAGES'],
+           description: {
+               content: 'The Most Random Memes',
+               usage: '!meme',
+               examples: ['memes', 'meme']
+           }
         });
     }
 
@@ -13,7 +21,7 @@ class MemeCommand extends Command {
             if (err) { return console.log(err); }
             console.log("----------");
             console.log(body.url);
-            console.log(body.text); 
+            console.log(body.text);
             return message.channel.send(body.url)
         });
     }

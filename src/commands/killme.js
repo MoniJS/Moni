@@ -3,7 +3,15 @@ const { Command } = require('discord-akairo');
 class KillMeCommand extends Command {
     constructor() {
         super('killme', {
-           aliases:  ['killme']
+           aliases:  ['killme'],
+            category: 'fun',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: 'Kill Me pls',
+                usage: '!killme',
+                examples: ['killme']
+            }
         });
     }
 
