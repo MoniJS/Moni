@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+const Sentry = require('@sentry/node'); Sentry.init({ dsn: process.env.RAVEN });
 const Client = require('./src/client/Client');
 const client = new Client({ owner: process.env.OWNER, token: process.env.TOKEN });
 
@@ -8,7 +9,7 @@ client.on('disconnect', () => console.log('[CLIENT DISCONNECTED]'))
 	.on('error', err => console.log(`[CLIENT ERROR] ${err.message}`))
 	.on('warn', warn => console.log(`[CLIENT WARN] ${warn}`));
 
-client.start(); 
+client.start();
 
 process.on('unhandledRejection', err => {
 	console.error(`[UNHANDLED REJECTION] ${err.message}`);
