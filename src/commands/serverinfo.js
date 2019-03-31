@@ -14,7 +14,7 @@ class ServerCommand extends Command {
            description: {
                content: 'Get Server Info',
                usage: '!server',
-               examples: ['server', 'serverinfo', 'serverstats', 'serverstat', 'server-info']
+               examples: ['server']
            }
         });
     }
