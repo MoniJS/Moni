@@ -11,6 +11,7 @@ class CrashCommand extends Command {
                content: 'Try Me',
                usage: '!crash',
                examples: ['crash']
+               }
         });
     }
 

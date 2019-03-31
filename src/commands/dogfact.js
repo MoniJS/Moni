@@ -11,6 +11,7 @@ class DogFactCommand extends Command {
                content: 'Dogge Facts',
                usage: '!dogfact',
                examples: ['dogfact']
+               }
         });
     }
 

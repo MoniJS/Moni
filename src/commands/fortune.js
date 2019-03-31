@@ -11,6 +11,7 @@ class FortuneCommand extends Command {
                content: 'See ur Fortune',
                usage: '!fortune',
                examples: ['fortune']
+               }
         });
     }
 

@@ -11,6 +11,7 @@ class JavaScriptCommand extends Command {
                content: 'Learn JS',
                usage: '!js',
                examples: ['js']
+               }
         });
     }
 

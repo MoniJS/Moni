@@ -12,6 +12,7 @@ class BirdImgCommand extends Command {
               content: 'Birdiiie',
               usage: '!bird',
               examples: ['bird']
+         }
         });
     }
 

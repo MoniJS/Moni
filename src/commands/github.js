@@ -11,6 +11,7 @@ class GitHubCommand extends Command {
                content: 'GitHub Links',
                usage: '!git',
                examples: ['github', 'git']
+               }
         });
     }
 

@@ -13,6 +13,7 @@ class ChuckNCommand extends Command {
                content: 'Chuck Noriss Jokezzz',
                usage: '!chuckn',
                examples: ['chuckn', 'chuck', 'chucknoris', 'chucknorris']
+          }
         });
     }
 

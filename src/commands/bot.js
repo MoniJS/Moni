@@ -14,6 +14,7 @@ class BotInfoCommand extends Command {
                content: 'Bot Stats',
                usage: '!bot',
                examples: ['bot']
+          }
         });
     }
 

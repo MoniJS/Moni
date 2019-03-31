@@ -11,6 +11,7 @@ class ComplementCommand extends Command {
                content: 'Complement Your Self',
                usage: '!complement',
                examples: ['complement']
+          }
         });
     }
 

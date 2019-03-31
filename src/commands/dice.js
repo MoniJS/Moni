@@ -11,6 +11,7 @@ class DiceCommand extends Command {
                content: 'Roll A 6 Sided Dice',
                usage: '!dice',
                examples: ['dice']
+               }
         });
     }
 

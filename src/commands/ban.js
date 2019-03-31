@@ -11,6 +11,7 @@ class BanCommand extends Command {
                content: 'Ban Bad People',
                usage: '!ban',
                examples: ['ban @moni', 'ban moni', 'ban 550460160829816833']
+          },
             args: [
                 {
                     id: 'member',

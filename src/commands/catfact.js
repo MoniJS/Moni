@@ -11,6 +11,7 @@ class CatFactCommand extends Command {
                content: 'Cat Facts',
                usage: '!catfact',
                examples: ['catfacts', 'catfact']
+          }
         });
     }
 

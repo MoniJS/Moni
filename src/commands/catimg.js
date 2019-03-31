@@ -12,6 +12,7 @@ class CatImgCommand extends Command {
                content: 'Cat Purr-fect Pics',
                usage: '!catimg',
                examples: ['catimage', 'catimg', 'catpic', 'catimages']
+          }
         });
     }
 

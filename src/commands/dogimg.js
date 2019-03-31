@@ -12,6 +12,7 @@ class DogImgCommand extends Command {
                content: 'Doggi Pics',
                usage: '!dogimg',
                examples: ['dogimg']
+               }
         });
     }
 

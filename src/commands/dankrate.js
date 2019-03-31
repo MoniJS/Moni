@@ -11,6 +11,7 @@ class DankRateCommand extends Command {
                content: 'See Ur DankRate',
                usage: '!dank',
                examples: ['dank']
+               }
         });
     }
 

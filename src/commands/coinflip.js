@@ -11,6 +11,7 @@ class CoinFlipCommand extends Command {
                content: '2 sided coin flip',
                usage: '!flip',
                examples: ['coin', 'flipacoin', 'flipcoin', 'toss', 'cointoss', 'flip']
+          }
         });
     }
 
