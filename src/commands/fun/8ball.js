@@ -16,7 +16,7 @@ class EightBallCommand extends Command {
     }
 
     exec(message) {
-        let replies = require('../random/replies.json');
+        let replies = require('../../random/replies.json');
         let result = Math.floor((Math.random() * replies.length));
         return message.reply(replies[result]);
     }
