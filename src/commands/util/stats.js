@@ -34,6 +34,7 @@ class BotInfoCommand extends Command {
             `Channels: ${this.client.channels.size}`,
             `Users: ${this.client.users.size}`,
         ])
+
         .addField('Library', [
             `[Discord.js (v${Discord.version})](https://discord.js.org)`,
             `[Akairo (v${Akairo.version})](https://discord-akairo.github.io)`
