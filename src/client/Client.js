@@ -1,5 +1,8 @@
 const { AkairoClient, CommandHandler, InhibitorHandler, ListenerHandler } = require('discord-akairo');
 const path = require('path');
+const Database = require('../struct/Database');
+const Setting = require('../models/settings');
+const SettingsProvider = require('../struct/SettingsProviders');
 
 class Client extends AkairoClient {
 
@@ -15,7 +18,7 @@ class Client extends AkairoClient {
 		this.commandHandler = new CommandHandler(this, {
 			directory: path.join(__dirname, '..', 'commands'),
 			aliasReplacement: /-/g,
-			prefix: message => ['*', '!', '?', 'm!', '.'],
+			prefix: message => this.settings.get(message.guild, 'prefix', '*'),
 			allowMention: true,
 			fetchMembers: true,
 			commandUtil: true,
@@ -40,6 +43,7 @@ class Client extends AkairoClient {
 		this.listenerHandler = new ListenerHandler(this, { directory: path.join(__dirname, '..', 'listeners') });
 
 		this.config = config;
+		this.settings = new SettingsProvider(Setting);
 		this.setup()
 	}
 
@@ -58,6 +62,8 @@ class Client extends AkairoClient {
 	}
 
 	async start() {
+		await Database.sync();
+		await this.settings.init();
 		return this.login(this.config.token);
 	}
 }
