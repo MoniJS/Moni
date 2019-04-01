@@ -10,7 +10,7 @@ class PrefixCommand extends Command {
 			description: {
 				content: [
 					'Displays or changes the prefix of the guild.',
-					'The prefix must not contain spaces and be below 5 characters.'
+					'The prefix must not contain spaces and be below 2 characters.'
 				],
 				usage: '<prefix>',
 				examples: ['!', '?']
