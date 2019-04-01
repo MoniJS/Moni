@@ -7,6 +7,7 @@ class PrefixCommand extends Command {
 			category: 'general',
 			channel: 'guild',
 			quoted: false,
+			userPermissions: ['MANAGE_GUILD'],
 			description: {
 				content: [
 					'Displays or changes the prefix of the guild.',
