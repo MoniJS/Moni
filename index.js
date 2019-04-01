@@ -1,8 +1,16 @@
 require('dotenv').config();
 
-const Sentry = require('@sentry/node'); Sentry.init({ dsn: process.env.RAVEN });
 const Client = require('./src/client/Client');
 const client = new Client({ owner: process.env.OWNER, token: process.env.TOKEN });
+
+if (process.env.RAVEN) {
+	Raven.config(process.env.RAVEN, {
+		captureUnhandledRejections: true,
+		autoBreadcrumbs: true,
+		environment: 'Moni',
+		release: '0.1.0'
+	}).install();
+}
 
 client.on('disconnect', () => console.log('[CLIENT DISCONNECTED]'))
 	.on('reconnect', () => console.log('[CLIENT RECONNECTING]'))
