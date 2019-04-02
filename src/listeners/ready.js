@@ -9,7 +9,7 @@ class ReadyListener extends Listener {
     }
 
     exec() {
-        this.client.user.setActivity(`type !src | ${this.client.guilds.size} Servers | ${this.client.users.size} Users`)
+        this.client.user.setActivity(`type @Moni help`)
         console.log(`[READY] ${this.client.user.tag}`)
     }
 }
