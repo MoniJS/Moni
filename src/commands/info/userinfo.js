@@ -27,13 +27,13 @@ class UserCommand extends Command {
 
         const { user } = member;
 
-        const embed = this.client.util.embed().setColor('RED')
+        const embed = this.client.util.embed().setColor('RANDOM')
         .setAuthor(`${member.user.tag} (${member.user.id})`, user.displayAvatarURL())
         .setThumbnail(user.displayAvatarURL())
         .addField('❯ Member Details', [
             `${member.nickname ? `• Nickname: ${member.nickname}` : ''}`,
             `• Joined at: ${moment.utc(member.joinedAt).format('DD/MM/YYYY kk:mm:ss')}`,
-            `• Role: ${member.roles.map(role=> `*${role}*`).join(', ')}`
+            `• Roles: ${member.roles.filter(role => role.id !== message.guild.id).map(role=> `*${role}*`).join(', ')}`
         ])
         .addField('❯ User Details', [
             `${user.bot ? `• Bot Account` : ''}`,
