@@ -20,10 +20,10 @@ class ServerCommand extends Command {
     }
 
     exec(message) {
-        const randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
+        //const randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
 
-        const exampleEmbed = new Discord.MessageEmbed()
-	    .setColor(randomColor)
+        const embed = new Discord.MessageEmbed()
+	    .setColor('RANDOM')
 	    .setTitle('Server Info')
         .setThumbnail(message.guild.iconURL())
 	    .setAuthor(`${message.author.tag}`)
@@ -39,10 +39,10 @@ class ServerCommand extends Command {
         .addField('❯ Server Region',  message.guild.region.toUpperCase(), true)
         .addField('❯ Join Date', moment.utc(message.member.joinedAt).format('MM/DD/YYYY h:mm A'), true)
 	    .setTimestamp()
-        .setImage(message.guild.iconURL())
+        //.setImage(message.guild.iconURL())
 	    .setFooter(new Date().getTime() - message.createdTimestamp + " ms");
 
-        return message.util.send(exampleEmbed);
+        return message.util.send({embed});
     }
 }
 
