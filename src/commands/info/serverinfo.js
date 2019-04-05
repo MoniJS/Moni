@@ -20,10 +20,8 @@ class ServerCommand extends Command {
     }
 
     exec(message) {
-        const randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
-
         const exampleEmbed = new Discord.MessageEmbed()
-	    .setColor(randomColor)
+	    .setColor('RANDOM')
 	    .setTitle('Server Info')
         .setThumbnail(message.guild.iconURL())
 	    .setAuthor(`${message.author.tag}`)

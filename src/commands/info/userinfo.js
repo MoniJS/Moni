@@ -33,7 +33,7 @@ class UserCommand extends Command {
         .addField('❯ Member Details', [
             `${member.nickname ? `• Nickname: ${member.nickname}` : ''}`,
             `• Joined at: ${moment.utc(member.joinedAt).format('DD/MM/YYYY kk:mm:ss')}`,
-            `• Role: ${member.roles.map(role=> `*${role}*`).join(', ')}`
+            `• Roles: ${member.roles.filter(role => role.id !== message.guild.id).map(role => `*${role}*`).join(', ')}`
         ])
         .addField('❯ User Details', [
             `${user.bot ? `• Bot Account` : ''}`,
