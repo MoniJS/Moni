@@ -23,7 +23,7 @@ class HackCommand extends Command {
     }
 
     exec(message, { member }) {
-        return message.channel.send(`Initializing the hack on ${member} `).then(Message => {
+        return message.util.send(`Initializing the hack on ${member} `).then(Message => {
             setTimeout(() => { Message.edit("Downloading Hacks..."); }, 2000);
             setTimeout(() => { Message.edit(`Finding Facebook Login...`); }, 4000);
             setTimeout(() => { Message.edit(`Found Facebook Login & Password`); }, 7000);

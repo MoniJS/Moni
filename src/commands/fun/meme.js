@@ -22,7 +22,7 @@ class MemeCommand extends Command {
             console.log("----------");
             console.log(body.url);
             console.log(body.text);
-            return message.channel.send(body.url)
+            return message.util.send(body.url)
         });
     }
 }

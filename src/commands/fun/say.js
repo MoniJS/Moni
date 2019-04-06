@@ -23,7 +23,7 @@ class SayCommand extends Command {
     }
 
     exec(message, { msg }) {
-        return message.channel.send(msg);
+        return message.util.send(msg);
     }
 }
 

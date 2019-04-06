@@ -32,7 +32,7 @@ class RulesCommand extends Command {
 	    .setTimestamp()
 	    .setFooter('Dont break the rule or be BANNED', 'https://cdn.discordapp.com/avatars/550460160829816833/8ff23522610d174c4fc418613130d51c.png?size=2048');
 
-        return message.channel.send(embed);
+        return message.util.send(embed);
     }
 }
 

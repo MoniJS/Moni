@@ -21,7 +21,7 @@ class PunCommand extends Command {
             if (err) { return console.log(err); }
             console.log("----------");
             console.log(body.joke);
-            return message.channel.send(body.joke);
+            return message.util.send(body.joke);
         });
     }
 }

@@ -17,7 +17,7 @@ class CatFactCommand extends Command {
 
     exec(message) {
         let facts = require('../../random/catfact.json');
-        return message.channel.send(facts[Math.floor(Math.random() * facts.length)]);
+        return message.util.send(facts[Math.floor(Math.random() * facts.length)]);
     }
 }
 

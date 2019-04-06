@@ -21,7 +21,7 @@ class CatImgCommand extends Command {
             if (err) { return console.log(err); }
             console.log("----------");
             console.log(body.file);
-            return message.channel.send(body.file)
+            return message.util.send(body.file)
         });
     }
 }

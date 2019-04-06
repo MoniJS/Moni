@@ -16,7 +16,7 @@ class SrcCommand extends Command {
     }
 
     exec(message) {
-        return message.channel.send([
+        return message.util.send([
             `Fork Me On GitHub and make me better (https://github.com/moni-js/Moni)`,
             `You also get a Special Role Here https://discord.gg/jQdFFH6`
         ]);

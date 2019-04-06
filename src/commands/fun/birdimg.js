@@ -21,7 +21,7 @@ class BirdImgCommand extends Command {
             if (err) { return console.log(err); }
             console.log("----------");
             console.log(body.file);
-            return message.channel.send(`https://random.birb.pw/img/${body.file}`)
+            return message.util.send(`https://random.birb.pw/img/${body.file}`)
         });
     }
 }

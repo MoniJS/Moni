@@ -16,7 +16,7 @@ class PythonCommand extends Command {
 
     exec(message) {
         if(message.guild.id === "550140222822809610") {
-            return message.channel.send([
+            return message.util.send([
                 `**Learn Python**`,
                 '',
                 `Python.org − Official Python site. Find a complete list of all documentation, installation, tutorials, news etc.`,
