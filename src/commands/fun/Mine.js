@@ -3,7 +3,7 @@ const Minesweeper = require('discord.js-minesweeper');
 
 class MineCommand extends Command {
     constructor() {
-        super('meme', {
+        super('mine', {
            aliases: ['mine'],
            category: 'util',
            channel: 'guild',

@@ -7,8 +7,8 @@ const os = require('os-utils')
 
 class BotInfoCommand extends Command {
     constructor() {
-        super('BotInfo', {
-            aliases: ['stats', 'botstats', 'botinfo', 'bot'],
+        super('stats', {
+            aliases: ['stats'],
             category: 'util',
             channel: 'guild',
             clientPermissions: ['SEND_MESSAGES', 'EMBED_LINKS'],

@@ -21,6 +21,10 @@ const Tags = db.define('tags', {
     uses: {
         type: Sequelize.INTEGER,
         defaultValue: 0
+    },
+    hoisted: {
+        type: Sequelize.BOOLEAN,
+        defaultValue: false
     }
 })
 
