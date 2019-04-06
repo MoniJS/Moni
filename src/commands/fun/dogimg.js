@@ -4,15 +4,15 @@ const request = require('request');
 class DogImgCommand extends Command {
     constructor() {
         super('DogImg', {
-           aliases: ['dogimage', 'dogpic', 'dogpics', 'dogimgs', 'dogimg'],
-           category: 'fun',
-           channel: 'guild',
-           clientPermissions: ['SEND_MESSAGES'],
-           description: {
-               content: 'Doggi Pics',
-               usage: '!dogimg',
-               examples: ['dogimg']
-               }
+            aliases: ['dogimage', 'dogpic', 'dogpics', 'dogimgs', 'dogimg'],
+            category: 'fun',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: 'Doggi Pics',
+                usage: '!dogimg',
+                examples: ['dogimg']
+            }
         });
     }
 
@@ -21,7 +21,7 @@ class DogImgCommand extends Command {
             if (err) { return console.log(err); }
             console.log("----------");
             console.log(body.url);
-            return message.channel.send(body.url)
+            return message.util.send(body.url)
         });
 
     }

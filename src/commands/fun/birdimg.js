@@ -4,15 +4,15 @@ const request = require('request');
 class BirdImgCommand extends Command {
     constructor() {
         super('BirdImg', {
-           aliases: ['bird', 'birdimg'],
-           category: 'fun',
-          channel: 'guild',
-          clientPermissions: ['SEND_MESSAGES'],
-          description: {
-              content: 'Birdiiie',
-              usage: '!bird',
-              examples: ['bird']
-         }
+            aliases: ['bird', 'birdimg'],
+            category: 'fun',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: 'Birdiiie',
+                usage: '!bird',
+                examples: ['bird']
+            }
         });
     }
 
@@ -21,7 +21,7 @@ class BirdImgCommand extends Command {
             if (err) { return console.log(err); }
             console.log("----------");
             console.log(body.file);
-            return message.channel.send(`https://random.birb.pw/img/${body.file}`)
+            return message.util.send(`https://random.birb.pw/img/${body.file}`)
         });
     }
 }

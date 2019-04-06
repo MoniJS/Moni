@@ -36,9 +36,9 @@ class BotInfoCommand extends Command {
         .addField('Discord.js', Discord.version, true)
         .addField('Akairo', Akairo.version, true)
         .addField('Memory',
-[`• Using : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`,
-`• Free : ${Math.round(os.freemem())}`
-], true)
+            [`• Using : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`,
+            `• Free : ${Math.round(os.freemem())}`
+        ], true)
 	    .setTimestamp()
         .setImage(this.client.user.avatarURL)
 	    .setFooter(`Version ${version}`);

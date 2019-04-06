@@ -7,21 +7,19 @@ const verificationLevels = ['None', 'Low', 'Medium', '(╯°□°）╯︵ ┻�
 class ServerCommand extends Command {
     constructor() {
         super('server', {
-           aliases: ['server', 'serverinfo', 'serverstats', 'serverstat'],
-           category: 'util',
-           channel: 'guild',
-           clientPermissions: ['SEND_MESSAGES'],
-           description: {
-               content: 'Get Server Info',
-               usage: '!server',
-               examples: ['server']
-           }
+            aliases: ['server', 'serverinfo', 'serverstats', 'serverstat'],
+            category: 'util',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: 'Get Server Info',
+                usage: '!server',
+                examples: ['server']
+            }
         });
     }
 
     exec(message) {
-        //const randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
-
         const embed = new Discord.MessageEmbed()
 	    .setColor('RANDOM')
 	    .setTitle('Server Info')
@@ -39,7 +37,6 @@ class ServerCommand extends Command {
         .addField('❯ Server Region',  message.guild.region.toUpperCase(), true)
         .addField('❯ Join Date', moment.utc(message.member.joinedAt).format('MM/DD/YYYY h:mm A'), true)
 	    .setTimestamp()
-        //.setImage(message.guild.iconURL())
 	    .setFooter(new Date().getTime() - message.createdTimestamp + " ms");
 
         return message.util.send({embed});
