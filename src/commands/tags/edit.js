@@ -54,7 +54,7 @@ class TagEditCommand extends Command {
 	}
 
 	async exec(message, { tag, hoist, unhoist, content }) {
-		if (tag.user !== message.author.id && !staffRole) {
+		if (tag.user !== message.author.id) {
 			return message.util.reply('Losers are only allowed to edit their own tags! Hah hah hah!');
 		}
 		if (content && content.length >= 1950) {
