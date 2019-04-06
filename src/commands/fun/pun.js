@@ -4,15 +4,15 @@ const request = require('request');
 class PunCommand extends Command {
     constructor() {
         super('Pun', {
-           aliases: ['pun', 'dadjoke', 'dadjokes', 'joke'],
-           category: 'fun',
-           channel: 'guild',
-           clientPermissions: ['SEND_MESSAGES'],
-           description: {
-               content: 'A random Pun',
-               usage: '!pun',
-               examples: ['pun', 'dadjokes']
-           }
+            aliases: ['pun', 'dadjoke', 'dadjokes', 'joke'],
+            category: 'fun',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: 'A random Pun',
+                usage: '!pun',
+                examples: ['pun', 'dadjokes']
+            }
         });
     }
 

@@ -3,15 +3,15 @@ const { Command } = require('discord-akairo');
 class DogFactCommand extends Command {
     constructor() {
         super('DogFact', {
-           aliases: ['dogfacts', 'dogfact'],
-           category: 'fun',
-           channel: 'guild',
-           clientPermissions: ['SEND_MESSAGES'],
-           description: {
-               content: 'Dogge Facts',
-               usage: '!dogfact',
-               examples: ['dogfact']
-               }
+            aliases: ['dogfacts', 'dogfact'],
+            category: 'fun',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: 'Dogge Facts',
+                usage: '!dogfact',
+                examples: ['dogfact']
+            }
         });
     }
 

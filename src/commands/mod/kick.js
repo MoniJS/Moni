@@ -4,14 +4,14 @@ class KickCommand extends Command {
     constructor() {
         super('kick', {
             aliases: ['kick'],
-          category: 'mod',
-          channel: 'guild',
-          clientPermissions: ['SEND_MESSAGES', 'KICK_MEMBERS'],
-          description: {
-               content: 'Kick Bad People',
-               usage: '!kick',
-               examples: ['kick @Moni', 'kick Suvajit', 'kick 550460160829816833']
-          },
+            category: 'mod',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES', 'KICK_MEMBERS'],
+            description: {
+                content: 'Kick Bad People',
+                usage: '!kick',
+                examples: ['kick @Moni', 'kick Suvajit', 'kick 550460160829816833']
+            },
             args: [
                 {
                     id: 'member',
@@ -20,7 +20,6 @@ class KickCommand extends Command {
             ],
             clientPermissions: ['KICK_MEMBERS'],
             userPermissions: ['KICK_MEMBERS'],
-            channelRestriction: 'guild'
         });
     }
 

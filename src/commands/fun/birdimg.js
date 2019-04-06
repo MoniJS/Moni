@@ -4,15 +4,15 @@ const request = require('request');
 class BirdImgCommand extends Command {
     constructor() {
         super('BirdImg', {
-           aliases: ['bird', 'birdimg'],
-           category: 'fun',
-          channel: 'guild',
-          clientPermissions: ['SEND_MESSAGES'],
-          description: {
-              content: 'Birdiiie',
-              usage: '!bird',
-              examples: ['bird']
-         }
+            aliases: ['bird', 'birdimg'],
+            category: 'fun',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: 'Birdiiie',
+                usage: '!bird',
+                examples: ['bird']
+            }
         });
     }
 

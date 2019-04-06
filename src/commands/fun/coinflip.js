@@ -3,15 +3,15 @@ const { Command } = require('discord-akairo');
 class CoinFlipCommand extends Command {
     constructor() {
         super('CoinFlip', {
-           aliases: ['coin', 'flipacoin', 'flipcoin', 'toss', 'cointoss', 'flip'],
-           category: 'util',
-           channel: 'guild',
-           clientPermissions: ['SEND_MESSAGES'],
-           description: {
-               content: '2 sided coin flip',
-               usage: '!flip',
-               examples: ['coin', 'flipacoin', 'flipcoin', 'toss', 'cointoss', 'flip']
-          }
+            aliases: ['coin', 'flipacoin', 'flipcoin', 'toss', 'cointoss', 'flip'],
+            category: 'util',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: '2 sided coin flip',
+                usage: '!flip',
+                examples: ['coin', 'flipacoin', 'flipcoin', 'toss', 'cointoss', 'flip']
+            }
         });
     }
 

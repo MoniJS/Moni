@@ -4,15 +4,15 @@ const request = require('request');
 class CatImgCommand extends Command {
     constructor() {
         super('CatImg', {
-           aliases: ['catimage', 'catimg', 'catpic', 'catimages'],
-           category: 'fun',
-           channel: 'guild',
-           clientPermissions: ['SEND_MESSAGES'],
-           description: {
-               content: 'Cat Purr-fect Pics',
-               usage: '!catimg',
-               examples: ['catimage', 'catimg', 'catpic', 'catimages']
-          }
+            aliases: ['catimage', 'catimg', 'catpic', 'catimages'],
+            category: 'fun',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: 'Cat Purr-fect Pics',
+                usage: '!catimg',
+                examples: ['catimage', 'catimg', 'catpic', 'catimages']
+            }
         });
     }
 

@@ -3,15 +3,15 @@ const { Command } = require('discord-akairo');
 class RoastCommand extends Command {
     constructor() {
         super('roast', {
-           aliases: ['roast'],
-           category: 'fun',
-           channel: 'guild',
-           clientPermissions: ['SEND_MESSAGES'],
-           description: {
-               content: 'Send A Random Roast',
-               usage: '!roast',
-               examples: ['!roast']
-           }
+            aliases: ['roast'],
+            category: 'fun',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: 'Send A Random Roast',
+                usage: '!roast',
+                examples: ['!roast']
+            }
         });
     }
 

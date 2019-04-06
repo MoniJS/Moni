@@ -3,22 +3,22 @@ const { Command } = require('discord-akairo');
 class HackCommand extends Command {
     constructor() {
         super('Hack', {
-           aliases: ['hack'],
-           category: 'fun',
-           channel: 'guild',
-           clientPermissions: ['SEND_MESSAGES'],
-           description: {
-               content: 'Ummm. Hack Someone',
-               usage: '!src',
-               examples: ['hack @Moni', 'hack', 'hack Moni']
-          },
-           args: [
-               {
-                   id: 'member',
-                   type: 'member',
-                   default: message => message.member
-               }
-           ]
+            aliases: ['hack'],
+            category: 'fun',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: 'Ummm. Hack Someone',
+                usage: '!src',
+                examples: ['hack @Moni', 'hack', 'hack Moni']
+            },
+            args: [
+                {
+                    id: 'member',
+                    type: 'member',
+                    default: message => message.member
+                }
+            ]
         });
     }
 

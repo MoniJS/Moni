@@ -4,15 +4,15 @@ const request = require('request');
 class MemeCommand extends Command {
     constructor() {
         super('meme', {
-           aliases: ['meme', 'memes'],
-           category: 'util',
-           channel: 'guild',
-           clientPermissions: ['SEND_MESSAGES'],
-           description: {
-               content: 'The Most Random Memes',
-               usage: '!meme',
-               examples: ['memes', 'meme']
-           }
+            aliases: ['meme', 'memes'],
+            category: 'util',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: 'The Most Random Memes',
+                usage: '!meme',
+                examples: ['memes', 'meme']
+            }
         });
     }
 

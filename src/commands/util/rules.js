@@ -4,22 +4,21 @@ const Discord = require("discord.js");
 class RulesCommand extends Command {
     constructor() {
         super('rules', {
-           aliases: ['rules', 'rule'],
-           category: 'util',
-           channel: 'guild',
-           clientPermissions: ['SEND_MESSAGES'],
-           description: {
-               content: 'Rules To Use This Bot',
-               usage: '!rules',
-               examples: ['rules', 'rule']
-           }
+            aliases: ['rules', 'rule'],
+            category: 'util',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: 'Rules To Use This Bot',
+                usage: '!rules',
+                examples: ['rules', 'rule']
+            }
         });
     }
 
     exec(message) {
-        const randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
-        const exampleEmbed = new Discord.MessageEmbed()
-	    .setColor(randomColor)
+        const embed = new Discord.MessageEmbed()
+	    .setColor('RANDOM')
 	    .setTitle('Rules')
 	    .setURL('https://monis10.github.io/')
 	    .setAuthor('Bullet Bot', 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/emoji-one/64/white-heavy-check-mark_2705.png')
@@ -33,7 +32,7 @@ class RulesCommand extends Command {
 	    .setTimestamp()
 	    .setFooter('Dont break the rule or be BANNED', 'https://cdn.discordapp.com/avatars/550460160829816833/8ff23522610d174c4fc418613130d51c.png?size=2048');
 
-        return message.channel.send(exampleEmbed);
+        return message.channel.send(embed);
     }
 }
 

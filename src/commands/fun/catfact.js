@@ -3,15 +3,15 @@ const { Command } = require('discord-akairo');
 class CatFactCommand extends Command {
     constructor() {
         super('CatFact', {
-           aliases: ['catfacts', 'catfact'],
-           category: 'fun',
-           channel: 'guild',
-           clientPermissions: ['SEND_MESSAGES'],
-           description: {
-               content: 'Cat Facts',
-               usage: '!catfact',
-               examples: ['catfacts', 'catfact']
-          }
+            aliases: ['catfacts', 'catfact'],
+            category: 'fun',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: 'Cat Facts',
+                usage: '!catfact',
+                examples: ['catfacts', 'catfact']
+            }
         });
     }
 

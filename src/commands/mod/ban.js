@@ -5,13 +5,13 @@ class BanCommand extends Command {
         super('ban', {
             aliases: ['ban'],
             category: 'mod',
-           channel: 'guild',
-           clientPermissions: ['SEND_MESSAGES', 'BAN_MEMBERS'],
-           description: {
-               content: 'Ban Bad People',
-               usage: '!ban',
-               examples: ['ban @moni', 'ban moni', 'ban 550460160829816833']
-          },
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES', 'BAN_MEMBERS'],
+            description: {
+                content: 'Ban Bad People',
+                usage: '!ban',
+                examples: ['ban @moni', 'ban moni', 'ban 550460160829816833']
+            },
             args: [
                 {
                     id: 'member',
@@ -20,7 +20,6 @@ class BanCommand extends Command {
             ],
             clientPermissions: ['BAN_MEMBERS'],
             userPermissions: ['BAN_MEMBERS'],
-            channelRestriction: 'guild'
         });
     }
 

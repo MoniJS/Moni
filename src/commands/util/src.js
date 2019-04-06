@@ -3,15 +3,15 @@ const { Command } = require('discord-akairo');
 class SrcCommand extends Command {
     constructor() {
         super('src', {
-           aliases: ['src', 'source', 'support'],
-           category: 'util',
-           channel: 'guild',
-           clientPermissions: ['SEND_MESSAGES'],
-           description: {
-               content: 'Get The Source Code For This Bot',
-               usage: '!src',
-               examples: ['src', 'source', 'support']
-           }
+            aliases: ['src', 'source', 'support'],
+            category: 'util',
+            channel: 'guild',
+            clientPermissions: ['SEND_MESSAGES'],
+            description: {
+                content: 'Get The Source Code For This Bot',
+                usage: '!src',
+                examples: ['src', 'source', 'support']
+            }
         });
     }
 
