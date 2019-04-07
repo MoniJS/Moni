@@ -4,7 +4,7 @@ class PingCommand extends Command {
     constructor() {
         super('Ping', {
             aliases: ['ping'],
-            category: 'util',
+            category: 'general',
             channel: 'guild',
             clientPermissions: ['SEND_MESSAGES'],
             description: {

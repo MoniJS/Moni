@@ -5,7 +5,7 @@ class MemeCommand extends Command {
     constructor() {
         super('meme', {
             aliases: ['meme', 'memes'],
-            category: 'util',
+            category: 'fun',
             channel: 'guild',
             clientPermissions: ['SEND_MESSAGES'],
             description: {
