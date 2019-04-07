@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <p>
-  <a href="https://discord.gg/jQdFFH6"><img src="https://cdn.discordapp.com/attachments/548692280350081026/559092648745500727/devil.png" width="50%"></a>
+  <a href="https://discord.gg/jQdFFH6"><img src="https://cdn.discordapp.com/attachments/516098824683388949/564306251354341397/devil.png" width="50%"></a>
  </p>
   <p>
     <a href="https://discord.gg/jQdFFH6"><img src="https://img.shields.io/discord/550140222822809610.svg?colorB=Blue&logo=discord&label=Support&style=for-the-badge" alt="Discord server" /></a>
@@ -20,7 +20,7 @@
 </div>
 
 ## About
-Moni is a Discord ChatBot made with [JavaScript](https://www.javascript.com/) and [Discord.JS](https://discord.js.org/#/).
+Moni is a Discord ChatBot made with [JavaScript](https://www.javascript.com/) and [Discord.JS](https://discord.js.org/#/) library and [Discord-Akairo](https://discord-akairo.github.io/) framework.
 
 - Open-Source
 - Community Features
