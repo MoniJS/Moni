@@ -4,6 +4,7 @@ class PythonCommand extends Command {
     constructor() {
         super('python', {
             aliases: ['python', 'py'],
+            category: 'util',
             channel: 'guild',
             clientPermissions: ['SEND_MESSAGES'],
             description: {
