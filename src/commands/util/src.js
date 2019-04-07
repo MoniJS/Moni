@@ -9,8 +9,7 @@ class SrcCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Get The Source Code For This Bot',
-                usage: '!src',
-                examples: ['src', 'source', 'support']
+                examples: ['']
             }
         });
     }

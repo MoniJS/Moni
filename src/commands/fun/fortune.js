@@ -9,8 +9,7 @@ class FortuneCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'See ur Fortune',
-                usage: '!fortune',
-                examples: ['fortune']
+                examples: ['']
             }
         });
     }

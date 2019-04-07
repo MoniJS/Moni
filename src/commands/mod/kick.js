@@ -9,7 +9,7 @@ class KickCommand extends Command {
             clientPermissions: ['SEND_MESSAGES', 'KICK_MEMBERS'],
             description: {
                 content: 'Kick Bad People',
-                usage: '!kick',
+                usage: '<member>',
                 examples: ['kick @Moni', 'kick Suvajit', 'kick 550460160829816833']
             },
             args: [

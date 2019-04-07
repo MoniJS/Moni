@@ -9,8 +9,7 @@ class YomamaCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Get A Random YoMama Joke.',
-                usage: '!yomama',
-                examples: ['yomama']
+                examples: ['']
             }
         });
     }

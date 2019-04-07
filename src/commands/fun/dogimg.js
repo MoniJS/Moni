@@ -10,8 +10,7 @@ class DogImgCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Doggi Pics',
-                usage: '!dogimg',
-                examples: ['dogimg']
+                examples: ['']
             }
         });
     }

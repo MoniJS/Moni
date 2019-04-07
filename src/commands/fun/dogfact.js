@@ -9,8 +9,7 @@ class DogFactCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Dogge Facts',
-                usage: '!dogfact',
-                examples: ['dogfact']
+                examples: ['']
             }
         });
     }

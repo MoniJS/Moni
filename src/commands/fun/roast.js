@@ -9,8 +9,7 @@ class RoastCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Send A Random Roast',
-                usage: '!roast',
-                examples: ['!roast']
+                examples: ['']
             }
         });
     }

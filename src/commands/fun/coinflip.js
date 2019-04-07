@@ -9,8 +9,7 @@ class CoinFlipCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: '2 sided coin flip',
-                usage: '!flip',
-                examples: ['coin', 'flipacoin', 'flipcoin', 'toss', 'cointoss', 'flip']
+                examples: ['']
             }
         });
     }

@@ -9,8 +9,7 @@ class GitHubCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'GitHub Links',
-                usage: '!git',
-                examples: ['github', 'git']
+                examples: ['']
             }
         });
     }
@@ -18,8 +17,8 @@ class GitHubCommand extends Command {
     exec(message) {
         if(message.guild.id === "550140222822809610") {
             return message.util.send([
-                `Here is the JavaScript GitHub Url => (https://github.com/moni-js)`,
-                `Here is the Python GitHub Url => (https://github.com/moni-py)`
+                `Here is the JavaScript GitHub Url => (<https://github.com/moni-js>)`,
+                `Here is the Python GitHub Url => (<https://github.com/moni-py>)`
             ]);
         }
     }

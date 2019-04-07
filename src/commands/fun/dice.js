@@ -9,8 +9,7 @@ class DiceCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Roll A 6 Sided Dice',
-                usage: '!dice',
-                examples: ['dice']
+                examples: ['']
             }
         });
     }

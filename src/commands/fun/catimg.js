@@ -10,8 +10,7 @@ class CatImgCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Cat Purr-fect Pics',
-                usage: '!catimg',
-                examples: ['catimage', 'catimg', 'catpic', 'catimages']
+                examples: ['']
             }
         });
     }

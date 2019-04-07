@@ -10,8 +10,7 @@ class MineCommand extends Command {
            clientPermissions: ['SEND_MESSAGES'],
            description: {
                content: 'Mine Sweeper with spoiler tags',
-               usage: '!mine',
-               examples: ['mine 10 10 31', 'mine 5 4 3']
+               examples: ['']
            }
         });
     }

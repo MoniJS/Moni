@@ -9,8 +9,7 @@ class ComplementCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Complement Your Self',
-                usage: '!complement',
-                examples: ['complement']
+                examples: ['']
             }
         });
     }

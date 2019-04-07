@@ -10,8 +10,7 @@ class MemeCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'The Most Random Memes',
-                usage: '!meme',
-                examples: ['memes', 'meme']
+                examples: ['']
             }
         });
     }
