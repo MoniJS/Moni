@@ -9,8 +9,8 @@ class HackCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Ummm. Hack Someone',
-                usage: '!src',
-                examples: ['hack @Moni', 'hack', 'hack Moni']
+                usage: '<member>',
+                examples: ['', 'hack @Moni', 'hack Moni']
             },
             args: [
                 {

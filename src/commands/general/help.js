@@ -21,7 +21,7 @@ class HelpCommand extends Command {
 			description: {
 				content: 'Displays a list of commands or information about a command.',
 				usage: '[command]',
-				examples: ['', 'star', 'remove-rep']
+				examples: ['', 'stats', 'js']
 			}
 		});
 	}

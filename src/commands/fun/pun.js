@@ -10,8 +10,7 @@ class PunCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'A random Pun',
-                usage: '!pun',
-                examples: ['pun', 'dadjokes']
+                examples: ['']
             }
         });
     }

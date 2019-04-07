@@ -9,8 +9,7 @@ class CatFactCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Cat Facts',
-                usage: '!catfact',
-                examples: ['catfacts', 'catfact']
+                examples: ['']
             }
         });
     }

@@ -10,8 +10,7 @@ class BirdImgCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Birdiiie',
-                usage: '!bird',
-                examples: ['bird']
+                examples: ['']
             }
         });
     }

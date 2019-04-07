@@ -9,7 +9,7 @@ class BanCommand extends Command {
             clientPermissions: ['SEND_MESSAGES', 'BAN_MEMBERS'],
             description: {
                 content: 'Ban Bad People',
-                usage: '!ban',
+                usage: '<member>',
                 examples: ['ban @moni', 'ban moni', 'ban 550460160829816833']
             },
             args: [

@@ -9,8 +9,7 @@ class KillMeCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Kill Me pls',
-                usage: '!killme',
-                examples: ['killme']
+                examples: ['']
             }
         });
     }

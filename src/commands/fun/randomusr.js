@@ -9,8 +9,7 @@ class RandomUsrCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Picks A Random Server User',
-                usage: 'randomusr',
-                examples: ['randomusr', 'randomuser']
+                examples: ['']
             }
         });
     }

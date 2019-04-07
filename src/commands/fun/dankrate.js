@@ -9,8 +9,7 @@ class DankRateCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'See Ur DankRate',
-                usage: '!dank',
-                examples: ['dank']
+                examples: ['']
             }
         });
     }

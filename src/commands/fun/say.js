@@ -9,7 +9,7 @@ class SayCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Say Something',
-                usage: '!say',
+                usage: '<words>',
                 examples: ['say Hello', 'echo Hello']
             },
             args: [

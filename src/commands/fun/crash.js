@@ -9,8 +9,7 @@ class CrashCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Try Me',
-                usage: '!crash',
-                examples: ['crash']
+                examples: ['']
             }
         });
     }

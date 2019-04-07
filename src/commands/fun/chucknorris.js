@@ -11,8 +11,7 @@ class ChuckNCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Chuck Noriss Jokezzz',
-                usage: '!chuckn',
-                examples: ['chuckn', 'chuck', 'chucknoris', 'chucknorris']
+                examples: ['']
             }
         });
     }

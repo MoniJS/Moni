@@ -13,8 +13,7 @@ class ServerCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Get Server Info',
-                usage: '!server',
-                examples: ['server']
+                examples: ['']
             }
         });
     }

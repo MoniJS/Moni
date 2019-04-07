@@ -10,8 +10,7 @@ class RulesCommand extends Command {
             clientPermissions: ['SEND_MESSAGES'],
             description: {
                 content: 'Rules To Use This Bot',
-                usage: '!rules',
-                examples: ['rules', 'rule']
+                examples: ['']
             }
         });
     }
@@ -30,7 +29,7 @@ class RulesCommand extends Command {
         .addField('Rule #3','Offensive/advertising names on the leaderboard will be wiped and blacklisted', true)
         .addField('Rule #4','Do not use the bot for racism, homophobia, or advertising', true)
 	    .setTimestamp()
-	    .setFooter('Dont break the rule or be BANNED', 'https://cdn.discordapp.com/avatars/550460160829816833/8ff23522610d174c4fc418613130d51c.png?size=2048');
+	    .setFooter('Dont break the rule or be BANNED', 'https://cdn.discordapp.com/avatars/550460160829816833/8ff23522610d174c4fc418613130d51c.png');
 
         return message.util.send(embed);
     }
