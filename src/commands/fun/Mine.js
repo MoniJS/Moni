@@ -5,7 +5,7 @@ class MineCommand extends Command {
     constructor() {
         super('mine', {
            aliases: ['mine'],
-           category: 'util',
+           category: 'fun',
            channel: 'guild',
            clientPermissions: ['SEND_MESSAGES'],
            description: {

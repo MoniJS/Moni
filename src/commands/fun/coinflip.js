@@ -4,7 +4,7 @@ class CoinFlipCommand extends Command {
     constructor() {
         super('CoinFlip', {
             aliases: ['coin', 'flipacoin', 'flipcoin', 'toss', 'cointoss', 'flip'],
-            category: 'util',
+            category: 'fun',
             channel: 'guild',
             clientPermissions: ['SEND_MESSAGES'],
             description: {

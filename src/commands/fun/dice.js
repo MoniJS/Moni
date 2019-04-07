@@ -4,7 +4,7 @@ class DiceCommand extends Command {
     constructor() {
         super('Dice', {
             aliases: ['dice', 'roll'],
-            category: 'util',
+            category: 'fun',
             channel: 'guild',
             clientPermissions: ['SEND_MESSAGES'],
             description: {
