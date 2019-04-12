@@ -2,7 +2,7 @@
   "main": "index.js",
   "dependencies": {
     "discord-akairo": "discord-akairo/discord-akairo",
-    "discord.js": "github:discordjs/discord.js",
+    "discord.js": "discordjs/discord.js",
     "discord.js-minesweeper": "^1.0.3",
     "dotenv": "^7.0.0",
     "moment": "^2.24.0",
