@@ -32,7 +32,7 @@ class UserCommand extends Command {
         .setThumbnail(user.displayAvatarURL())
         .addField('❯ Member Details', [
             `${member.nickname ? `• Nickname: ${member.nickname}` : ''}`,
-            `• Joined at: ${moment.utc(member.joinedAt).format('DD/MM/YYYY kk:mm:ss')}`,
+            `• Joined at: ${moment.utc(member.joinedAt).format('DD/MM-YYYY kk:mm:ss')}`,
             `• Roles: ${member.roles.filter(role => role.id !== message.guild.id).map(role=> `*${role}*`).join(', ')}`
         ])
         .addField('❯ User Details', [
