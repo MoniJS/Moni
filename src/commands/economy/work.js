@@ -20,7 +20,7 @@ class WorkCommand extends Command {
          var output = await eco.Work(message.author.id, {
      failurerate: 5,
      money: Math.floor(Math.random() * 1000),
-     jobs: ['cashier', 'shopkeeper', 'drug dealer', 'hitman', 'scammer', 'hacker', 'chef', 'nanny', 'babysitter', 'farmer']
+     jobs: require('src/random/jobs.json');
    })
    //10% chance to fail and earn nothing. You earn between 1-500 coins. And you get one of those 3 random jobs.
    if (output.earned == 0) return message.reply('Gotta work harder, dont give up, and do cheat.')
