@@ -16,7 +16,7 @@ class TransferCommand extends Command {
         });
     }
 
-    exec(message, { member }) {
+  async   exec(message, { member }) {
        const { user } = member;
        var amount = args[1]
 

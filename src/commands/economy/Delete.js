@@ -17,7 +17,7 @@ class DeleteCommand extends Command {
         });
     }
 
-    exec(message) {
+async exec(message) {
            const { user } = member;
            if (!user) return message.reply('Tell me who to delete you stupid.')
            var output = await eco.Delete(user.id)

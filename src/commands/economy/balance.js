@@ -16,7 +16,7 @@ class BalanceCommand extends Command {
         });
     }
 
-    exec(message) {
+    async exec(message) {
          var output = await eco.FetchBalance(message.author.id)
         message.channel.send(`Yo ${message.author.tag}! My senses say you own ${output.balance} coins.`);
     }

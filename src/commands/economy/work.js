@@ -16,7 +16,7 @@ class WorkCommand extends Command {
         });
     }
 
-    exec(message) {
+  async   exec(message) {
          var output = await eco.Work(message.author.id, {
      failurerate: 5,
      money: Math.floor(Math.random() * 1000),

@@ -16,7 +16,7 @@ class DailyCommand extends Command {
         });
     }
 
-    exec(message) {
+  async exec(message) {
          var output = await eco.Daily(message.author.id)
 
       if (output.updated) {
