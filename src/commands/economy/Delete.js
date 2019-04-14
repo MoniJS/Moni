@@ -4,7 +4,7 @@ const { Command } = require('discord-akairo');
 
 class DeleteCommand extends Command {
     constructor() {
-        super('Balance', {
+        super('Delete', {
             aliases: ['delete'],
             category: 'owner',
             ownerOnly: true,
