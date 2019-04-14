@@ -18,16 +18,16 @@ class TagEditCommand extends Command {
 		});
 	}
 
-	async *args(msg) {
+	async *args(message) {
 		const tag = yield {
-			type: async (msg, phrase) => {
+			type: async (message, phrase) => {
                 if (!phrase) return null;
-                const tag = await Tags.findOne({ where: { name: phrase, guild: msg.guild.id }});
+                const tag = await Tags.findOne({ where: { name: phrase, guild: message.guild.id }});
                 if (tag) return tag;
             },
 			prompt: {
 				start: 'what tag do you want to edit?',
-				retry: (msg, { phrase }) => `a tag with the name **${phrase}** does not exist.`
+				retry: (message, { phrase }) => `a tag with the name **${phrase}** does not exist.`
 			}
 		};
 		const hoist = yield {

@@ -12,15 +12,15 @@ class TagDeleteCommand extends Command {
 			args: [
 				{
 					id: 'tag',
-					type: async (msg, phrase) => {
+					type: async (message, phrase) => {
 						if (!phrase) return null;
 						phrase = Util.cleanContent(phrase.toLowerCase(), message);
-						const tag = await Tags.findOne({ where: { name: phrase, guild: msg.guild.id }});
+						const tag = await Tags.findOne({ where: { name: phrase, guild: message.guild.id }});
 						if (tag) return tag;
 					},
 					prompt: {
 						start: `what tag do you want to delete?`,
-						retry: (msg, { phrase }) => `a tag with the name **${phrase}** does not exist.`
+						retry: (message, { phrase }) => `a tag with the name **${phrase}** does not exist.`
 					}
 				}
 			],
