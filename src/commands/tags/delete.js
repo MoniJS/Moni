@@ -1,5 +1,5 @@
 const { Command } = require('discord-akairo');
-const Tags = require('../../models/Tags');
+const Tags = require(process.env.TAGS);
 require('dotenv').config();
 const { Util } = require('discord.js');
 
