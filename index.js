@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const Client = require('./src/client/Client');
 const client = new Client({ owner: process.env.OWNER, token: process.env.TOKEN });
+const Raven = require('raven');
 
 if (process.env.RAVEN) {
 	Raven.config(process.env.RAVEN, {
