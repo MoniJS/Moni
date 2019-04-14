@@ -1,5 +1,6 @@
 const { Command } = require('discord-akairo');
 const { MessageEmbed } = require('discord.js');
+const fetch = require('node-fetch');
 const moment = require('moment'); require('moment-duration-format');
 class NPMCommand extends Command {
 	constructor() {
@@ -11,7 +12,7 @@ class NPMCommand extends Command {
 				{
 					id: 'pkg',
 					prompt: {
-						start: message => `${message.author}, what would you like to search for?`
+						start: message => `${message.author}, what NPM pkg would you like to search for?`
 					},
 					match: 'content',
 					type: pkg => pkg ? encodeURIComponent(pkg.replace(/ /g, '-')) : null
