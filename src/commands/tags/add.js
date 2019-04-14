@@ -12,7 +12,7 @@ class TagAddCommand extends Command {
 			args: [
 				{
 					id: 'name',
-					type: async (msg, phrase) => {
+					type: async (message, phrase) => {
 						if (!phrase) return null;
 						phrase = Util.cleanContent(phrase.toLowerCase(), message);
 						const tag = await Tags.findOne({ where: { name: phrase, guild: message.guild.id } });
