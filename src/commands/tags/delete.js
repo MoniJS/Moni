@@ -1,5 +1,6 @@
 const { Command } = require('discord-akairo');
 const Tags = require('../../models/Tags');
+const { Util } = require('discord.js');
 
 class TagDeleteCommand extends Command {
 	constructor() {
@@ -13,6 +14,7 @@ class TagDeleteCommand extends Command {
 					id: 'tag',
 					type: async (msg, phrase) => {
 						if (!phrase) return null;
+						phrase = Util.cleanContent(phrase.toLowerCase(), message);
 						const tag = await Tags.findOne({ where: { name: phrase, guild: msg.guild.id }});
 						if (tag) return tag;
 					},

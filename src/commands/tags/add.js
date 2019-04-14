@@ -1,5 +1,6 @@
 const { Command } = require('discord-akairo');
 const Tags = require('../../models/Tags');
+const { Util } = require('discord.js');
 
 class TagAddCommand extends Command {
 	constructor() {
@@ -11,8 +12,16 @@ class TagAddCommand extends Command {
 			args: [
 				{
 					id: 'name',
+					type: async (msg, phrase) => {
+						if (!phrase) return null;
+						phrase = Util.cleanContent(phrase.toLowerCase(), message);
+						const tag = await Tags.findOne({ where: { name: phrase, guild: message.guild.id } });
+						if (tag) return null;
+						else return phrase;
+					},
 					prompt: {
 						start: `what should the tag be named?`,
+						retry: 'this tag already exist.'
 					}
 				},
 				{
