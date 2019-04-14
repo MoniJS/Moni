@@ -4,7 +4,7 @@ class GitHubCommand extends Command {
     constructor() {
         super('Github', {
             aliases: ['github', 'git'],
-            category: 'util',
+            category: 'dev',
             channel: 'guild',
             clientPermissions: ['SEND_MESSAGES'],
             description: {

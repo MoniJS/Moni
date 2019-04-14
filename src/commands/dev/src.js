@@ -4,7 +4,7 @@ class SrcCommand extends Command {
     constructor() {
         super('src', {
             aliases: ['src', 'source', 'support'],
-            category: 'util',
+            category: 'dev',
             channel: 'guild',
             clientPermissions: ['SEND_MESSAGES'],
             description: {

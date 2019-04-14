@@ -5,7 +5,7 @@ class RulesCommand extends Command {
     constructor() {
         super('rules', {
             aliases: ['rules', 'rule'],
-            category: 'util',
+            category: 'dev',
             channel: 'guild',
             clientPermissions: ['SEND_MESSAGES'],
             description: {
