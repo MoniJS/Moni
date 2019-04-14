@@ -4,7 +4,7 @@ class JavaScriptCommand extends Command {
     constructor() {
         super('JavaScript', {
             aliases: ['Javascript', 'js','ecmascript'],
-            category: 'util',
+            category: 'dev',
             channel: 'guild',
             clientPermissions: ['SEND_MESSAGES'],
             description: {
