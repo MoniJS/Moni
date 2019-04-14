@@ -6,7 +6,7 @@ class WorkCommand extends Command {
     constructor() {
         super('Work', {
             aliases: ['work'],
-            category: 'owner',
+            category: 'economy',
             channel: 'guild',
             clientPermissions: ['SEND_MESSAGES'],
             description: {
