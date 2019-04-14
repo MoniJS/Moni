@@ -1,4 +1,5 @@
 const discord = require('discord.js');
+const Client = require('./src/client/Client');
 const eco = require('discord-economy');
 const { Command } = require('discord-akairo');
 
