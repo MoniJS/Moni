@@ -1,5 +1,6 @@
 const { Command } = require('discord-akairo');
 const { Util } = require('discord.js');
+require('dotenv').config();
 const Tags = require('../../models/Tags');
 
 class TagEditCommand extends Command {
