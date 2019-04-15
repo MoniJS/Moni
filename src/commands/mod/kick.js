@@ -27,7 +27,7 @@ class KickCommand extends Command {
 	}
 
 	async exec(message, { member }) {
-		await member.kick(`Kicked by ${message.author.tag} (${message.author.id})`).then(() => message.util.reply(`${args.member} was kicked!`));
+		await member.kick(`Kicked by ${message.author.tag} (${message.author.id})`).then(() => message.util.reply(`${member} was kicked!`));
 	}
 }
 

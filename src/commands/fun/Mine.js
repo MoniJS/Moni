@@ -1,3 +1,4 @@
+/* eslint-disable radix */
 const { Command } = require('discord-akairo');
 const Minesweeper = require('discord.js-minesweeper');
 
@@ -11,16 +12,30 @@ class MineCommand extends Command {
 			description: {
 				content: 'Mine Sweeper with spoiler tags',
 				examples: ['']
-			}
+			},
+			args: [
+				{
+					id: 'args0',
+					match: 'content'
+				},
+				{
+					id: 'args1',
+					match: 'content'
+				},
+				{
+					id: 'args2',
+					match: 'content'
+				}
+			]
 		});
 	}
 
-	exec(message) {
+	exec(message, { args0, args1, args2 }) {
 		const content = message.content.split(' ');
 		const args = content.slice(1);
-		const rows = parseInt(args[0]);
-		const columns = parseInt(args[1]);
-		const mines = parseInt(args[2]);
+		const rows = parseInt(args0);
+		const columns = parseInt(args1);
+		const mines = parseInt(args2);
 
 		if (!rows) {
 			return message.channel.send(':warning: Please provide the number of rows.');

@@ -23,7 +23,7 @@ class UserCommand extends Command {
 		});
 	}
 
-	async exec(message, { member }) {
+	exec(message, { member }) {
 		const { user } = member;
 
 		const embed = this.client.util.embed().setColor('RANDOM')

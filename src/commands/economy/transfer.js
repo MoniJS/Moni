@@ -1,3 +1,4 @@
+/* eslint-disable new-cap */
 const discord = require('discord.js');
 const eco = require('discord-economy');
 const { Command } = require('discord-akairo');
@@ -12,14 +13,22 @@ class TransferCommand extends Command {
 			description: {
 				content: 'Send Coins to Discord Users, Not Bots',
 				examples: ['@Moni#2030 transfer Suvjait 100']
-			}
+			},
+			args: [
+				{
+					id: 'member',
+					type: 'member'
+				},
+				{
+					id: 'amount',
+					match: 'content'
+				}
+			]
 		});
 	}
 
-	async exec(message, { member }) {
+	async exec(message, { member, amount }) {
 		const { user } = member;
-		let amount = args[1];
-
 		if (!user) return message.reply('You can send money to **nobody**, please mention someone');
 		if (!amount) return message.reply('Umm... You want to send 0 coins, specify how much you want to send.');
 

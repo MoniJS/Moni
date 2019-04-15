@@ -12,16 +12,22 @@ class UrbanCommand extends Command {
 			description: {
 				content: 'Searchs Urban Dictionary',
 				examples: ['hello world']
-			}
+			},
+			args: [
+				{
+					id: '_query',
+					content: 'match'
+				}
+			]
 		});
 	}
 
-	async exec(message) {
-		if (!args.length) {
+	async exec(message, { _query }) {
+		if (!_query) {
 			return message.channel.send('You need to supply a search term!');
 		}
 
-		const query = querystring.stringify({ term: args.join(' ') });
+		const query = querystring.stringify({ term: _query });
 
 		const { body } = await fetch
 			.get(`https://api.urbandictionary.com/v0/define${query}`)
@@ -29,7 +35,7 @@ class UrbanCommand extends Command {
 
 		if (!body.list.length) {
 			return message.channel.send(
-				`No results found for **${args.join(' ')}**.`
+				`No results found for **${_query}**.`
 			);
 		}
 
@@ -40,8 +46,9 @@ class UrbanCommand extends Command {
 			.setColor('RANDOM')
 			.setTitle(answer.word)
 			.setURL(answer.permalink)
-			.addField('Definition', trim(answer.definition, 1024))
-			.addField('Example', trim(answer.example, 1024))
+			// Don't Know what is it
+			// .addField('Definition', trim(answer.definition, 1024))
+			// .addField('Example', trim(answer.example, 1024))
 			.addField(
 				'Rating',
 				`${answer.thumbs_up} thumbs up. ${answer.thumbs_down} thumbs down.`

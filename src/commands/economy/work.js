@@ -17,6 +17,7 @@ class WorkCommand extends Command {
 	}
 
 	async exec(message) {
+		// eslint-disable-next-line new-cap
 		let output = await eco.Work(message.author.id, {
 			failurerate: 5,
 			money: Math.floor(Math.random() * 1000),
