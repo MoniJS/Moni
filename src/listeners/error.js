@@ -13,7 +13,6 @@ class ErrorListener extends Listener {
 
 	exec(error, message, command) {
 		console.log(error);
-		if (error) return message.channel.send('Oops, something went wrong');
 
 		Raven.captureBreadcrumb({
 			message: 'command_errored',
@@ -39,6 +38,8 @@ class ErrorListener extends Listener {
 			}
 		});
 		Raven.captureException(error);
+
+		if (error) return message.channel.send('Oops, something went wrong');
 	}
 }
 
