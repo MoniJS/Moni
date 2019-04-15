@@ -19,6 +19,7 @@
         "no-shadow":"off",
         "no-unused-vars":"off",
         "prefer-const":"off",
+        "no-console":"off",
         "prefer-destructuring": [
             "off"
         ],
