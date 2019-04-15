@@ -54,10 +54,6 @@ class NPMCommand extends Command {
 			.addField('Main File', version.main || 'index.js', true)
 			.addField('Dependencies', dependencies && dependencies.length ? dependencies.join(', ') : 'None')
 			.addField('Maintainers', maintainers);
-
-		if (message.channel.type === 'dm' || !message.channel.permissionsFor(message.guild.me).has(['ADD_REACTIONS', 'MANAGE_MESSAGES'], false)) {
-			return message.util.send({ embed });
-		}
 		return message.util.send({ embed });
 	}
 
