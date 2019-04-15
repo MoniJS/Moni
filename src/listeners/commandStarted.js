@@ -1,25 +1,26 @@
+/* eslint-disable multiline-ternary */
 const { Listener } = require('discord-akairo');
 const Raven = require('raven');
 
 class CommandStartedListener extends Listener {
-    constructor() {
-        super('commandstarted', {
-            emitter: 'commandHandler',
-            event: 'commandStarted',
-            category: 'commandHandler'
-        });
-    }
+	constructor() {
+		super('commandstarted', {
+			emitter: 'commandHandler',
+			event: 'commandStarted',
+			category: 'commandHandler'
+		});
+	}
 
-    exec(message, command, args) {
-        console.log({
-            time: message.createdAt,
-            command: command.id,
-            guild: message.guild ? `${message.guild.name} (${message.guild.id})` : 'DM',
-            user: `${message.author.tag} (${message.author.id})`,
-            args: message.content
-        })
+	exec(message, command, args) {
+		console.log({
+			time: message.createdAt,
+			command: command.id,
+			guild: message.guild ? `${message.guild.name} (${message.guild.id})` : 'DM',
+			user: `${message.author.tag} (${message.author.id})`,
+			args: message.content
+		});
 
-        Raven.captureBreadcrumb({
+		Raven.captureBreadcrumb({
 			message: 'command_started',
 			category: command.category.id,
 			data: {
@@ -65,7 +66,7 @@ class CommandStartedListener extends Listener {
 				args
 			}
 		});
-    }
+	}
 }
 
 module.exports = CommandStartedListener;

@@ -1,25 +1,26 @@
+/* eslint-disable multiline-ternary */
 const { Listener } = require('discord-akairo');
 const Raven = require('raven');
 
 class ErrorListener extends Listener {
-    constructor() {
-        super('error', {
-            emitter: 'commandHandler',
-            event: 'error',
-            category: 'commandHandler'
-        });
-    }
+	constructor() {
+		super('error', {
+			emitter: 'commandHandler',
+			event: 'error',
+			category: 'commandHandler'
+		});
+	}
 
-    exec(error, message, command) {
-        console.log(error);
-        try {
-            return message.channel.send([
-                `Oops, something went wrong`,
-                `Try again.`
-            ])
-        } catch {}
+	exec(error, message, command) {
+		console.log(error);
+		try {
+			return message.channel.send([
+				'Oops, something went wrong',
+				'Try again.'
+			]);
+		} catch {} // eslint-disable-line
 
-        Raven.captureBreadcrumb({
+		Raven.captureBreadcrumb({
 			message: 'command_errored',
 			category: command ? command.category.id : 'inhibitor',
 			data: {
@@ -43,7 +44,7 @@ class ErrorListener extends Listener {
 			}
 		});
 		Raven.captureException(error);
-    }
+	}
 }
 
 module.exports = ErrorListener;

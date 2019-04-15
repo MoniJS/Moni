@@ -2,26 +2,29 @@
   "main": "index.js",
   "dependencies": {
     "discord-akairo": "discord-akairo/discord-akairo",
+    "discord-economy": "^1.0.3",
     "discord.js": "discordjs/discord.js",
     "discord.js-minesweeper": "^1.0.3",
     "dotenv": "^7.0.0",
     "moment": "^2.24.0",
     "moment-duration-format": "^2.2.2",
     "ms": "2.1.1",
+    "node-fetch": "^2.3.0",
     "os-utils": "0.0.14",
     "raven": "^2.6.4",
     "request": "2.88.0",
     "sequelize": ">=5.3.0",
-    "sqlite3": "^4.0.6",
-    "discord-economy": "^1.0.3",
-    "node-fetch": "^2.3.0"
+    "sqlite3": "^4.0.6"
   },
-  "name": "Moni",
+  "name": "moni",
   "description": "<div align=\"center\">\r   <br />\r   <p>\r   <a href=\"https://discord.gg/jQdFFH6\"><img src=\"https://cdn.discordapp.com/attachments/548692280350081026/559092648745500727/devil.png\" width=\"50%\"></a>\r  </p>\r   <p>\r     <a href=\"https://discord.gg/jQdFFH6\"><img src=\"https://discordapp.com/api/guilds/550140222822809610/embed.png\" alt=\"Discord server\" /></a>\r     <a href=\"https://www.patreon.com/\"><img src=\"https://img.shields.io/badge/donate-patreon-F96854.svg\" alt=\"Patreon\" /></a>\r   </p>\r </br>\r </div>",
   "version": "0.0.3",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-aqua": "^4.4.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "eslint ./"
   },
   "repository": {
     "type": "git",

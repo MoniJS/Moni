@@ -10,7 +10,7 @@ class ReconnectListener extends Listener {
 	}
 
 	exec() {
-		console.log("[RECONNECTING]");
+		console.log('[RECONNECTING]');
 	}
 }
 
