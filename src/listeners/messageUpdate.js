@@ -1,17 +1,16 @@
-/* const { Listener } = require('discord-akairo');
+const { Listener } = require('discord-akairo');
 
 class MessageUpdateListener extends Listener {
-    constructor() {
-        super('messageUpdate', {
-            emitter: 'client',
-            event: 'messageUpdate'
-        });
-    }
+	constructor() {
+		super('messageUpdate', {
+			emitter: 'client',
+			event: 'messageUpdate'
+		});
+	}
 
-    exec(oldMessage, newMessage) {
-
-   oldMessage.channel.send(newMessage.content);
-    }
+	exec(oldMessage, newMessage) {
+		oldMessage.channel.send(newMessage.content);
+	}
 }
 
-module.exports = MessageUpdateListener;*/
+module.exports = MessageUpdateListener;

@@ -1,7 +1,5 @@
 /* eslint-disable new-cap */
 /* eslint-disable max-len */
-const discord = require('discord.js');
-const Client = require('./src/client/Client');
 const eco = require('discord-economy');
 const { Command } = require('discord-akairo');
 
@@ -43,11 +41,12 @@ class LeaderboardCommand extends Command {
 					let secondplace = await this.client.users.fetch(users[1].userid); // Searches for the user object in discord for second place
 					let thirdplace = await this.client.users.fetch(users[2].userid); // Searches for the user object in discord for third place
 
-					message.channel.send(`My leaderboard:
-
-1 - ${firstplace.tag} : ${users[0].balance}
-2 - ${secondplace.tag} : ${users[1].balance}
-3 - ${thirdplace.tag} : ${users[2].balance}`);
+					message.channel.send([
+						'Leaderboard',
+						`1 - ${firstplace.tag} : ${users[0].balance}`,
+						`2 - ${secondplace.tag} : ${users[1].balance}`,
+						`3 - ${thirdplace.tag} : ${users[2].balance}`
+					]);
 				});
 		}
 	}
