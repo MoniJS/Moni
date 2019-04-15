@@ -18,8 +18,6 @@ class DogImgCommand extends Command {
 	exec(message) {
 		request('https://random.dog/woof.json', { json: true }, (err, res, body) => {
 			if (err) return console.log(err);
-			console.log('----------');
-			console.log(body.url);
 			return message.util.send(body.url);
 		});
 	}
