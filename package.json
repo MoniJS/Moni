@@ -20,7 +20,8 @@
 		"raven": "^2.6.4",
 		"request": "^2.88.0",
 		"sequelize": "^5.5.0",
-		"sqlite3": "^4.0.6"
+		"sqlite3": "^4.0.6",
+		"turndown": "^5.0.3"
 	},
 	"devDependencies": {
 		"eslint": "^5.16.0",
