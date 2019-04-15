@@ -24,7 +24,8 @@
     "eslint-config-aqua": "^4.4.1"
   },
   "scripts": {
-    "test": "eslint ./"
+    "test": "eslint ./",
+    "start": "eslint --fix src/commands/info/stats.js"
   },
   "repository": {
     "type": "git",
