@@ -22,7 +22,7 @@ class BotInfoCommand extends Command {
 	exec(message) {
 		const devs = ['447916021198749696', '444432489818357760'].map(id => this.client.users.get(id).tag);
 		const embed = new Discord.MessageEmbed()
-	    .setColor('RANDOM')
+			.setColor('RANDOM')
 			.setAuthor(`${this.client.user.username} Statistics`)
 			.addField('Bot Devs', devs.join(' | '))
 			.addField('Memory',
@@ -38,9 +38,9 @@ class BotInfoCommand extends Command {
 				`[Discord.js (v${Discord.version})](https://discord.js.org)`,
 				`[Akairo (v${Akairo.version})](https://discord-akairo.github.io)`
 			], true)
-	    .setTimestamp()
+			.setTimestamp()
 			.setThumbnail(this.client.user.avatarURL)
-	    .setFooter(`Version ${version}`, this.client.user.avatarURL);
+			.setFooter(`Version ${version}`, this.client.user.avatarURL);
 		return message.util.send(embed);
 	}
 }

@@ -15,12 +15,12 @@ class KillMeCommand extends Command {
 	}
 
 	exec(message) {
-		return message.util.send(`${message.author.username} has died.`).then(Message => {
+		return message.util.send(`${message.author.username} has died.`).then(msg => {
 			setTimeout(() => {
-				Message.edit('Respawning...');
+				msg.edit('Respawning...');
 			}, 1000);
 			setTimeout(() => {
-				Message.edit(`Revival complete. Welcome back, ${message.author.username}`);
+				msg.edit(`Revival complete. Welcome back, ${message.author.username}`);
 			}, 1000);
 		});
 	}

@@ -18,8 +18,6 @@ class PunCommand extends Command {
 	exec(message) {
 		request('https://icanhazdadjoke.com/', { json: true }, (err, res, body) => {
 			if (err) return console.log(err);
-			console.log('----------');
-			console.log(body.joke);
 			return message.util.send(body.joke);
 		});
 	}

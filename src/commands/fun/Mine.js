@@ -32,7 +32,6 @@ class MineCommand extends Command {
 
 	exec(message, { args0, args1, args2 }) {
 		const content = message.content.split(' ');
-		const args = content.slice(1);
 		const rows = parseInt(args0);
 		const columns = parseInt(args1);
 		const mines = parseInt(args2);
