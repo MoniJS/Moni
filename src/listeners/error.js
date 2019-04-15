@@ -13,12 +13,7 @@ class ErrorListener extends Listener {
 
 	exec(error, message, command) {
 		console.log(error);
-		try {
-			return message.channel.send([
-				'Oops, something went wrong',
-				'Try again.'
-			]);
-		} catch {} // eslint-disable-line
+		if (error) return message.channel.send('Oops, something went wrong');
 
 		Raven.captureBreadcrumb({
 			message: 'command_errored',
