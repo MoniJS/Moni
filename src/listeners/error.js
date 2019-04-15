@@ -39,7 +39,13 @@ class ErrorListener extends Listener {
 		});
 		Raven.captureException(error);
 
-		if (error) return message.channel.send('Oops, something went wrong');
+		if (message.guild ? message.channel.permissionsFor(this.client.user).has('SEND_MESSAGES') : true) {
+			message.channel.send([
+				'```js',
+				error.toString(),
+				'```'
+			]);
+		}
 	}
 }
 

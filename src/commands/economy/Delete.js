@@ -17,7 +17,11 @@ class DeleteCommand extends Command {
 			args: [
 				{
 					id: 'member',
-					type: 'member'
+					type: 'member',
+					prompt: {
+						start: 'who is the member?',
+						retry: 'please mention a valid member.'
+					}
 				}
 			]
 		});
