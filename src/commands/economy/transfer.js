@@ -11,7 +11,7 @@ class TransferCommand extends Command {
 			clientPermissions: ['SEND_MESSAGES'],
 			description: {
 				content: 'Send Coins to Discord Users, Not Bots',
-				examples: ['@Moni#2030 transfer Suvjait 100']
+				examples: ['Suvjait 100']
 			},
 			args: [
 				{
@@ -20,7 +20,12 @@ class TransferCommand extends Command {
 				},
 				{
 					id: 'amount',
-					match: 'content'
+					match: 'content',
+					type: 'number',
+					prompt: {
+						start: message => `${message.author}, please provide a number.`,
+						retry: message => `${message.author}, please provide a valid number.`
+					}
 				}
 			]
 		});
