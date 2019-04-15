@@ -21,14 +21,10 @@
   "version": "0.0.3",
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-config-aqua": "^4.4.1",
-    "flow-bin": "^0.97.0"
+    "eslint-config-aqua": "^4.4.1"
   },
   "scripts": {
-    "test": "eslint ./",
-    "build": "babel src/ -d lib/",
-    "prepublish": "npm run build",
-    "flow": "flow"
+    "test": "eslint ./"
   },
   "repository": {
     "type": "git",
