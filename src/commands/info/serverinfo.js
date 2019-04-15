@@ -20,14 +20,14 @@ class ServerCommand extends Command {
 
 	exec(message) {
 		const embed = new Discord.MessageEmbed()
-	    .setColor('RANDOM')
-	    .setTitle('Server Info')
+			.setColor('RANDOM')
+			.setTitle('Server Info')
 			.setThumbnail(message.guild.iconURL())
-	    .setAuthor(`${message.author.tag}`)
-	    .setDescription('Info On Your Server')
+			.setAuthor(`${message.author.tag}`)
+			.setDescription('Info On Your Server')
 			.addField('❯ Name', message.guild.name, true)
 			.addField('❯ Guild ID', message.guild.id, true)
-	    .addField('❯ Guild Creation', moment.utc(message.guild.createdAt).format('MM/DD/YYYY h:mm A'), true)
+			.addField('❯ Guild Creation', moment.utc(message.guild.createdAt).format('MM/DD/YYYY h:mm A'), true)
 			.addField('❯ Members', message.guild.memberCount, true)
 			.addField('❯ Explicit Filter', filterLevels[message.guild.explicitContentFilter], true)
 			.addField('❯ Verification Level', verificationLevels[message.guild.verificationLevel], true)
@@ -35,8 +35,8 @@ class ServerCommand extends Command {
 			.addField('❯ Server Owner', message.guild.owner, true)
 			.addField('❯ Server Region', message.guild.region.toUpperCase(), true)
 			.addField('❯ Join Date', moment.utc(message.member.joinedAt).format('MM/DD/YYYY h:mm A'), true)
-	    .setTimestamp()
-	    .setFooter(`${new Date().getTime() - message.createdTimestamp} ms`);
+			.setTimestamp()
+			.setFooter(`${new Date().getTime() - message.createdTimestamp} ms`);
 
 		return message.util.send({ embed });
 	}
