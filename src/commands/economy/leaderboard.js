@@ -5,7 +5,7 @@ const { Command } = require('discord-akairo');
 
 class LeaderboardCommand extends Command {
 	constructor() {
-		super('Leaderboard', {
+		super('leaderboard', {
 			aliases: ['leaderboard', 'richest'],
 			category: 'economy',
 			channel: 'guild',

@@ -4,7 +4,7 @@ const { Command } = require('discord-akairo');
 
 class DailyCommand extends Command {
 	constructor() {
-		super('Daily', {
+		super('daily', {
 			aliases: ['daily'],
 			category: 'economy',
 			channel: 'guild',

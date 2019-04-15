@@ -3,7 +3,7 @@ const { Command } = require('discord-akairo');
 
 class WorkCommand extends Command {
 	constructor() {
-		super('Work', {
+		super('work', {
 			aliases: ['work'],
 			category: 'economy',
 			channel: 'guild',

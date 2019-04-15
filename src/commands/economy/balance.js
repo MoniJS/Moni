@@ -3,7 +3,7 @@ const { Command } = require('discord-akairo');
 
 class BalanceCommand extends Command {
 	constructor() {
-		super('Balance', {
+		super('balance', {
 			aliases: ['balance'],
 			category: 'economy',
 			channel: 'guild',

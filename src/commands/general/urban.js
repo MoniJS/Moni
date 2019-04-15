@@ -1,10 +1,10 @@
 const { Command } = require('discord-akairo');
 const fetch = require('node-fetch');
-const querystring = require('querystring');
+const qs = require('querystring');
 
 class UrbanCommand extends Command {
 	constructor() {
-		super('Urban', {
+		super('urban', {
 			aliases: ['urban'],
 			category: 'general',
 			channel: 'guild',
@@ -27,13 +27,12 @@ class UrbanCommand extends Command {
 			return message.channel.send('You need to supply a search term!');
 		}
 
-		const query = querystring.stringify({ term: _query });
+		const query = qs.stringify({ term: _query });
 
-		const { body } = await fetch
-			.get(`https://api.urbandictionary.com/v0/define${query}`)
+		const body = await fetch(`https://api.urbandictionary.com/v0/define?${query}`)
 			.then(response => response.json());
 
-		if (!body.list.length) {
+		if (!body.list) {
 			return message.channel.send(`No results found for **${_query}**.`);
 		}
 

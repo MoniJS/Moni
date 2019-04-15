@@ -4,7 +4,7 @@ const { Command } = require('discord-akairo');
 
 class TransferCommand extends Command {
 	constructor() {
-		super('Transfer', {
+		super('transfer', {
 			aliases: ['transfer', 'send'],
 			category: 'economy',
 			channel: 'guild',
