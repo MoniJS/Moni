@@ -1,32 +1,31 @@
 {
     "extends": "aqua/node",
     "rules": {
-       "max-len": [
+        "max-len": [
             "error",
             120,
             2,
-          {
-               "ignoreStrings": true,
-               "ignoreTemplateLiterals": true
-          }
-       ],
-       "no-confusing-arrow": "off",
-       "no-eq-null": "off",
-       "no-negated-condition": "off",
-       "no-undefined": "off",
-       "linebreak-style":"off",
-       "camelcase":"off",
-       "no-shadow":"off",
-       "no-unused-vars":"off",
-       "prefer-const":"off",
-       "no-console":"off",
-       "prefer-destructuring": [
-          "off"
-       ],
-       "quotes": [
-          "error",
-          "single"
-       ],
-       "quote-props": "off"
-  }
+            {
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true
+            }
+        ],
+        "no-confusing-arrow": "off",
+        "no-eq-null": "off",
+        "no-negated-condition": "off",
+        "no-undefined": "off",
+        "linebreak-style":"off",
+        "camelcase":"off",
+        "no-shadow":"off",
+        "no-unused-vars":"off",
+        "prefer-const":"off",
+        "prefer-destructuring": [
+            "off"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "quote-props": "off"
+    }
 }
