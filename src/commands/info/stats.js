@@ -1,4 +1,5 @@
-const moment = require('moment'); require('moment-duration-format');
+const moment = require('moment');
+require('moment-duration-format');
 const { Command } = require('discord-akairo');
 const Discord = require('discord.js');
 const Akairo = require('discord-akairo');

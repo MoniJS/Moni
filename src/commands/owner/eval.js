@@ -1,3 +1,4 @@
+/* eslint-disable require-await */
 const { Command } = require('discord-akairo');
 const { Util, MessageEmbed } = require('discord.js');
 const util = require('util');
@@ -46,6 +47,7 @@ class EvalCommand extends Command {
 		let hrDiff;
 		try {
 			const hrStart = process.hrtime();
+			// eslint-disable-next-line no-eval
 			this.lastResult = eval(code);
 			hrDiff = process.hrtime(hrStart);
 		} catch (error) {

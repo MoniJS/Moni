@@ -19,7 +19,7 @@ class PrefixCommand extends Command {
 		});
 	}
 
-	async *args() {
+	*args() {
 		const prefix = yield {
 			match: 'content',
 			type: Argument.validate('string', (_, p) => !/\s/.test(p) && p.length <= 2)
@@ -27,7 +27,7 @@ class PrefixCommand extends Command {
 		return { prefix };
 	}
 
-	async exec(message, { prefix }) {
+	exec(message, { prefix }) {
 		if (!prefix) return message.util.send(`The current prefix for this guild is: \`${this.handler.prefix(message)}\``);
 		this.client.settings.set(message.guild, 'prefix', prefix);
 		if (prefix === this.handler.prefix(message)) {

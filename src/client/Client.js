@@ -11,16 +11,13 @@ const SettingsProvider = require('../struct/SettingsProviders');
 
 class Client extends AkairoClient {
 	constructor(config) {
-		super(
-			{ ownerID: config.owner },
-			{
-				messageCacheMaxSize: 50,
-				messageCacheLifetime: 300,
-				messageSweepInterval: 900,
-				disableEveryone: true,
-				disabledEvents: ['TYPING_START']
-			}
-		);
+		super({ ownerID: config.owner }, {
+			messageCacheMaxSize: 50,
+			messageCacheLifetime: 300,
+			messageSweepInterval: 900,
+			disableEveryone: true,
+			disabledEvents: ['TYPING_START']
+		});
 
 		this.commandHandler = new CommandHandler(this, {
 			directory: path.join(__dirname, '..', 'commands'),
@@ -35,22 +32,10 @@ class Client extends AkairoClient {
 			defaultCooldown: 3000,
 			argumentDefaults: {
 				prompt: {
-					modifyStart: (msg, text) =>
-						text &&
-            `${
-            	msg.author
-            } **::** ${text}\ntype \`cancel\` to cancel this command.`,
-					modifyRetry: (msg, text) =>
-						text &&
-            `${
-            	msg.author
-            } **::** ${text}\ntype \`cancel\` to cancel this command.`,
-					timeout: msg =>
-						`${msg.author} **::** Time ran out, command has been cancelled.`,
-					ended: msg =>
-						`${
-							msg.author
-						} **::** Too many retries, command has been cancelled.`,
+					modifyStart: (msg, text) => text && `${msg.author} **::** ${text}\ntype \`cancel\` to cancel this command.`,
+					modifyRetry: (msg, text) => text && `${msg.author} **::** ${text}\ntype \`cancel\` to cancel this command.`,
+					timeout: msg => `${msg.author} **::** Time ran out, command has been cancelled.`,
+					ended: msg => `${msg.author} **::** Too many retries, command has been cancelled.`,
 					cancel: msg => `${msg.author} **::** Command has been cancelled.`,
 					retries: 2,
 					time: 30000

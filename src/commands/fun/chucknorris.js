@@ -18,7 +18,7 @@ class ChuckNCommand extends Command {
 
 	exec(message) {
 		request('https://api.chucknorris.io/jokes/random', { json: true }, (err, res, body) => {
-			if (err) { return console.log(err); }
+			if (err) return console.log(err);
 			return message.util.send(body.value);
 		});
 	}

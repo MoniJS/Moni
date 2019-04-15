@@ -19,7 +19,7 @@ class TagEditCommand extends Command {
 		});
 	}
 
-	async *args(message) {
+	*args(message) {
 		const tag = yield {
 			type: async (message, phrase) => {
 				if (!phrase) return null;
