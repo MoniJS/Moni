@@ -11,7 +11,7 @@ class DeleteCommand extends Command {
 			channel: 'guild',
 			clientPermissions: ['SEND_MESSAGES'],
 			description: {
-				content: 'Delete all ur coins. :haha:',
+				content: 'Delete all ur coins 😂',
 				examples: ['Moni#3701'] // I would never delete my coins lul
 			},
 			args: [
