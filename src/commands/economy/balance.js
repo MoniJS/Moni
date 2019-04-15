@@ -10,7 +10,7 @@ class BalanceCommand extends Command {
 			clientPermissions: ['SEND_MESSAGES'],
 			description: {
 				content: 'See how much money you have saved up :)',
-				examples: ['@Moni#2030 balance']
+				examples: ['@Moni#2030']
 			}
 		});
 	}
