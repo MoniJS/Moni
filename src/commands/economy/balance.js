@@ -1,4 +1,3 @@
-const discord = require('discord.js');
 const eco = require('discord-economy');
 const { Command } = require('discord-akairo');
 
