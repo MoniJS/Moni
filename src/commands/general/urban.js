@@ -41,20 +41,18 @@ class UrbanCommand extends Command {
 
 		const [answer] = body.list;
 
-		const embed = this.client.util
-			.embed()
+		const embed = this.client.util.embed()
 			.setColor('RANDOM')
 			.setTitle(answer.word)
 			.setURL(answer.permalink)
-			// Don't Know what is it
-			// .addField('Definition', trim(answer.definition, 1024))
-			// .addField('Example', trim(answer.example, 1024))
+			.addField('Definition', answer.definition.substring(0, 1024))
+			.addField('Example', answer.example.substring(0, 1024))
 			.addField(
 				'Rating',
 				`${answer.thumbs_up} thumbs up. ${answer.thumbs_down} thumbs down.`
 			);
 
-		message.channel.send(embed);
+		return message.channel.send(embed);
 	}
 }
 
