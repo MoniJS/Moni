@@ -18,8 +18,6 @@ class BirdImgCommand extends Command {
 	exec(message) {
 		request('http://random.birb.pw/tweet.json/', { json: true }, (err, res, body) => {
 			if (err) return console.log(err);
-			console.log('----------');
-			console.log(body.file);
 			return message.util.send(`https://random.birb.pw/img/${body.file}`);
 		});
 	}

@@ -18,8 +18,6 @@ class CatImgCommand extends Command {
 	exec(message) {
 		request('http://aws.random.cat/meow', { json: true }, (err, res, body) => {
 			if (err) return console.log(err);
-			console.log('----------');
-			console.log(body.file);
 			return message.util.send(body.file);
 		});
 	}
