@@ -25,9 +25,10 @@ class BotInfoCommand extends Command {
 			.setColor('RANDOM')
 			.setAuthor(`${this.client.user.username} Statistics`)
 			.addField('Bot Devs', devs.join(' | '))
-			.addField('Memory',
-				[`• Using : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`,
-					`• Free : ${Math.round(os.freemem())}`])
+			.addField('Memory', [
+				`• Using : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`,
+				`• Free : ${Math.round(os.freemem())}`
+			])
 			.addField('UpTime', moment.duration(this.client.uptime).format('M [months], W [weeks], D [days], H [hrs], m [mins], s [secs]'), true)
 			.addField('General Stats', [
 				`Guilds: ${this.client.guilds.size}`,
