@@ -15,7 +15,7 @@ class ComplementCommand extends Command {
 	}
 
 	exec(message) {
-		let stuff = require('../../random/complement.json');
+		let stuff = require('../../../random/complement.json');
 		let good = stuff[Math.floor(Math.random() * stuff.length)];
 		return message.util.reply(good);
 	}

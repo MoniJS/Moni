@@ -15,7 +15,7 @@ class DogFactCommand extends Command {
 	}
 
 	exec(message) {
-		let facts = require('../../random/dogfact.json');
+		let facts = require('../../../random/dogfact.json');
 		return message.util.send(facts[Math.floor(Math.random() * facts.length)]);
 	}
 }
