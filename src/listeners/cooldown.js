@@ -12,7 +12,8 @@ class cooldownListener extends Listener {
 	exec(message, command, remaining) {
 		try {
 			return message.channel.send(`Please wait ${remaining}ms before trying the (${command}) command.`);
-		} catch {} // eslint-disable-line 
+		} catch {}
+		// eslint-disable-line
 	}
 }
 
