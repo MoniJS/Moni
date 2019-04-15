@@ -36,7 +36,7 @@ Moni is a Discord ChatBot made with [JavaScript](https://www.javascript.com/) an
 - [Node.js](https://nodejs.org/en/)
 - [Discord-Akairo](https://github.com/discord-akairo/discord-akairo)
 
-# Contributing
+## Contributing
 
 **The issue tracker is only for bug reports and enhancement suggestions. If you have a question, please ask it in the [Discord server](https://discord.gg/jQdFFH6) instead of opening an issue – you will get redirected there anyway.**
 
