@@ -34,9 +34,7 @@ class UrbanCommand extends Command {
 			.then(response => response.json());
 
 		if (!body.list.length) {
-			return message.channel.send(
-				`No results found for **${_query}**.`
-			);
+			return message.channel.send(`No results found for **${_query}**.`);
 		}
 
 		const [answer] = body.list;
@@ -47,10 +45,7 @@ class UrbanCommand extends Command {
 			.setURL(answer.permalink)
 			.addField('Definition', answer.definition.substring(0, 1024))
 			.addField('Example', answer.example.substring(0, 1024))
-			.addField(
-				'Rating',
-				`${answer.thumbs_up} thumbs up. ${answer.thumbs_down} thumbs down.`
-			);
+			.addField('Rating', `${answer.thumbs_up} thumbs up. ${answer.thumbs_down} thumbs down.`);
 
 		return message.channel.send(embed);
 	}
