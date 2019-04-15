@@ -5,7 +5,7 @@ const querystring = require('querystring');
 class UrbanCommand extends Command {
 	constructor() {
 		super('Urban', {
-			aliases: ['ping', 'pong'],
+			aliases: ['urban'],
 			category: 'general',
 			channel: 'guild',
 			clientPermissions: ['SEND_MESSAGES'],
