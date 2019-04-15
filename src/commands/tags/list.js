@@ -1,5 +1,4 @@
 const { Command } = require('discord-akairo');
-require('dotenv').config();
 const Tags = require(process.env.TAGS);
 
 class TagListCommand extends Command {

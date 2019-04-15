@@ -1,6 +1,5 @@
 const { Command } = require('discord-akairo');
 const Tags = require(process.env.TAGS);
-require('dotenv').config();
 const { Util } = require('discord.js');
 
 class TagDeleteCommand extends Command {

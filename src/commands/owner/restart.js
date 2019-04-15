@@ -1,6 +1,4 @@
 const { Command } = require('discord-akairo');
-const { Util, MessageEmbed } = require('discord.js');
-
 
 class RestartCommand extends Command {
 	constructor() {
