@@ -1,41 +1,40 @@
 {
-  "name": "moni",
-  "main": "index.js",
-  "dependencies": {
-    "discord-akairo": "github:discord-akairo/discord-akairo",
-    "discord-economy": "^1.0.3",
-    "discord.js": "github:discordjs/discord.js",
-    "discord.js-minesweeper": "^1.0.3",
-    "dotenv": "^7.0.0",
-    "moment": "^2.24.0",
-    "moment-duration-format": "^2.2.2",
-    "ms": "^2.1.1",
-    "node-fetch": "^2.3.0",
-    "os-utils": "^0.0.14",
-    "raven": "^2.6.4",
-    "request": "^2.88.0",
-    "sequelize": "^5.5.0",
-    "sqlite3": "^4.0.6"
-  },
-  "description": "",
-  "version": "0.0.3",
-  "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-aqua": "^4.4.1"
-  },
-  "scripts": {
-    "test": "eslint ./",
-    "start": "eslint --fix src/commands/info/stats.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/moni-js/Moni.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/moni-js/Moni/issues"
-  },
-  "homepage": "https://github.com/moni-js/Moni#readme"
+	"name": "moni",
+	"main": "index.js",
+	"description": "",
+	"version": "0.0.3",
+	"scripts": {
+		"test": "eslint ./"
+	},
+	"dependencies": {
+		"discord-akairo": "github:discord-akairo/discord-akairo",
+		"discord-economy": "^1.0.3",
+		"discord.js": "github:discordjs/discord.js",
+		"discord.js-minesweeper": "^1.0.3",
+		"dotenv": "^7.0.0",
+		"moment": "^2.24.0",
+		"moment-duration-format": "^2.2.2",
+		"ms": "^2.1.1",
+		"node-fetch": "^2.3.0",
+		"os-utils": "^0.0.14",
+		"raven": "^2.6.4",
+		"request": "^2.88.0",
+		"sequelize": "^5.5.0",
+		"sqlite3": "^4.0.6"
+	},
+	"devDependencies": {
+		"eslint": "^5.16.0",
+		"eslint-config-aqua": "^4.4.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/moni-js/Moni.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/moni-js/Moni/issues"
+	},
+	"homepage": "https://github.com/moni-js/Moni#readme"
 }
