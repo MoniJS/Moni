@@ -16,15 +16,19 @@ class TransferCommand extends Command {
 			args: [
 				{
 					id: 'member',
-					type: 'member'
+					type: 'member',
+					prompt: {
+						start: 'who is the member?',
+						retry: 'please provide a member.'
+					}
 				},
 				{
 					id: 'amount',
 					match: 'content',
 					type: 'number',
 					prompt: {
-						start: message => `${message.author}, please provide a number.`,
-						retry: message => `${message.author}, please provide a valid number.`
+						start: 'please provide a number.',
+						retry: 'please provide a valid number.'
 					}
 				}
 			]
