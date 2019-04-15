@@ -1,4 +1,4 @@
-const { Listener } = require('discord-akairo');
+/* const { Listener } = require('discord-akairo');
 
 class MessageUpdateListener extends Listener {
 	constructor() {
@@ -13,4 +13,4 @@ class MessageUpdateListener extends Listener {
 	}
 }
 
-module.exports = MessageUpdateListener;
+module.exports = MessageUpdateListener;*/
