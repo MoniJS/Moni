@@ -14,10 +14,10 @@ class NPMCommand extends Command {
 				{
 					id: 'pkg',
 					prompt: {
-						start: message => `${message.author}, what NPM pkg would you like to search for?`
+						start: 'what NPM pkg would you like to search for?'
 					},
 					match: 'content',
-					type: pkg => pkg ? encodeURIComponent(pkg.replace(/ /g, '-')) : null
+					type: (_, pkg) => pkg ? encodeURIComponent(pkg.replace(/ /g, '-')) : null
 				}
 			],
 			description: {
@@ -58,22 +58,7 @@ class NPMCommand extends Command {
 		if (message.channel.type === 'dm' || !message.channel.permissionsFor(message.guild.me).has(['ADD_REACTIONS', 'MANAGE_MESSAGES'], false)) {
 			return message.util.send({ embed });
 		}
-		const msg = await message.util.send({ embed });
-		msg.react('🗑');
-		let react;
-		try {
-			react = await msg.awaitReactions(
-				(reaction, user) => reaction.emoji.name === '🗑' && user.id === message.author.id,
-				{ max: 1, time: 30000, errors: ['time'] }
-			);
-		} catch (error) {
-			msg.reactions.removeAll();
-
-			return message;
-		}
-		react.first().message.delete();
-
-		return message;
+		return message.util.send({ embed });
 	}
 
 	_trimArray(arr) {
