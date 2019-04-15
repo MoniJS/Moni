@@ -10,7 +10,7 @@ class WorkCommand extends Command {
 			clientPermissions: ['SEND_MESSAGES'],
 			description: {
 				content: 'Work for Coins',
-				examples: ['@Moni#2030 work'] // I would never delete my coins lul
+				examples: [''] // I would never delete my coins lul
 			}
 		});
 	}
