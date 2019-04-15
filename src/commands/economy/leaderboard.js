@@ -17,7 +17,8 @@ class LeaderboardCommand extends Command {
 			args: [
 				{
 					id: 'member',
-					type: 'member'
+					type: 'member',
+					default: message => message.member
 				}
 			]
 		});
