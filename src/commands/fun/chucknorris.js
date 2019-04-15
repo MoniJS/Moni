@@ -1,4 +1,3 @@
-
 const { Command } = require('discord-akairo');
 const request = require('request');
 
