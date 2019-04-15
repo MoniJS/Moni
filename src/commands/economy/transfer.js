@@ -35,7 +35,11 @@ class TransferCommand extends Command {
 		if (output.balance < amount) return message.reply('You cant send an amount that is bigger that your balance.');
 
 		let transfer = await eco.Transfer(message.author.id, user.id, amount);
-		return message.reply(`:tada: Sucess!!\nBalance from ${message.author.tag}: ${transfer.FromUser}\nBalance from ${user.tag}: ${transfer.ToUser}`);
+		return message.reply([
+			'🎉 Sucess!!',
+			`Balance from ${message.author.tag}: ${transfer.FromUser}`,
+			`Balance from ${user.tag}: ${transfer.ToUser}`
+		]);
 	}
 }
 
