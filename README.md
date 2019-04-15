@@ -20,6 +20,9 @@
 </div>
 
 ## About
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/moni-js/Moni.svg)](https://greenkeeper.io/)
+
 Moni is a Discord ChatBot made with [JavaScript](https://www.javascript.com/) and [Discord.JS](https://discord.js.org/#/) library and [Discord-Akairo](https://discord-akairo.github.io/) framework.
 
 - Open-Source
