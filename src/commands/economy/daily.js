@@ -11,7 +11,7 @@ class DailyCommand extends Command {
 			clientPermissions: ['SEND_MESSAGES'],
 			description: {
 				content: 'Get your daily bonus',
-				examples: ['@Moni#2030 daily']
+				examples: ['']
 			}
 		});
 	}

@@ -4,7 +4,7 @@ const { Command } = require('discord-akairo');
 
 class DeleteCommand extends Command {
 	constructor() {
-		super('Delete', {
+		super('delete', {
 			aliases: ['delete'],
 			category: 'owner',
 			ownerOnly: true,
@@ -12,7 +12,7 @@ class DeleteCommand extends Command {
 			clientPermissions: ['SEND_MESSAGES'],
 			description: {
 				content: 'Delete all ur coins. :haha:',
-				examples: ['@Moni#2030 delete Moni#3701'] // I would never delete my coins lul
+				examples: ['Moni#3701'] // I would never delete my coins lul
 			},
 			args: [
 				{

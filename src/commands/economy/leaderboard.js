@@ -12,7 +12,7 @@ class LeaderboardCommand extends Command {
 			clientPermissions: ['SEND_MESSAGES'],
 			description: {
 				content: 'See the richest of the richest',
-				examples: ['@Moni#2030 leaderboard']
+				examples: ['@Moni#2030']
 			},
 			args: [
 				{
