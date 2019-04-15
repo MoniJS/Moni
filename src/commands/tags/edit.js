@@ -1,6 +1,5 @@
 const { Command } = require('discord-akairo');
 const { Util } = require('discord.js');
-require('dotenv').config();
 const Tags = require(process.env.TAGS);
 
 class TagEditCommand extends Command {
@@ -19,16 +18,16 @@ class TagEditCommand extends Command {
 		});
 	}
 
-	*args(message) {
+	*args() {
 		const tag = yield {
-			type: async (message, phrase) => {
+			type: async (msg, phrase) => {
 				if (!phrase) return null;
-				const tag = await Tags.findOne({ where: { name: phrase, guild: message.guild.id } });
+				const tag = await Tags.findOne({ where: { name: phrase, guild: msg.guild.id } });
 				if (tag) return tag;
 			},
 			prompt: {
 				start: 'what tag do you want to edit?',
-				retry: (message, { phrase }) => `a tag with the name **${phrase}** does not exist.`
+				retry: (msg, { phrase }) => `a tag with the name **${phrase}** does not exist.`
 			}
 		};
 		const hoist = yield {
