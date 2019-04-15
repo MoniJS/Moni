@@ -60,7 +60,7 @@ class HelpCommand extends Command {
 		const embed = this.client.util.embed()
 			.setColor('#8387db')
 			.addField('Command List', [
-				`To view details for a command, do \`*help <command>\``
+				'To view details for a command, do `*help <command>`'
 			]);
 
 		for (const category of this.handler.categories.values()) {

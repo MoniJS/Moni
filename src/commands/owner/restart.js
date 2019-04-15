@@ -2,8 +2,6 @@ const { Command } = require('discord-akairo');
 const { Util, MessageEmbed } = require('discord.js');
 
 
-
-
 class RestartCommand extends Command {
 	constructor() {
 		super('restart', {
@@ -18,11 +16,9 @@ class RestartCommand extends Command {
 		});
 	}
 
-     async exec(message) {
-          process.exit();
-     }
-
-
+	async exec(message) {
+		process.exit();
+	}
 }
 
 module.exports = RestartCommand;

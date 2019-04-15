@@ -22,10 +22,10 @@ class TagEditCommand extends Command {
 	async *args(message) {
 		const tag = yield {
 			type: async (message, phrase) => {
-                if (!phrase) return null;
-                const tag = await Tags.findOne({ where: { name: phrase, guild: message.guild.id }});
-                if (tag) return tag;
-            },
+				if (!phrase) return null;
+				const tag = await Tags.findOne({ where: { name: phrase, guild: message.guild.id } });
+				if (tag) return tag;
+			},
 			prompt: {
 				start: 'what tag do you want to edit?',
 				retry: (message, { phrase }) => `a tag with the name **${phrase}** does not exist.`
@@ -40,17 +40,17 @@ class TagEditCommand extends Command {
 			flag: ['--unpin', '--unhoist']
 		};
 		const content = yield (
-			hoist || unhoist ?
-			{
-				match: 'rest',
-			} :
-			{
-				match: 'rest',
-				prompt: {
-					start: 'what should the new content be?'
+			hoist || unhoist
+				? {
+					match: 'rest'
 				}
-			}
-		)
+				: {
+					match: 'rest',
+					prompt: {
+						start: 'what should the new content be?'
+					}
+				}
+		);
 		return { tag, hoist, unhoist, content };
 	}
 
@@ -63,7 +63,7 @@ class TagEditCommand extends Command {
 		}
 
 		await tag.update({
-			content: content ? Util.cleanContent(content, message) : tag.content,
+			content: content ? Util.cleanContent(content, message) : tag.content
 		});
 
 		return message.util.reply(`successfully edited **${tag.name}**${hoist ? ' to be hoisted.' : '.'}`);

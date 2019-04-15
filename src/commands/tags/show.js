@@ -16,14 +16,14 @@ class TagShowCommand extends Command {
 					match: 'content',
 					type: 'lowercase',
 					prompt: {
-						start: `what tag would you like to see?`
+						start: 'what tag would you like to see?'
 					}
 				}
 			],
 			description: {
 				content: 'Displays a tag.',
 				usage: '<tag>'
-			},
+			}
 		});
 	}
 
@@ -31,7 +31,7 @@ class TagShowCommand extends Command {
 		if (!name) return;
 		name = Util.cleanContent(name, message);
 
-		const tag = await Tags.findOne({ where: { guild: message.guild.id, name: name }});
+		const tag = await Tags.findOne({ where: { guild: message.guild.id, name } });
 
 		if (tag) await tag.update({ uses: tag.uses + 1 });
 

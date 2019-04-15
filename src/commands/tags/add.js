@@ -18,10 +18,10 @@ class TagAddCommand extends Command {
 						phrase = Util.cleanContent(phrase.toLowerCase(), message);
 						const tag = await Tags.findOne({ where: { name: phrase, guild: message.guild.id } });
 						if (tag) return null;
-						else return phrase;
+						return phrase;
 					},
 					prompt: {
-						start: `what should the tag be named?`,
+						start: 'what should the tag be named?',
 						retry: 'this tag already exist.'
 					}
 				},
@@ -29,7 +29,7 @@ class TagAddCommand extends Command {
 					id: 'content',
 					match: 'rest',
 					prompt: {
-						start: `what should the content of the tag be?`
+						start: 'what should the content of the tag be?'
 					}
 				},
 				{
@@ -55,11 +55,11 @@ class TagAddCommand extends Command {
 		}
 
 		await Tags.create({
-			name: name,
-			content: content,
+			name,
+			content,
 			user: message.author.id,
-			guild: message.guild.id,
-		})
+			guild: message.guild.id
+		});
 
 		return message.util.reply(`a tag with the name **${name.substring(0, 256)}** has been added.`);
 	}
