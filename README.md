@@ -15,30 +15,34 @@
 <a href="https://github.com/moni-js/moni/pulls">
     <img src="https://img.shields.io/github/issues-pr/moni-js/moni.svg?style=for-the-badge&colorB=37f149" alt="Pull Request">
 </a>
+<a href="https://greenkeeper.io">
+<img src="https://badges.greenkeeper.io/moni-js/Moni.svg?style=flat-square">
+</a>
   </p>
 </br>
 </div>
 
 ## About
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/moni-js/Moni.svg)](https://greenkeeper.io/)
-
 Moni is a Discord ChatBot made with [JavaScript](https://www.javascript.com/) and [Discord.JS](https://discord.js.org/#/) library and [Discord-Akairo](https://discord-akairo.github.io/) framework.
 
 - Open-Source
 - Community Features
-- Open Source (You can change it However You Like) 
+- Open Source (You can change it However You Like)
 
 ## Links
-* [Discord.js](https://discord.js.org/#/)
-* [Node.js](https://nodejs.org/en/)
-* [Discord-Akairo](https://github.com/discord-akairo/discord-akairo)
+
+- [Discord.js](https://discord.js.org/#/)
+- [Node.js](https://nodejs.org/en/)
+- [Discord-Akairo](https://github.com/discord-akairo/discord-akairo)
 
 ## Contributing
+
 Before creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the
 [documentation]().  
 See [the contribution guide](https://github.com/moni-js/Moni/blob/master/CONTRIBUTING.md) if you'd like to submit a PR.
 
 ## Help
+
 If you don't understand something or, you are experiencing problems, or you just need a gentle
 nudge in the right direction, please don't hesitate to join our official [Moni](https://discord.gg/jQdFFH6) Discord Server.
