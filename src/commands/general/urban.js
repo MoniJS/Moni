@@ -11,7 +11,7 @@ class UrbanCommand extends Command {
       clientPermissions: ["SEND_MESSAGES"],
       description: {
         content: "Searchs Urban Dictionary",
-        examples: ["!urban hello world"]
+        examples: ["hello world"]
       }
     });
   }
