@@ -50,9 +50,7 @@ class MineCommand extends Command {
 		const minesweeper = new Minesweeper({ rows, columns, mines });
 		const matrix = minesweeper.start();
 
-		return matrix
-			? message.channel.send(matrix)
-			: message.channel.send(':warning: You have provided invalid data.');
+		return matrix ? message.channel.send(matrix) : message.channel.send(':warning: You have provided invalid data.');
 	}
 }
 
