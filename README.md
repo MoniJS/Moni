@@ -15,6 +15,15 @@
 <a href="https://github.com/moni-js/moni/pulls">
     <img src="https://img.shields.io/github/issues-pr/moni-js/moni.svg?style=for-the-badge&colorB=37f149" alt="Pull Request">
 </a>
+<a>
+  <img src="https://forthebadge.com/images/badges/built-with-love.svg">
+</a>
+   <a>
+   <img src="https://forthebadge.com/images/badges/made-with-javascript.svg">  
+   </a>
+  <a>
+    <img src="https://forthebadge.com/images/badges/built-by-developers.svg">
+   </a> 
 <a href="https://greenkeeper.io">
 <img src="https://badges.greenkeeper.io/moni-js/Moni.svg?style=flat-square">
 </a>
