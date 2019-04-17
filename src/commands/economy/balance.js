@@ -17,7 +17,7 @@ class BalanceCommand extends Command {
 
 	async exec(message) {
 		// eslint-disable-next-line new-cap
-		let output = await eco.FetchBalance(message.author.id);
+		const output = await eco.FetchBalance(message.author.id);
 		return message.channel.send(`Yo ${message.author.tag}! My senses say you own ${output.balance} coins.`);
 	}
 }
