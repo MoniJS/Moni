@@ -1,5 +1,4 @@
 const { Command } = require('discord-akairo');
-const Discord = require('discord.js');
 
 class RulesCommand extends Command {
 	constructor() {
@@ -16,7 +15,7 @@ class RulesCommand extends Command {
 	}
 
 	exec(message) {
-		const embed = new Discord.MessageEmbed()
+		const embed = this.clien.util.embed()
 			.setColor('RANDOM')
 			.setTitle('Rules')
 			.setURL('https://github.com/moni-js/Moni')
