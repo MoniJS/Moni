@@ -15,9 +15,9 @@ class DankRateCommand extends Command {
 	}
 
 	async exec(message) {
-		let dankrate = Math.floor(Math.random() * 101);
-		const m = await message.util.reply(`You are ${dankrate}% Dank!!`);
-		m.react('💯');
+		const dankrate = Math.floor(Math.random() * 101);
+		const msg = await message.util.reply(`You are ${dankrate}% Dank!!`);
+		msg.react('💯');
 	}
 }
 

@@ -15,8 +15,8 @@ class FortuneCommand extends Command {
 	}
 
 	exec(message) {
-		let fortunes = require('../../../random/fortune.json');
-		let Randomfortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+		const fortunes = require('../../../random/fortune.json');
+		const Randomfortune = fortunes[Math.floor(Math.random() * fortunes.length)];
 		return message.util.send(Randomfortune);
 	}
 }

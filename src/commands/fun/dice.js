@@ -15,8 +15,8 @@ class DiceCommand extends Command {
 	}
 
 	exec(message) {
-		let Roll = require('../../../random/dice.json');
-		let randomRoll = Roll[Math.floor(Math.random() * Roll.length)];
+		const Roll = require('../../../random/dice.json');
+		const randomRoll = Roll[Math.floor(Math.random() * Roll.length)];
 		return message.util.send(`#${randomRoll}`);
 	}
 }
