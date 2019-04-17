@@ -412,7 +412,8 @@ discord.js-minesweeper@^1.0.3:
 
 "discord.js@github:discordjs/discord.js":
   version "12.0.0-dev"
-  resolved "https://codeload.github.com/discordjs/discord.js/tar.gz/d9a053df67b780b85e09657345bfa7c06c9cf41b"
+  uid b5320299f79c5ccfba8dac95699d2d7202682b56
+  resolved "https://codeload.github.com/discordjs/discord.js/tar.gz/b5320299f79c5ccfba8dac95699d2d7202682b56"
   dependencies:
     form-data "^2.3.3"
     node-fetch "^2.3.0"
