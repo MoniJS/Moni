@@ -13,8 +13,10 @@ class MessageListener extends Listener {
 	exec(message) {
 		if (this.client.settings.get(message.guild, 'badwords', true)) {
 			if (badwords.some(word => message.content.toLowerCase().includes(word))) {
-				message.delete();
-				return message.channel.send(`${message.author}, no bad words Idiot.`);
+				try {
+					message.delete();
+					return message.channel.send(`${message.author}, no bad words Idiot.`);
+				} catch {} // eslint-disable-line
 			}
 		}
 	}
