@@ -15,7 +15,6 @@ class MessageListener extends Listener {
 			if (badwords.some(word => message.content.toLowerCase().includes(word))) {
 				message.delete();
 				return message.channel.send(`${message.author}, no bad words Idiot.`);
-				return message.author.send(`You said the bad word ${badwords}.`);
 			}
 		}
 	}
