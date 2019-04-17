@@ -17,7 +17,7 @@ class NPMCommand extends Command {
 						start: 'what NPM pkg would you like to search for?'
 					},
 					match: 'content',
-					type: (_, pkg) => pkg ? encodeURIComponent(pkg.replace(/ /g, '-')) : null
+					type: (_, pkg) => pkg ? encodeURIComponent(pkg.toLowerCase().replace(/ /g, '-')) : null
 				}
 			],
 			description: {
