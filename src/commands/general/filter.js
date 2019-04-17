@@ -14,10 +14,10 @@ class FilterCommand extends Command {
 
 	exec(message) {
 		if (this.client.settings.get(message.guild, 'badwords', true)) {
-			this.client.settings.set(message.guild.id, 'badwprds', false);
+			this.client.settings.set(message.guild, 'badwords', false);
 			return message.util.reply('Successfully disabled bad words filter.');
 		}
-		this.client.settings.set(message.guild.id, 'badwords', true);
+		this.client.settings.set(message.guild, 'badwords', true);
 		return message.util.reply('Successfully enabled bad words filter.');
 	}
 }
