@@ -1,14 +1,10 @@
 const { Command } = require('discord-akairo');
-const Discord = require('discord.js');
-const { version } = require('../../../package.json');
-
 
 class InviteCommand extends Command {
 	constructor() {
 		super('invite', {
 			aliases: ['invite'],
 			category: 'general',
-			channel: 'guild',
 			clientPermissions: ['SEND_MESSAGES', 'EMBED_LINKS'],
 			description: {
 				content: 'Displays the invite link for the bot'
@@ -17,10 +13,10 @@ class InviteCommand extends Command {
 	}
 
 	exec(message) {
-		const embed = new Discord.MessageEmbed()
+		const embed = this.client.util.embed()
 			.setColor('RANDOM')
-			.addField('Invite', '[Invite me to your server by clicking here](https://discordapp.com/oauth2/authorize?client_id=550460160829816833&scope=bot&permissions=8\n)')
-			.setFooter(`${this.client.user.username} ${version}`, this.client.user.avatarURL);
+			.setTitle(`Invite ${this.client.user.username} to your server!`)
+			.setURL(`https://discordapp.com/oauth2/authorize?client_id=${this.client.user.id}&scope=bot&permissions=8`);
 		return message.util.send({ embed });
 	}
 }
