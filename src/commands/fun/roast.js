@@ -16,7 +16,7 @@ class RoastCommand extends Command {
 
 	exec(message) {
 		const roast = require('../../../random/roast.json');
-		let randomRoast = roast[Math.floor(Math.random() * roast.length)];
+		const randomRoast = roast[Math.floor(Math.random() * roast.length)];
 		return message.util.reply(randomRoast);
 	}
 }
