@@ -30,7 +30,7 @@ class DeleteCommand extends Command {
 	async exec(message, { member }) {
 		const { user } = member;
 		if (!user) return message.reply('Tell me who to delete you stupid.');
-		let output = await eco.Delete(user.id);
+		const output = await eco.Delete(user.id);
 		if (output.deleted === true) return message.reply('Succesfully deleted the user out of the database!');
 		return message.reply('Error: Could not find the user in database.');
 	}

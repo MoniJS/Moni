@@ -14,7 +14,7 @@ class RestartCommand extends Command {
 		});
 	}
 
-	exec(message) {
+	exec() {
 		process.exit();
 	}
 }
