@@ -17,9 +17,6 @@ class InviteCommand extends Command {
 	}
 
 	exec(message) {
-		const prefix = this.handler.prefix(message);
-		const owner = this.client.users.get(this.client.ownerID);
-
 		const embed = new Discord.MessageEmbed()
 			.setColor('RANDOM')
 			.addField('Invite', '[Invite me to your server by clicking here](https://discordapp.com/oauth2/authorize?client_id=550460160829816833&scope=bot&permissions=8\n)')
