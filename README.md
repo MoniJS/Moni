@@ -19,13 +19,13 @@
   <img src="https://forthebadge.com/images/badges/built-with-love.svg">
 </a>
    <a>
-   <img src="https://forthebadge.com/images/badges/made-with-javascript.svg">  
+   <img src="https://forthebadge.com/images/badges/made-with-javascript.svg">
    </a>
   <a>
     <img src="https://forthebadge.com/images/badges/built-by-developers.svg">
-   </a> 
+   </a>
 <a href="https://greenkeeper.io">
-<img src="https://badges.greenkeeper.io/moni-js/Moni.svg?style=flat-square">
+<img src="https://img.shields.io/badge/Greenkeeper-Enabled-green.svg?style=for-the-badge&colorB=37f149">
 </a>
   </p>
 </br>
@@ -50,7 +50,7 @@ Moni is a Discord ChatBot made with [JavaScript](https://www.javascript.com/) an
 **The issue tracker is only for bug reports and enhancement suggestions. If you have a question, please ask it in the [Discord server](https://discord.gg/jQdFFH6) instead of opening an issue – you will get redirected there anyway.**
 
 If you wish to contribute to Moni codebase or documentation, feel free to fork the repository and submit a
-pull request.Also a Requirement is join the [Discord server](https://discord.gg/jQdFFH6). 
+pull request.Also a Requirement is join the [Discord server](https://discord.gg/jQdFFH6).
 This way we can contact the person regarding the issue. :)
 ## Setup
 To get ready to work on the codebase, please do the following:
