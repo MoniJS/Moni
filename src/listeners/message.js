@@ -15,7 +15,7 @@ class MessageListener extends Listener {
 			if (badwords.some(word => message.content.toLowerCase().includes(word))) {
 				try {
 					message.delete();
-					return message.channel.send(`${message.author}, no bad words Idiot.`);
+					return message.member.send(`${message.author}, you said the bad word.`);
 				} catch {} // eslint-disable-line
 			}
 		}
