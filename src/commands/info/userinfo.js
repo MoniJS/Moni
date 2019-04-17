@@ -26,7 +26,8 @@ class UserCommand extends Command {
 	exec(message, { member }) {
 		const { user } = member;
 
-		const embed = this.client.util.embed().setColor('RANDOM')
+		const embed = this.client.util.embed()
+			.setColor('RANDOM')
 			.setAuthor(`${member.user.tag} (${member.user.id})`, user.displayAvatarURL())
 			.setThumbnail(user.displayAvatarURL())
 			.addField('❯ Member Details', [
