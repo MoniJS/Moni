@@ -11,7 +11,7 @@
 		"discord-economy": "^1.0.3",
 		"discord.js": "github:discordjs/discord.js",
 		"discord.js-minesweeper": "^1.0.3",
-		"dotenv": "^7.0.0",
+		"dotenv": "^8.0.0",
 		"moment": "^2.24.0",
 		"moment-duration-format": "^2.2.2",
 		"ms": "^2.1.1",
