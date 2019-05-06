@@ -1494,9 +1494,9 @@ sequelize@^4.38.0:
     wkx "^0.4.1"
 
 sequelize@^5.6.1:
-  version "5.8.2"
-  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-5.8.2.tgz#19674a86fe12815b1fbceb010869538c9d6ec60c"
-  integrity sha512-UUNPza1twZKpc4wwO23X8aqjrdk2AB7nU2RX6KTXZm6FnxrJtPQaZgPyeHplCnmzXfXzX/OsFCZqGiCDY0oejw==
+  version "5.8.5"
+  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-5.8.5.tgz#3bb63b5e5b65eedc46d57fc69bb251b8af1bd73a"
+  integrity sha512-FvI3ceqYnNmgbBDeMvD7kdPFAnqelchiMavM+v+1SC+J19M4NThLSxrYL+yJWUJCSe++dHTyv2MEe7OBDVL6mw==
   dependencies:
     bluebird "^3.5.0"
     cls-bluebird "^2.1.0"
