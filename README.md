@@ -4,7 +4,7 @@
 	  <a href="https://discordapp.com/invite/5gcPC6B"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.svg.png" width="50%"></a>
 	 </p>
 	  <p>
-	    <a href="https://discord.gg/jQdFFH6"><img src="https://img.shields.io/discord/550140222822809610.svg?colorB=Blue&logo=discord&label=Support&style=for-the-badge" alt="Discord server" /></a>
+	    <a href="https://discord.gg/jQdFFH6"><img src="https://img.shields.io/discord/437048931827056642.svg?colorB=Blue&logo=discord&label=Support&style=for-the-badge" alt="Discord server" /></a>
 	    <a href="https://discordapp.com/invite/5gcPC6B">
     <img src="https://img.shields.io/travis/repl-it-discord/repl-it-electron/dev.svg?style=for-the-badge" alt="Build">
 </a>
@@ -43,3 +43,4 @@ See feature implementation details on the [roadmap](https://github.com/repl-it-d
 ## Acknowledgements
 
 [@mat1](https://repl.it/@mat1) for Discord Rich Presence Integration
+[@MoniS10](https://github.com/MoniS10) for making this look pretty.
