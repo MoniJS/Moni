@@ -1,46 +1,41 @@
 <div align="center">
-	  <br />
-	  <p>
-	  <a href="https://discordapp.com/invite/5gcPC6B"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.svg.png" width="50%"></a>
-	 </p>
-	  <p>
-	    <a href="https://discord.gg/jQdFFH6"><img src="https://img.shields.io/discord/437048931827056642.svg?colorB=Blue&logo=discord&label=Support&style=for-the-badge" alt="Discord server" /></a>
-	    <a href="https://discordapp.com/invite/5gcPC6B">
-    <img src="https://img.shields.io/travis/repl-it-discord/repl-it-electron/dev.svg?style=for-the-badge" alt="Build">
+  <br />
+  <p>
+  <a href="https://discord.gg/jQdFFH6"><img src="https://cdn.discordapp.com/attachments/548692280350081026/559092648745500727/devil.png" width="50%"></a>
+ </p>
+  <p>
+    <a href="https://discord.gg/jQdFFH6"><img src="https://img.shields.io/discord/550140222822809610.svg?colorB=Blue&logo=discord&label=Support&style=for-the-badge" alt="Discord server" /></a>
+    <a href="https://discord.gg/jQdFFH6">
+    <img src="https://img.shields.io/travis/moni-js/Moni/master.svg?style=for-the-badge" alt="Build">
 </a>
-	<a href="https://github.com/repl-it-discord/repl-it-electron/issues">
-	    <img src="https://img.shields.io/github/issues/repl-it-discord/repl-it-electron.svg?style=for-the-badge&colorB=37f149" alt="Issues">
-	</a>
-	<a href="https://github.com/repl-it-discord/repl-it-electron/pulls">
-	    <img src="https://img.shields.io/github/issues-pr/repl-it-discord/repl-it-electron.svg?style=for-the-badge&colorB=37f149" alt="Pull Request">
-	</a>
-	  </p>
-	</br>
-	</div>
+    <a href="https://discord.gg/jQdFFH6"><img src="https://img.shields.io/github/languages/top/moni-js/Moni.svg?colorB=f0db4f&style=for-the-badge" alt="Language" /></a>
+<a href="https://github.com/moni-js/moni/issues">
+    <img src="https://img.shields.io/github/issues/moni-js/moni.svg?style=for-the-badge&colorB=37f149" alt="Issues">
+</a>
+<a href="https://github.com/moni-js/moni/pulls">
+    <img src="https://img.shields.io/github/issues-pr/moni-js/moni.svg?style=for-the-badge&colorB=37f149" alt="Pull Request">
+</a>
+  </p>
+</br>
+</div>
 
 ## About
+Moni is a Discord ChatBot made with [JavaScript](https://www.javascript.com/) and [Discord.JS](https://discord.js.org/#/).
 
-[repl.it](https://repl.it) is an online coding platform that provides an IDE all in your browser. `repl-it-electron` is an unofficial native desktop application that interfaces wth repl.it. It intends to improve developer experience through simplicity. As an electron app you can use it on Mac OS, Windows 7, 8 and 10.
-## Features
-* Discord Rich Presence (using DiscordRPC)
-* Work with two windows simultaneously
-* Change themes (other than *Light* and *Dark*)
-* Works on macOS and Windows 7, 8, 10
+- Open-Source
+- Community Features
+- Open Source (You can change it However You Like)
+
+## Links
+* [Discord.js](https://discord.js.org/#/)
+* [Node.js](https://nodejs.org/en/)
+* [Discord-Akairo](https://github.com/discord-akairo/discord-akairo)
+
 ## Contributing
+Before creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the
+[documentation]().
+See [the contribution guide](https://github.com/moni-js/Moni/blob/master/CONTRIBUTING.md) if you'd like to submit a PR.
 
-```bash
-git clone --recurse-submodules https://github.com/repl-it-discord/repl-it-electron
-cd repl-it-electron
-npm install -g --production windows-build-tools # windows
-npm install
-npm start
-```
-
-See [CONTRIBUTING.md](./.github/CONTRIBUTING.md) before contributing
-
-See feature implementation details on the [roadmap](https://github.com/repl-it-discord/repl-it-electron/projects)
-
-## Acknowledgements
-
-[@mat1](https://repl.it/@mat1) for Discord Rich Presence Integration
-[@MoniS10](https://github.com/MoniS10) for making this look pretty.
+## Help
+If you don't understand something or, you are experiencing problems, or you just need a gentle
+nudge in the right direction, please don't hesitate to join our official [Moni](https://discord.gg/jQdFFH6) Discord Server.
