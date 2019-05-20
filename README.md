@@ -20,7 +20,7 @@
 </div>
 
 ## About
-Moni is a Discord ChatBot made with [JavaScript](https://www.javascript.com/) and [Discord.JS](https://discord.js.org/#/).
+Moni is a Discord Bot made with [JavaScript](https://www.javascript.com/) and [Discord.JS](https://discord.js.org/#/).
 
 - Open-Source
 - Community Features
