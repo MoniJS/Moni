@@ -1,22 +1,22 @@
-const { Command } = require("discord-akairo");
-const fetch = require("node-fetch");
-const qs = require("querystring");
+const { Command } = require('discord-akairo');
+const fetch = require('node-fetch');
+const qs = require('querystring');
 
 class UrbanCommand extends Command {
 	constructor() {
-		super("urban", {
-			aliases: ["urban"],
-			category: "general",
-			channel: "guild",
-			clientPermissions: ["SEND_MESSAGES"],
+		super('urban', {
+			aliases: ['urban'],
+			category: 'general',
+			channel: 'guild',
+			clientPermissions: ['SEND_MESSAGES'],
 			description: {
-				content: "Searchs Urban Dictionary",
-				examples: ["hello world"]
+				content: 'Searchs Urban Dictionary',
+				examples: ['hello world']
 			},
 			args: [
 				{
-					id: "_query",
-					content: "match"
+					id: '_query',
+					content: 'match'
 				}
 			]
 		});
@@ -24,7 +24,7 @@ class UrbanCommand extends Command {
 
 	async exec(message, { _query }) {
 		if (!_query) {
-			return message.channel.send("You need to supply a search term!");
+			return message.channel.send('You need to supply a search term!');
 		}
 
 		const query = qs.stringify({ term: _query });
@@ -37,12 +37,12 @@ class UrbanCommand extends Command {
 
 		const [answer] = body.list;
 		const embed = this.client.util.embed()
-			.setColor("RANDOM")
+			.setColor('RANDOM')
 			.setTitle(answer.word)
 			.setURL(answer.permalink)
-			.addField("Definition", answer.definition.substring(0, 1024))
-			.addField("Example", answer.example.substring(0, 1024))
-			.addField("Rating", `${answer.thumbs_up} thumbs up. ${answer.thumbs_down} thumbs down.`);
+			.addField('Definition', answer.definition.substring(0, 1024))
+			.addField('Example', answer.example.substring(0, 1024))
+			.addField('Rating', `${answer.thumbs_up} thumbs up. ${answer.thumbs_down} thumbs down.`);
 		return message.channel.send(embed);
 	}
 }

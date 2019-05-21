@@ -1,29 +1,29 @@
-const { Command } = require("discord-akairo");
-const { MessageEmbed } = require("discord.js");
-const fetch = require("node-fetch");
-const moment = require("moment");
-require("moment-duration-format");
+const { Command } = require('discord-akairo');
+const { MessageEmbed } = require('discord.js');
+const fetch = require('node-fetch');
+const moment = require('moment');
+require('moment-duration-format');
 
 class NPMCommand extends Command {
 	constructor() {
-		super("npm", {
-			aliases: ["npm", "npm-package"],
-			category: "dev",
-			clientPermissions: ["EMBED_LINKS"],
+		super('npm', {
+			aliases: ['npm', 'npm-package'],
+			category: 'dev',
+			clientPermissions: ['EMBED_LINKS'],
 			args: [
 				{
-					id: "pkg",
+					id: 'pkg',
 					prompt: {
-						start: "what NPM pkg would you like to search for?"
+						start: 'what NPM pkg would you like to search for?'
 					},
-					match: "content",
-					type: (_, pkg) => pkg ? encodeURIComponent(pkg.toLowerCase().replace(/ /g, "-")) : null
+					match: 'content',
+					type: (_, pkg) => pkg ? encodeURIComponent(pkg.toLowerCase().replace(/ /g, '-')) : null
 				}
 			],
 			description: {
-				content: "Responds with information on an NPM package.",
-				usage: "<query>",
-				examples: ["discord.js", "discord-akairo", "node-fetch"]
+				content: 'Responds with information on an NPM package.',
+				usage: '<query>',
+				examples: ['discord.js', 'discord-akairo', 'node-fetch']
 			}
 		});
 	}
@@ -31,29 +31,29 @@ class NPMCommand extends Command {
 	async exec(message, { pkg }) {
 		const res = await fetch(`https://registry.npmjs.com/${pkg}`);
 		if (res.status === 404) {
-			return message.util.reply("I couldn't find the requested information.");
+			return message.util.reply('I couldn\'t find the requested information.');
 		}
 		const body = await res.json();
 		if (body.time === undefined) {
-			return message.util.reply("commander of this package decided to unpublish it.");
+			return message.util.reply('commander of this package decided to unpublish it.');
 		}
-		const version = body.versions[body["dist-tags"].latest];
-		const maintainers = this._trimArray(body.maintainers.map(user => user.name).join(", "));
-		const dependencies = version.dependencies ? this._trimArray(Object.keys(version.dependencies)) : "";
+		const version = body.versions[body['dist-tags'].latest];
+		const maintainers = this._trimArray(body.maintainers.map(user => user.name).join(', '));
+		const dependencies = version.dependencies ? this._trimArray(Object.keys(version.dependencies)) : '';
 		const embed = new MessageEmbed()
 			.setColor(0xCB0000)
-			.setAuthor("NPM", "https://i.imgur.com/ErKf5Y0.png", "https://www.npmjs.com/")
+			.setAuthor('NPM', 'https://i.imgur.com/ErKf5Y0.png', 'https://www.npmjs.com/')
 			.setTitle(body.name)
 			.setURL(`https://www.npmjs.com/package/${pkg}`)
-			.setDescription(body.description || "No description.")
-			.addField("Version", body["dist-tags"].latest, true)
-			.addField("License", body.license || "None", true)
-			.addField("Author", body.author ? body.author.name : "???", true)
-			.addField("Creation Date", moment.utc(body.time.created).format("DD-MM-YYYY kk:mm:ss"), true)
-			.addField("Modification Date", moment.utc(body.time.modified).format("DD-MM-YYYY kk:mm:ss"), true)
-			.addField("Main File", version.main || "index.js", true)
-			.addField("Dependencies", dependencies && dependencies.length ? dependencies.join(", ") : "None")
-			.addField("Maintainers", maintainers);
+			.setDescription(body.description || 'No description.')
+			.addField('Version', body['dist-tags'].latest, true)
+			.addField('License', body.license || 'None', true)
+			.addField('Author', body.author ? body.author.name : '???', true)
+			.addField('Creation Date', moment.utc(body.time.created).format('DD-MM-YYYY kk:mm:ss'), true)
+			.addField('Modification Date', moment.utc(body.time.modified).format('DD-MM-YYYY kk:mm:ss'), true)
+			.addField('Main File', version.main || 'index.js', true)
+			.addField('Dependencies', dependencies && dependencies.length ? dependencies.join(', ') : 'None')
+			.addField('Maintainers', maintainers);
 		return message.util.send({ embed });
 	}
 

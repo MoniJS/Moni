@@ -1,11 +1,11 @@
-const { Guild } = require("discord.js");
-const { SequelizeProvider } = require("discord-akairo");
+const { Guild } = require('discord.js');
+const { SequelizeProvider } = require('discord-akairo');
 
 class SettingsProvider extends SequelizeProvider {
 	constructor(table) {
 		super(table, {
-			idColumn: "guildID",
-			dataColumn: "settings"
+			idColumn: 'guildID',
+			dataColumn: 'settings'
 		});
 	}
 
@@ -31,9 +31,9 @@ class SettingsProvider extends SequelizeProvider {
 
 	static getGuildID(guild) {
 		if (guild instanceof Guild) return guild.id;
-		if (guild === "global" || guild === null) return "global";
-		if (typeof guild === "string" && /^\d+$/.test(guild)) return guild;
-		throw new TypeError("Invalid guild specified. Must be a Guild instance, guild ID, \"global\", or null.");
+		if (guild === 'global' || guild === null) return 'global';
+		if (typeof guild === 'string' && /^\d+$/.test(guild)) return guild;
+		throw new TypeError('Invalid guild specified. Must be a Guild instance, guild ID, "global", or null.');
 	}
 }
 

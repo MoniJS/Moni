@@ -1,27 +1,27 @@
-const { Command } = require("discord-akairo");
+const { Command } = require('discord-akairo');
 const Tags = require(process.env.TAGS);
-const { Util } = require("discord.js");
+const { Util } = require('discord.js');
 
 class TagShowCommand extends Command {
 	constructor() {
-		super("tag-show", {
-			aliases: ["tag", "tag-show"],
-			category: "tags",
-			channel: "guild",
+		super('tag-show', {
+			aliases: ['tag', 'tag-show'],
+			category: 'tags',
+			channel: 'guild',
 			ratelimit: 2,
 			args: [
 				{
-					id: "name",
-					match: "content",
-					type: "lowercase",
+					id: 'name',
+					match: 'content',
+					type: 'lowercase',
 					prompt: {
-						start: "what tag would you like to see?"
+						start: 'what tag would you like to see?'
 					}
 				}
 			],
 			description: {
-				content: "Displays a tag.",
-				usage: "<tag>"
+				content: 'Displays a tag.',
+				usage: '<tag>'
 			}
 		});
 	}

@@ -1,7 +1,7 @@
-const { db } = require("../struct/Database");
-const Sequelize = require("sequelize");
+const { db } = require('../struct/Database');
+const Sequelize = require('sequelize');
 
-const Tags = db.define("tags", {
+const Tags = db.define('tags', {
 	name: {
 		type: Sequelize.TEXT,
 		allowNull: false
@@ -16,7 +16,7 @@ const Tags = db.define("tags", {
 	},
 	content: {
 		type: Sequelize.TEXT,
-		defaultValue: ""
+		defaultValue: ''
 	},
 	uses: {
 		type: Sequelize.INTEGER,

@@ -1,13 +1,13 @@
 /* eslint-disable multiline-ternary */
-const { Listener } = require("discord-akairo");
-const Raven = require("raven");
+const { Listener } = require('discord-akairo');
+const Raven = require('raven');
 
 class CommandStartedListener extends Listener {
 	constructor() {
-		super("commandstarted", {
-			emitter: "commandHandler",
-			event: "commandStarted",
-			category: "commandHandler"
+		super('commandstarted', {
+			emitter: 'commandHandler',
+			event: 'commandStarted',
+			category: 'commandHandler'
 		});
 	}
 
@@ -15,13 +15,13 @@ class CommandStartedListener extends Listener {
 		console.log({
 			time: message.createdAt,
 			command: command.id,
-			guild: message.guild ? `${message.guild.name} (${message.guild.id})` : "DM",
+			guild: message.guild ? `${message.guild.name} (${message.guild.id})` : 'DM',
 			user: `${message.author.tag} (${message.author.id})`,
 			args: message.content
 		});
 
 		Raven.captureBreadcrumb({
-			message: "command_started",
+			message: 'command_started',
 			category: command.category.id,
 			data: {
 				user: {

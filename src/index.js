@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const Client = require('./src/client/Client');
+const Client = require('./client/Client');
 const client = new Client({
 	owner: process.env.OWNER,
 	token: process.env.TOKEN
@@ -21,7 +21,6 @@ client
 	.on('reconnect', () => console.log('[CLIENT RECONNECTING]'))
 	.on('error', err => console.log(`[CLIENT ERROR] ${err.message}`))
 	.on('warn', warn => console.log(`[CLIENT WARN] ${warn}`));
-
 client.start();
 
 process.on('unhandledRejection', err => {

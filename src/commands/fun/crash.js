@@ -1,15 +1,15 @@
-const { Command } = require("discord-akairo");
+const { Command } = require('discord-akairo');
 
 class CrashCommand extends Command {
 	constructor() {
-		super("Crash", {
-			aliases: ["crash"],
-			category: "fun",
-			channel: "guild",
-			clientPermissions: ["SEND_MESSAGES"],
+		super('Crash', {
+			aliases: ['crash'],
+			category: 'fun',
+			channel: 'guild',
+			clientPermissions: ['SEND_MESSAGES'],
 			description: {
-				content: "Try Me",
-				examples: [""]
+				content: 'Try Me',
+				examples: ['']
 			}
 		});
 	}

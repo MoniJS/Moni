@@ -1,21 +1,21 @@
-const { Command } = require("discord-akairo");
+const { Command } = require('discord-akairo');
 
 class YomamaCommand extends Command {
 	constructor() {
-		super("yomama", {
-			aliases: ["yomama"],
-			category: "fun",
-			channel: "guild",
-			clientPermissions: ["SEND_MESSAGES"],
+		super('yomama', {
+			aliases: ['yomama'],
+			category: 'fun',
+			channel: 'guild',
+			clientPermissions: ['SEND_MESSAGES'],
 			description: {
-				content: "Get A Random YoMama Joke.",
-				examples: [""]
+				content: 'Get A Random YoMama Joke.',
+				examples: ['']
 			}
 		});
 	}
 
 	exec(message) {
-		const joke = require("../../../random/yomama.json");
+		const joke = require('../../../random/yomama.json');
 		let randomQ = joke[Math.floor(Math.random() * joke.length)];
 		return message.util.send(randomQ);
 	}
