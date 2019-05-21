@@ -1,16 +1,16 @@
-const eco = require('discord-economy');
-const { Command } = require('discord-akairo');
+const eco = require("discord-economy");
+const { Command } = require("discord-akairo");
 
 class BalanceCommand extends Command {
 	constructor() {
-		super('balance', {
-			aliases: ['balance'],
-			category: 'economy',
-			channel: 'guild',
-			clientPermissions: ['SEND_MESSAGES'],
+		super("balance", {
+			aliases: ["balance"],
+			category: "economy",
+			channel: "guild",
+			clientPermissions: ["SEND_MESSAGES"],
 			description: {
-				content: 'See how much money you have saved up :)',
-				examples: ['@Moni#2030']
+				content: "See how much money you have saved up :)",
+				examples: ["@Moni#2030"]
 			}
 		});
 	}

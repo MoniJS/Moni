@@ -1,21 +1,21 @@
-const { Command } = require('discord-akairo');
+const { Command } = require("discord-akairo");
 
 class HackCommand extends Command {
 	constructor() {
-		super('Hack', {
-			aliases: ['hack'],
-			category: 'fun',
-			channel: 'guild',
-			clientPermissions: ['SEND_MESSAGES'],
+		super("Hack", {
+			aliases: ["hack"],
+			category: "fun",
+			channel: "guild",
+			clientPermissions: ["SEND_MESSAGES"],
 			description: {
-				content: 'Ummm. Hack Someone',
-				usage: '<member>',
-				examples: ['', 'hack @Moni', 'hack Moni']
+				content: "Ummm. Hack Someone",
+				usage: "<member>",
+				examples: ["", "hack @Moni", "hack Moni"]
 			},
 			args: [
 				{
-					id: 'member',
-					type: 'member',
+					id: "member",
+					type: "member",
 					default: message => message.member
 				}
 			]
@@ -25,31 +25,31 @@ class HackCommand extends Command {
 	exec(message, { member }) {
 		return message.util.send(`Initializing the hack on ${member} `).then(msg => {
 			setTimeout(() => {
-				msg.edit('Downloading Hacks...');
+				msg.edit("Downloading Hacks...");
 			}, 2000);
 			setTimeout(() => {
-				msg.edit('Finding Facebook Login...');
+				msg.edit("Finding Facebook Login...");
 			}, 4000);
 			setTimeout(() => {
-				msg.edit('Found Facebook Login & Password');
+				msg.edit("Found Facebook Login & Password");
 			}, 7000);
 			setTimeout(() => {
-				msg.edit('Injecting hack.exe');
+				msg.edit("Injecting hack.exe");
 			}, 9000);
 			setTimeout(() => {
-				msg.edit('Downloading User Data...');
+				msg.edit("Downloading User Data...");
 			}, 12000);
 			setTimeout(() => {
-				msg.edit('Selling data on Dark Web');
+				msg.edit("Selling data on Dark Web");
 			}, 15000);
 			setTimeout(() => {
-				msg.edit('Stealing 134.432545 Bitcoins ');
+				msg.edit("Stealing 134.432545 Bitcoins ");
 			}, 18000);
 			setTimeout(() => {
-				msg.edit('Sending BitCoins to Ip Address : 12.3.456.789.0');
+				msg.edit("Sending BitCoins to Ip Address : 12.3.456.789.0");
 			}, 23000);
 			setTimeout(() => {
-				msg.edit('Hiring Bomb Squad');
+				msg.edit("Hiring Bomb Squad");
 			}, 27000);
 			setTimeout(() => {
 				msg.edit(` ${message.author} Murdered ${member}`);

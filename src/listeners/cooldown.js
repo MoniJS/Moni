@@ -1,11 +1,11 @@
-const { Listener } = require('discord-akairo');
+const { Listener } = require("discord-akairo");
 
 class cooldownListener extends Listener {
 	constructor() {
-		super('cooldown', {
-			emitter: 'commandHandler',
-			event: 'cooldown',
-			category: 'client'
+		super("cooldown", {
+			emitter: "commandHandler",
+			event: "cooldown",
+			category: "client"
 		});
 	}
 

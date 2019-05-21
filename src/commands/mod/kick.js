@@ -1,28 +1,28 @@
-const { Command } = require('discord-akairo');
+const { Command } = require("discord-akairo");
 
 class KickCommand extends Command {
 	constructor() {
-		super('kick', {
-			aliases: ['kick'],
-			category: 'mod',
-			channel: 'guild',
-			clientPermissions: ['SEND_MESSAGES', 'KICK_MEMBERS'],
+		super("kick", {
+			aliases: ["kick"],
+			category: "mod",
+			channel: "guild",
+			clientPermissions: ["SEND_MESSAGES", "KICK_MEMBERS"],
 			description: {
-				content: 'Kick Bad People',
-				usage: '<member>',
-				examples: ['kick @Moni', 'kick Suvajit', 'kick 550460160829816833']
+				content: "Kick Bad People",
+				usage: "<member>",
+				examples: ["kick @Moni", "kick Suvajit", "kick 550460160829816833"]
 			},
 			args: [
 				{
-					id: 'member',
-					type: 'member',
+					id: "member",
+					type: "member",
 					prompt: {
-						start: 'what member do you want to ban?',
-						retry: 'please provid a valid member.'
+						start: "what member do you want to ban?",
+						retry: "please provid a valid member."
 					}
 				}
 			],
-			userPermissions: ['KICK_MEMBERS']
+			userPermissions: ["KICK_MEMBERS"]
 		});
 	}
 

@@ -1,8 +1,8 @@
-const { AkairoClient, CommandHandler, InhibitorHandler, ListenerHandler } = require('discord-akairo');
-const path = require('path');
-const Database = require('../struct/Database');
-const Setting = require('../models/settings');
-const SettingsProvider = require('../struct/SettingsProviders');
+const { AkairoClient, CommandHandler, InhibitorHandler, ListenerHandler } = require("discord-akairo");
+const path = require("path");
+const Database = require("../struct/Database");
+const Setting = require("../models/settings");
+const SettingsProvider = require("../struct/SettingsProviders");
 
 class Client extends AkairoClient {
 	constructor(config) {
@@ -11,13 +11,13 @@ class Client extends AkairoClient {
 			messageCacheLifetime: 300,
 			messageSweepInterval: 900,
 			disableEveryone: true,
-			disabledEvents: ['TYPING_START']
+			disabledEvents: ["TYPING_START"]
 		});
 
 		this.commandHandler = new CommandHandler(this, {
-			directory: path.join(__dirname, '..', 'commands'),
+			directory: path.join(__dirname, "..", "commands"),
 			aliasReplacement: /-/g,
-			prefix: message => this.settings.get(message.guild, 'prefix', '.'),
+			prefix: message => this.settings.get(message.guild, "prefix", "."),
 			allowMention: true,
 			fetchMembers: true,
 			commandUtil: true,
@@ -39,10 +39,10 @@ class Client extends AkairoClient {
 		});
 
 		this.inhibitorHandler = new InhibitorHandler(this, {
-			directory: path.join(__dirname, '..', 'inhibitors')
+			directory: path.join(__dirname, "..", "inhibitors")
 		});
 		this.listenerHandler = new ListenerHandler(this, {
-			directory: path.join(__dirname, '..', 'listeners')
+			directory: path.join(__dirname, "..", "listeners")
 		});
 
 		this.config = config;

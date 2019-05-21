@@ -1,21 +1,21 @@
-const { Command } = require('discord-akairo');
+const { Command } = require("discord-akairo");
 
 class CatFactCommand extends Command {
 	constructor() {
-		super('CatFact', {
-			aliases: ['catfacts', 'catfact'],
-			category: 'fun',
-			channel: 'guild',
-			clientPermissions: ['SEND_MESSAGES'],
+		super("CatFact", {
+			aliases: ["catfacts", "catfact"],
+			category: "fun",
+			channel: "guild",
+			clientPermissions: ["SEND_MESSAGES"],
 			description: {
-				content: 'Cat Facts',
-				examples: ['']
+				content: "Cat Facts",
+				examples: [""]
 			}
 		});
 	}
 
 	exec(message) {
-		const facts = require('../../../random/catfact.json');
+		const facts = require("../../../random/catfact.json");
 		return message.util.send(facts[Math.floor(Math.random() * facts.length)]);
 	}
 }

@@ -4,7 +4,8 @@
 	"description": "",
 	"version": "0.0.3",
 	"scripts": {
-		"test": "eslint ./"
+		"test": "eslint ./",
+		"lint": "eslint --fix src/"
 	},
 	"dependencies": {
 		"discord-akairo": "github:discord-akairo/discord-akairo",

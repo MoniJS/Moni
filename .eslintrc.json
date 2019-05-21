@@ -24,7 +24,7 @@
         ],
         "quotes": [
             "error",
-            "single"
+            "double"
         ],
         "quote-props": "off"
     }

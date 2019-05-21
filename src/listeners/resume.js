@@ -1,11 +1,11 @@
-const { Listener } = require('discord-akairo');
+const { Listener } = require("discord-akairo");
 
 class ResumeListener extends Listener {
 	constructor() {
-		super('resumed', {
-			emitter: 'client',
-			event: 'resumed',
-			category: 'client'
+		super("resumed", {
+			emitter: "client",
+			event: "resumed",
+			category: "client"
 		});
 	}
 

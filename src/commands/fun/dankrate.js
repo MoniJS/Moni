@@ -1,15 +1,15 @@
-const { Command } = require('discord-akairo');
+const { Command } = require("discord-akairo");
 
 class DankRateCommand extends Command {
 	constructor() {
-		super('DankRate', {
-			aliases: ['dankrate', 'dank'],
-			category: 'fun',
-			channel: 'guild',
-			clientPermissions: ['SEND_MESSAGES'],
+		super("DankRate", {
+			aliases: ["dankrate", "dank"],
+			category: "fun",
+			channel: "guild",
+			clientPermissions: ["SEND_MESSAGES"],
 			description: {
-				content: 'See Ur DankRate',
-				examples: ['']
+				content: "See Ur DankRate",
+				examples: [""]
 			}
 		});
 	}
@@ -17,7 +17,7 @@ class DankRateCommand extends Command {
 	async exec(message) {
 		const dankrate = Math.floor(Math.random() * 101);
 		const msg = await message.util.reply(`You are ${dankrate}% Dank!!`);
-		msg.react('💯');
+		msg.react("💯");
 	}
 }
 

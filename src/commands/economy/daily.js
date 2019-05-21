@@ -1,17 +1,17 @@
 /* eslint-disable new-cap */
-const eco = require('discord-economy');
-const { Command } = require('discord-akairo');
+const eco = require("discord-economy");
+const { Command } = require("discord-akairo");
 
 class DailyCommand extends Command {
 	constructor() {
-		super('daily', {
-			aliases: ['daily'],
-			category: 'economy',
-			channel: 'guild',
-			clientPermissions: ['SEND_MESSAGES'],
+		super("daily", {
+			aliases: ["daily"],
+			category: "economy",
+			channel: "guild",
+			clientPermissions: ["SEND_MESSAGES"],
 			description: {
-				content: 'Get your daily bonus',
-				examples: ['']
+				content: "Get your daily bonus",
+				examples: [""]
 			}
 		});
 	}

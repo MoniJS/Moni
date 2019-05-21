@@ -1,11 +1,11 @@
-const { Listener } = require('discord-akairo');
+const { Listener } = require("discord-akairo");
 
 class DisconnectListener extends Listener {
 	constructor() {
-		super('disconnect', {
-			emitter: 'client',
-			event: 'disconnect',
-			category: 'client'
+		super("disconnect", {
+			emitter: "client",
+			event: "disconnect",
+			category: "client"
 		});
 	}
 

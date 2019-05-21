@@ -1,17 +1,17 @@
-const { Command } = require('discord-akairo');
+const { Command } = require("discord-akairo");
 const Tags = require(process.env.TAGS);
-const { Util } = require('discord.js');
+const { Util } = require("discord.js");
 
 class TagDeleteCommand extends Command {
 	constructor() {
-		super('tag-delete', {
-			aliases: ['tag-delete'],
-			category: 'tags',
-			channel: 'guild',
+		super("tag-delete", {
+			aliases: ["tag-delete"],
+			category: "tags",
+			channel: "guild",
 			ratelimit: 2,
 			args: [
 				{
-					id: 'tag',
+					id: "tag",
 					type: async (message, phrase) => {
 						if (!phrase) return null;
 						phrase = Util.cleanContent(phrase.toLowerCase(), message);
@@ -19,20 +19,20 @@ class TagDeleteCommand extends Command {
 						if (tag) return tag;
 					},
 					prompt: {
-						start: 'what tag do you want to delete?',
+						start: "what tag do you want to delete?",
 						retry: (message, { phrase }) => `a tag with the name **${phrase}** does not exist.`
 					}
 				}
 			],
 			description: {
-				content: 'Deletes a tag.',
-				usage: '<tag>'
+				content: "Deletes a tag.",
+				usage: "<tag>"
 			}
 		});
 	}
 
 	async exec(message, { tag }) {
-		if (tag.user !== message.author.id) return message.util.reply('you can only delete your own tags.');
+		if (tag.user !== message.author.id) return message.util.reply("you can only delete your own tags.");
 		await tag.destroy();
 
 		return message.util.reply(`successfully deleted **${tag.name.substring(0, 256)}**.`);

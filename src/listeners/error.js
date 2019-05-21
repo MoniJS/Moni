@@ -1,13 +1,13 @@
 /* eslint-disable multiline-ternary */
-const { Listener } = require('discord-akairo');
-const Raven = require('raven');
+const { Listener } = require("discord-akairo");
+const Raven = require("raven");
 
 class ErrorListener extends Listener {
 	constructor() {
-		super('error', {
-			emitter: 'commandHandler',
-			event: 'error',
-			category: 'commandHandler'
+		super("error", {
+			emitter: "commandHandler",
+			event: "error",
+			category: "commandHandler"
 		});
 	}
 
@@ -15,8 +15,8 @@ class ErrorListener extends Listener {
 		console.log(error);
 
 		Raven.captureBreadcrumb({
-			message: 'command_errored',
-			category: command ? command.category.id : 'inhibitor',
+			message: "command_errored",
+			category: command ? command.category.id : "inhibitor",
 			data: {
 				user: {
 					id: message.author.id,
@@ -39,11 +39,11 @@ class ErrorListener extends Listener {
 		});
 		Raven.captureException(error);
 
-		if (message.guild ? message.channel.permissionsFor(this.client.user).has('SEND_MESSAGES') : true) {
+		if (message.guild ? message.channel.permissionsFor(this.client.user).has("SEND_MESSAGES") : true) {
 			message.channel.send([
-				'```js',
+				"```js",
 				error.toString(),
-				'```'
+				"```"
 			]);
 		}
 	}
