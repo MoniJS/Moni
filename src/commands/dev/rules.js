@@ -18,7 +18,7 @@ class RulesCommand extends Command {
 		const embed = this.clien.util.embed()
 			.setColor('RANDOM')
 			.setTitle('Rules')
-			.setURL('https://github.com/moni-js/Moni')
+			.setURL('https://github.com/MoniJs/Moni')
 			.setAuthor('Moni', 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/emoji-one/64/white-heavy-check-mark_2705.png')
 			.setDescription('By using Moni, you agree to these rules. If you break any rules, we reserve the right to ban you from Moni')
 			.setThumbnail('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/socialmedia/emoji-one/44/warning-sign_26a0.png', true)
