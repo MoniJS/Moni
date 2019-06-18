@@ -6,14 +6,14 @@
   <p>
     <a href="https://discord.gg/jQdFFH6"><img src="https://img.shields.io/discord/550140222822809610.svg?colorB=Blue&logo=discord&label=Support&style=for-the-badge" alt="Discord server" /></a>
     <a href="https://discord.gg/jQdFFH6">
-    <img src="https://img.shields.io/travis/moni-js/Moni/master.svg?style=for-the-badge" alt="Build">
+    <img src="https://img.shields.io/travis/MoniJs/Moni/master.svg?style=for-the-badge" alt="Build">
 </a>
-    <a href="https://discord.gg/jQdFFH6"><img src="https://img.shields.io/github/languages/top/moni-js/Moni.svg?colorB=f0db4f&style=for-the-badge" alt="Language" /></a>
-<a href="https://github.com/moni-js/moni/issues">
-    <img src="https://img.shields.io/github/issues/moni-js/moni.svg?style=for-the-badge&colorB=37f149" alt="Issues">
+    <a href="https://discord.gg/jQdFFH6"><img src="https://img.shields.io/github/languages/top/MoniJs/Moni.svg?colorB=f0db4f&style=for-the-badge" alt="Language" /></a>
+<a href="https://github.com/MoniJs/moni/issues">
+    <img src="https://img.shields.io/github/issues/MoniJs/moni.svg?style=for-the-badge&colorB=37f149" alt="Issues">
 </a>
-<a href="https://github.com/moni-js/moni/pulls">
-    <img src="https://img.shields.io/github/issues-pr/moni-js/moni.svg?style=for-the-badge&colorB=37f149" alt="Pull Request">
+<a href="https://github.com/MoniJs/moni/pulls">
+    <img src="https://img.shields.io/github/issues-pr/MoniJs/moni.svg?style=for-the-badge&colorB=37f149" alt="Pull Request">
 </a>
   </p>
 </br>
@@ -34,7 +34,7 @@ Moni is a Discord Bot made with [JavaScript](https://www.javascript.com/) and [D
 ## Contributing
 Before creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the
 [documentation]().
-See [the contribution guide](https://github.com/moni-js/Moni/blob/master/CONTRIBUTING.md) if you'd like to submit a PR.
+See [the contribution guide](https://github.com/MoniJs/Moni/blob/master/CONTRIBUTING.md) if you'd like to submit a PR.
 
 ## Help
 If you don't understand something or, you are experiencing problems, or you just need a gentle

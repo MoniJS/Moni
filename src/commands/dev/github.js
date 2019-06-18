@@ -17,7 +17,7 @@ class GitHubCommand extends Command {
 	exec(message) {
 		if (message.guild.id === '550140222822809610') {
 			return message.util.send([
-				'Here is the JavaScript GitHub Url => (<https://github.com/moni-js>)'
+				'Here is the JavaScript GitHub Url => (<https://github.com/MoniJs>)'
 			]);
 		}
 	}

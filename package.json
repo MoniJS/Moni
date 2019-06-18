@@ -30,13 +30,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/moni-js/Moni.git"
+		"url": "git+https://github.com/MoniJs/Moni.git"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/moni-js/Moni/issues"
+		"url": "https://github.com/MoniJs/Moni/issues"
 	},
-	"homepage": "https://github.com/moni-js/Moni#readme"
+	"homepage": "https://github.com/MoniJs/Moni#readme"
 }
