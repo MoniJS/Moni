@@ -395,8 +395,8 @@ detect-libc@^1.0.2:
 
 discord-akairo@discord-akairo/discord-akairo:
   version "8.0.0-beta.8"
-  uid de81244f8cbab3d6ff2270a28ee635ac1c90bd97
-  resolved "https://codeload.github.com/discord-akairo/discord-akairo/tar.gz/de81244f8cbab3d6ff2270a28ee635ac1c90bd97"
+  uid "817327e64546062353ac595d64b52924896d032a"
+  resolved "https://codeload.github.com/discord-akairo/discord-akairo/tar.gz/817327e64546062353ac595d64b52924896d032a"
 
 discord-economy@^1.0.3:
   version "1.1.6"
