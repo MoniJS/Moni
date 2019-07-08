@@ -3,7 +3,7 @@ const { Command } = require('discord-akairo');
 class PullCommand extends Command {
 	constructor() {
 		super('pull', {
-			aliases: ['pull', 'fetch],
+			aliases: ['pull', 'fetch'],
 			category: 'general',
 			clientPermissions: ['READ_MESSAGES', 'SEND_MESSAGES'],
 			description: {
