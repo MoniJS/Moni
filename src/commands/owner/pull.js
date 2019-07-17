@@ -4,7 +4,8 @@ class PullCommand extends Command {
 	constructor() {
 		super('pull', {
 			aliases: ['pull', 'fetch'],
-			category: 'general',
+			category: 'owner',
+			ownerOnly: true,
 			clientPermissions: ['READ_MESSAGES', 'SEND_MESSAGES'],
 			description: {
 				content: 'Fetch latest src from Github'
