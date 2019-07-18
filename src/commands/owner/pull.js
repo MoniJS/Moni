@@ -1,4 +1,5 @@
 const { Command } = require('discord-akairo');
+const shell = require('shelljs');
 
 class PullCommand extends Command {
 	constructor() {
@@ -14,8 +15,7 @@ class PullCommand extends Command {
 	}
 
 	exec(message) {
-		  const shell = require('shelljs');
-      	  const { stderr, stdout, code } = shell.exec('git pull');
+      	const { stderr, stdout, code } = shell.exec('git pull');
 		return message.channel.send([
 			`${stderr}`,
 			`${stdout}`,
