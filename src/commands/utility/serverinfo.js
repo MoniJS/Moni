@@ -8,7 +8,7 @@ class ServerCommand extends Command {
 	constructor() {
 		super('server', {
 			aliases: ['server', 'serverinfo', 'serverstats', 'serverstat'],
-			category: 'info',
+			category: 'utility',
 			channel: 'guild',
 			clientPermissions: ['SEND_MESSAGES'],
 			description: {

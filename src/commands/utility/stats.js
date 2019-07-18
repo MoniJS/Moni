@@ -10,7 +10,7 @@ class BotInfoCommand extends Command {
 	constructor() {
 		super('stats', {
 			aliases: ['stats'],
-			category: 'info',
+			category: 'utility',
 			channel: 'guild',
 			clientPermissions: ['SEND_MESSAGES', 'EMBED_LINKS'],
 			description: {

@@ -14,8 +14,8 @@ class PullCommand extends Command {
 	}
 
 	exec(message) {
-		  const shell = require ('shelljs');
-      		 const {stderr, stdout, code } = shell.exec('git pull');
+		  const shell = require('shelljs');
+      	  const { stderr, stdout, code } = shell.exec('git pull');
 		return message.channel.send([
 			`${stderr}`,
 			`${stdout}`,

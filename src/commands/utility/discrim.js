@@ -1,25 +1,25 @@
 const { Command } = require('discord-akairo');
 const moment = require('moment');
 
-class UserCommand extends Command {
+class DiscrimCommand extends Command {
 	constructor() {
-		super('user', {
-			aliases: ['user', 'userinfo'],
-			category: 'info',
+		super('discrim', {
+			aliases: ['discrim'],
+			category: 'utility',
 			channel: 'guild',
-			clientPermissions: ['EMBED_LINKS'],
-			args: [
+            clientPermissions: ['EMBED_LINKS'], ['SEND_MESSAGES'],
+            description: {
+                content: "Get info about a member's Discriminator ",
+                usage: '<member>',
+                examples: ['@Moni', 'Suvajit', '444432489818357760', 'CαdσAиgєlυs']
+            },
+            args: [
 				{
 					id: 'member',
 					type: 'member',
 					default: message => message.member
 				}
-			],
-			description: {
-				content: 'Get info about a member.',
-				usage: '<member>',
-				examples: ['@Moni', 'Suvajit', '444432489818357760', 'CαdσAиgєlυs']
-			}
+			]
 		});
 	}
 
@@ -46,4 +46,4 @@ class UserCommand extends Command {
 	}
 }
 
-module.exports = UserCommand;
+module.exports = DiscrimCommand;
