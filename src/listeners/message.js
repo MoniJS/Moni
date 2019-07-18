@@ -1,5 +1,6 @@
 const { Listener } = require('discord-akairo');
-const badwords = require('../../random/badwords.json');
+// const badwords = require('../../random/badwords.json');
+const profanities = require('profanities');
 
 class MessageListener extends Listener {
 	constructor() {
@@ -12,11 +13,11 @@ class MessageListener extends Listener {
 
 	exec(message) {
 		if (this.client.settings.get(message.guild, 'badwords', true)) {
-			if (badwords.some(word => message.content.toLowerCase().includes(word))) {
-				try {
+			for (x = 0; x < profanities.length; x++) {
+				if (message.content.toUpperCase() == profanities[x].toUpperCase()) {
+					return message.channel.send('Hey! Don\'t say that');
 					message.delete();
-					return message.member.send(`${message.author}, you said the bad word.`);
-				} catch {} // eslint-disable-line
+				}
 			}
 		}
 	}
