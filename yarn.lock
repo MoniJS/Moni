@@ -1350,6 +1350,11 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
   integrity sha512-MtEC1TqN0EU5nephaJ4rAtThHtC86dNN9qCuEhtshvpVBkAW5ZO7BASN9REnF9eoXGcRub+pFuKEpOHE+HbEMw==
 
+profanities@^2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/profanities/-/profanities-2.11.0.tgz#09309ec31e313fbef922321ac4233dc864fd4a62"
+  integrity sha512-IoeRoPNyhuuVzCq4A4tDCOO6+WlHfW6Yf4im62idXWStul7G5bDUB4HzeOo3eSlaCzDeidN0ypmI9sZV2s9T0Q==
+
 progress@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"

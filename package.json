@@ -19,6 +19,7 @@
 		"ms": "^2.1.1",
 		"node-fetch": "^2.3.0",
 		"os-utils": "^0.0.14",
+		"profanities": "^2.11.0",
 		"raven": "^2.6.4",
 		"request": "^2.88.0",
 		"sequelize": "^5.6.1",
