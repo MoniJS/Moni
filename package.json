@@ -8,6 +8,7 @@
 		"lint": "eslint --fix src/"
 	},
 	"dependencies": {
+		"debug": "^4.1.1",
 		"discord-akairo": "discord-akairo/discord-akairo",
 		"discord-economy": "^1.0.3",
 		"discord.js": "discordjs/discord.js",
@@ -22,6 +23,7 @@
 		"request": "^2.88.0",
 		"sequelize": "^5.6.1",
 		"shelljs": "^0.8.3",
+		"simple-git": "^1.122.0",
 		"sqlite3": "^4.0.6",
 		"turndown": "^5.0.3"
 	},
