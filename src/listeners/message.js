@@ -14,7 +14,7 @@ class MessageListener extends Listener {
 	exec(message) {
 		if (this.client.settings.get(message.guild, 'badwords', true)) {
 			for (x = 0; x < profanities.length; x++) {
-				if (message.content.toUpperCase() == profanities[x].toUpperCase()) {
+				if (message.content.toUpperCase() === profanities[x].toUpperCase()) {
 					return message.channel.send('Hey! Don\'t say that');
 					message.delete();
 				}

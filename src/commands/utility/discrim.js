@@ -7,13 +7,13 @@ class DiscrimCommand extends Command {
 			aliases: ['discrim'],
 			category: 'utility',
 			channel: 'guild',
-            clientPermissions: ['EMBED_LINKS'], ['SEND_MESSAGES'],
-            description: {
-                content: "Get info about a member's Discriminator ",
-                usage: '<member>',
-                examples: ['@Moni', 'Suvajit', '444432489818357760', 'CαdσAиgєlυs']
-            },
-            args: [
+			clientPermissions: ['SEND_MESSAGES'],
+			description: {
+				content: 'Get info about a member\'s Discriminator ',
+				usage: '<member>',
+				examples: ['@Moni', 'Suvajit', '444432489818357760', 'CαdσAиgєlυs']
+			},
+			args: [
 				{
 					id: 'member',
 					type: 'member',
