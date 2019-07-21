@@ -1,6 +1,7 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 const { Command } = require('discord-akairo');
 const shell = require('shelljs');
+const { client } = this;
 class PullCommand extends Command {
 	constructor() {
 		super('pull', {
@@ -16,6 +17,9 @@ class PullCommand extends Command {
 
 	exec(message) {
       		 const { stderr, stdout, code } = shell.exec('git pull');
+		this.client.inhibitorHandler.removeAll() && this.client.inhibitorHandler.loadAll();
+		this.client.listenerHandler.removeAll() && this.client.listenerHandler.loadAll();
+		this.client.commandHandler.removeAll() && this.client.commandHandler.loadAll();
 		return message.channel.send([
 			`${stderr}`,
 			`${stdout}`,
