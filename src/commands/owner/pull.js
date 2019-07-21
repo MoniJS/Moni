@@ -15,11 +15,8 @@ class PullCommand extends Command {
 		});
 	}
 
-	exec(message) {
-      		 const { stderr, stdout, code } = shell.exec('git pull');
-		this.client.inhibitorHandler.removeAll() && this.client.inhibitorHandler.loadAll();
-		this.client.listenerHandler.removeAll() && this.client.listenerHandler.loadAll();
-		this.client.commandHandler.removeAll() && this.client.commandHandler.loadAll();
+	exec(message) {	
+		const { stderr, stdout, code } = shell.exec('pm2 pull 0');
 		return message.channel.send([
 			`${stderr}`,
 			`${stdout}`,
