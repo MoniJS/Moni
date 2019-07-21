@@ -1,7 +1,7 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 const { Command } = require('discord-akairo');
 const shell = require('shelljs');
-const { client } = this;
+
 class PullCommand extends Command {
 	constructor() {
 		super('pull', {
