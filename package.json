@@ -2,7 +2,7 @@
 	"name": "moni",
 	"main": "src/index.js",
 	"description": "",
-	"version": "0.0.3",
+	"version": "1.0.0",
 	"scripts": {
 		"test": "eslint ./",
 		"lint": "eslint --fix src/"

@@ -9,7 +9,7 @@ class RestartCommand extends Command {
 			quoted: false,
 			description: {
 				content: 'Restarts Bot',
-				usage: '!restart'
+				usage: ''
 			}
 		});
 	}

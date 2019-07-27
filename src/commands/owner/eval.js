@@ -30,20 +30,6 @@ class EvalCommand extends Command {
 	}
 
 	async exec(message, { code }) {
-		const msg = message;
-		const { client, lastResult } = this;
-		const doReply = val => {
-			if (val instanceof Error) {
-				message.util.send(`*Callback error:* \`${val}\``);
-			} else {
-				const result = this._result(val, process.hrtime(this.hrStart));
-				if (Array.isArray(result)) {
-					for (const res of result) message.util.send(res);
-				}
-				message.util.send(result);
-			}
-		};
-
 		let hrDiff;
 		try {
 			const hrStart = process.hrtime();

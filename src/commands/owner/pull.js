@@ -1,4 +1,3 @@
-/* eslint-disable no-mixed-spaces-and-tabs */
 const { Command } = require('discord-akairo');
 const shell = require('shelljs');
 
@@ -15,7 +14,7 @@ class PullCommand extends Command {
 		});
 	}
 
-	exec(message) {	
+	exec(message) {
 		const { stderr, stdout, code } = shell.exec('pm2 pull 0');
 		return message.channel.send([
 			`${stderr}`,
