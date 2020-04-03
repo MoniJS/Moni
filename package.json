@@ -5,7 +5,8 @@
 	"version": "1.0.0",
 	"scripts": {
 		"test": "eslint ./",
-		"lint": "eslint --fix src/"
+		"lint": "eslint --fix src/",
+		"start": "node src/index.js"
 	},
 	"dependencies": {
 		"debug": "^4.1.1",
@@ -13,7 +14,7 @@
 		"discord-economy": "^1.0.3",
 		"discord.js": "discordjs/discord.js",
 		"discord.js-minesweeper": "^1.0.3",
-		"dotenv": "^8.0.0",
+		"dotenv": "^8.2.0",
 		"moment": "^2.24.0",
 		"moment-duration-format": "^2.2.2",
 		"ms": "^2.1.1",
